@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public abstract class Chessman : MonoBehaviour
+public abstract class Chessman : NetworkBehaviour
 {
 
     public int CurrentX { set; get; }

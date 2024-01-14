@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
+using Unity.Networking;
 
-public class BoardManager : MonoBehaviour
+
+public class BoardManager : NetworkBehaviour
 {
     public static BoardManager Instance { get; set; }
     private bool[,] allowedMoves { get; set; }
-
+    private bool isSpawn = false;
     private const float TILE_SIZE = 1.0f;
     private const float TILE_OFFSET = 0.5f;
 
@@ -23,7 +26,7 @@ public class BoardManager : MonoBehaviour
     public Chessman[,] Chessmans { get; set; }
     private Chessman selectedChessman;
 
-    public bool isWhiteTurn = true;
+    public NetworkVariable<bool> isWhiteTurn = new NetworkVariable<bool>(true);
 
     private Material previousMat;
     public Material selectedMat;
@@ -34,15 +37,30 @@ public class BoardManager : MonoBehaviour
     void Start()
     {
         Instance = this;
-        SpawnAllChessmans();
+
+        activeChessman = new List<GameObject>();
+        Chessmans = new Chessman[8, 8];
         EnPassantMove = new int[2] { -1, -1 };
     }
 
     // Update is called once per frame
+    public override void OnNetworkSpawn()
+    {
+        if(IsHost)
+         { 
+        SpawnAllChessmans();
+         }
+        else
+        {
+            // This code will run on the client side
+            // You may want to perform client-side initialization here
+            // For example, you can instantiate the Chessmans array
+
+        }
+    }
     void Update()
     {
         UpdateSelection();
-
         if (Input.GetMouseButtonDown(0))
         {
             if (selectionX >= 0 && selectionY >= 0)
@@ -50,7 +68,9 @@ public class BoardManager : MonoBehaviour
                 if (selectedChessman == null)
                 {
                     // Select the chessman
+                    Debug.Log("Selection X " + selectionX);
                     SelectChessman(selectionX, selectionY);
+                    //Debug.Log(Chessmans[selectionX, selectionY].isWhite);
                 }
                 else
                 {
@@ -66,12 +86,16 @@ public class BoardManager : MonoBehaviour
 
     private void SelectChessman(int x, int y)
     {
-        if (Chessmans[x, y] == null) return;
+        if (Chessmans == null || Chessmans[x, y] == null)
+        {
+            Debug.Log("Chessman or Chessmans array is null");
+            return;
+        }
 
-        if (Chessmans[x, y].isWhite != isWhiteTurn) return;
+        if (Chessmans[x, y].isWhite != isWhiteTurn.Value)  return;
 
         bool hasAtLeastOneMove = false;
-
+        Debug.Log("Entered to slect");
         allowedMoves = Chessmans[x, y].PossibleMoves();
         for (int i = 0; i < 8; i++)
         {
@@ -88,7 +112,7 @@ public class BoardManager : MonoBehaviour
 
         if (!hasAtLeastOneMove)
             return;
-
+        Debug.Log("Part 1");
         selectedChessman = Chessmans[x, y];
         previousMat = selectedChessman.GetComponent<MeshRenderer>().material;
         selectedMat.mainTexture = previousMat.mainTexture;
@@ -103,7 +127,7 @@ public class BoardManager : MonoBehaviour
         {
             Chessman c = Chessmans[x, y];
 
-            if (c != null && c.isWhite != isWhiteTurn)
+            if (c != null && c.isWhite != isWhiteTurn.Value)
             {
                 // Capture a piece
 
@@ -119,7 +143,7 @@ public class BoardManager : MonoBehaviour
             }
             if (x == EnPassantMove[0] && y == EnPassantMove[1])
             {
-                if (isWhiteTurn)
+                if (isWhiteTurn.Value)
                     c = Chessmans[x, y - 1];
                 else
                     c = Chessmans[x, y + 1];
@@ -156,7 +180,7 @@ public class BoardManager : MonoBehaviour
             selectedChessman.transform.position = GetTileCenter(x, y);
             selectedChessman.SetPosition(x, y);
             Chessmans[x, y] = selectedChessman;
-            isWhiteTurn = !isWhiteTurn;
+            isWhiteTurn.Value = !isWhiteTurn.Value;
         }
 
         selectedChessman.GetComponent<MeshRenderer>().material = previousMat;
@@ -174,6 +198,7 @@ public class BoardManager : MonoBehaviour
         {
             selectionX = (int)hit.point.x;
             selectionY = (int)hit.point.z;
+            Debug.Log("Slection Y " + selectionY);
         }
         else
         {
@@ -196,10 +221,11 @@ public class BoardManager : MonoBehaviour
             go = Instantiate(chessmanPrefabs[index], position, blackOrientation) as GameObject;
         }
 
-        go.transform.SetParent(transform);
+        go.GetComponent<NetworkObject>().Spawn();
         Chessmans[x, y] = go.GetComponent<Chessman>();
         Chessmans[x, y].SetPosition(x, y);
         activeChessman.Add(go);
+        go.transform.SetParent(transform);
     }
 
     private Vector3 GetTileCenter(int x, int y)
@@ -272,7 +298,7 @@ public class BoardManager : MonoBehaviour
 
     private void EndGame()
     {
-        if (isWhiteTurn)
+        if (isWhiteTurn.Value)
             Debug.Log("White wins");
         else
             Debug.Log("Black wins");
@@ -282,7 +308,7 @@ public class BoardManager : MonoBehaviour
             Destroy(go);
         }
 
-        isWhiteTurn = true;
+        isWhiteTurn.Value = true;
         BoardHighlights.Instance.HideHighlights();
         SpawnAllChessmans();
     }
