@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-public abstract class Chessman : NetworkBehaviour
+public abstract class Chessman : MonoBehaviour
 {
 
     public int CurrentX { set; get; }

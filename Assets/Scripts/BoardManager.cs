@@ -25,38 +25,116 @@ public class BoardManager : NetworkBehaviour
 
     public Chessman[,] Chessmans { get; set; }
     private Chessman selectedChessman;
+    public bool isWhiteTurn = true;
+    //public NetworkVariable<bool> isWhiteTurn = new NetworkVariable<bool>(true , NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
-    public NetworkVariable<bool> isWhiteTurn = new NetworkVariable<bool>(true);
+    public NetworkVariable<CustomMovement> whiteMovement = new NetworkVariable<CustomMovement>(new CustomMovement {
+        _x = 0,
+        _y = 0
+    }, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+    public NetworkVariable<CustomMovement> whiteMovementFinal = new NetworkVariable<CustomMovement>(new CustomMovement
+    {
+        _x = 0,
+        _y = 0
+    }, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+
+    public NetworkVariable<CustomMovement> blackMovement = new NetworkVariable<CustomMovement>(new CustomMovement
+    {
+        _x = 0,
+        _y = 0
+    }, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+    public NetworkVariable<CustomMovement> blackMovementFinal = new NetworkVariable<CustomMovement>(new CustomMovement
+    {
+        _x = 0,
+        _y = 0
+    }, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+
 
     private Material previousMat;
     public Material selectedMat;
 
     public int[] EnPassantMove { set; get; }
 
+
+    public struct CustomMovement :INetworkSerializable
+    {
+        public int _x;
+        public int _y;
+        public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
+        {
+            serializer.SerializeValue(ref _x);
+            serializer.SerializeValue(ref _y);
+
+        }
+
+    }
+
     // Use this for initialization
     void Start()
     {
         Instance = this;
 
-        activeChessman = new List<GameObject>();
-        Chessmans = new Chessman[8, 8];
+       // activeChessman = new List<GameObject>();
+        //Chessmans = new Chessman[8, 8];
         EnPassantMove = new int[2] { -1, -1 };
     }
 
     // Update is called once per frame
     public override void OnNetworkSpawn()
     {
-        if(IsHost)
-         { 
+
+       
         SpawnAllChessmans();
-         }
+        if(!IsHost)
+        {  
+            whiteMovement.OnValueChanged += whiteMovementChanged;
+            whiteMovementFinal.OnValueChanged += whiteMovementFinalChanged;
+        }
         else
         {
-            // This code will run on the client side
-            // You may want to perform client-side initialization here
-            // For example, you can instantiate the Chessmans array
+            blackMovement.OnValueChanged += blackMovementChanged;
+            blackMovementFinal.OnValueChanged += blackMovementFinalChanged;
+        }
+
+    }
+
+    public void whiteMovementChanged(CustomMovement prev, CustomMovement current) 
+    {
+        Debug.Log("Initial Changed");
+        SelectChessman(current._x, current._y);
+    }
+    public void whiteMovementFinalChanged(CustomMovement prev, CustomMovement current)
+    {
+        Debug.Log("Final Changed");
+        MoveChessman(current._x, current._y);
+    }
+    public void blackMovementChanged(CustomMovement prev, CustomMovement current)
+    {
+        Debug.Log("Initial Changed");
+        SelectChessman(current._x, current._y);
+    }
+    public void blackMovementFinalChanged(CustomMovement prev, CustomMovement current)
+    {
+        Debug.Log("Final Changed");
+        MoveChessman(current._x, current._y);
+    }
+
+    public NetworkObject FindGameObjectsInSpheres(Vector3 center , float sphereRadius , LayerMask excludedLayer)
+    {
+
+        GameObject hitObject;
+            Collider[] colliders = Physics.OverlapSphere(center, sphereRadius , ~excludedLayer);
+
+            foreach (Collider collider in colliders)
+            {
+            NetworkObject netObject = collider.GetComponent<NetworkObject>();
+
+            // Do something with the found object
+            if (netObject != null)
+                return netObject;
 
         }
+        return null;
     }
     void Update()
     {
@@ -69,7 +147,14 @@ public class BoardManager : NetworkBehaviour
                 {
                     // Select the chessman
                     Debug.Log("Selection X " + selectionX);
+                    if(IsHost && isWhiteTurn)
+                    { 
                     SelectChessman(selectionX, selectionY);
+                    }
+                    if(IsClient && !isWhiteTurn)
+                    {
+                        SelectChessman(selectionX, selectionY);
+                    }
                     //Debug.Log(Chessmans[selectionX, selectionY].isWhite);
                 }
                 else
@@ -86,14 +171,46 @@ public class BoardManager : NetworkBehaviour
 
     private void SelectChessman(int x, int y)
     {
+        //Chessmans = new Chessman[8, 8];
         if (Chessmans == null || Chessmans[x, y] == null)
         {
+
             Debug.Log("Chessman or Chessmans array is null");
             return;
         }
 
-        if (Chessmans[x, y].isWhite != isWhiteTurn.Value)  return;
+        if (Chessmans[x, y].isWhite != isWhiteTurn) return;
 
+        if (isWhiteTurn)
+        {
+            Debug.Log("Value Set");
+            whiteMovement.Value = new CustomMovement
+            {
+                _x = x,
+                _y = y
+            };
+        }
+        else
+        {
+            
+            CustomMovement blackMovement_temp = new CustomMovement
+            {
+                _x = x,
+                _y = y
+            };
+            blackTurnServerRPC(blackMovement_temp);
+
+            
+        }
+        
+        
+    
+        
+        if(IsClient)
+        {
+            Debug.Log("X movement" + whiteMovement.Value._x);
+        }
+        Debug.Log(Chessmans[x,y]);
         bool hasAtLeastOneMove = false;
         Debug.Log("Entered to slect");
         allowedMoves = Chessmans[x, y].PossibleMoves();
@@ -112,7 +229,7 @@ public class BoardManager : NetworkBehaviour
 
         if (!hasAtLeastOneMove)
             return;
-        Debug.Log("Part 1");
+
         selectedChessman = Chessmans[x, y];
         previousMat = selectedChessman.GetComponent<MeshRenderer>().material;
         selectedMat.mainTexture = previousMat.mainTexture;
@@ -127,7 +244,26 @@ public class BoardManager : NetworkBehaviour
         {
             Chessman c = Chessmans[x, y];
 
-            if (c != null && c.isWhite != isWhiteTurn.Value)
+            if (isWhiteTurn)
+            {
+                Debug.Log("Value Set");
+                whiteMovementFinal.Value = new CustomMovement
+                {
+                    _x = x,
+                    _y = y
+                };
+            }
+            else
+            {
+                
+                CustomMovement blackMovementFinal_temp = new CustomMovement
+                {
+                    _x = x,
+                    _y = y
+                };
+                blackTurnFinalServerRPC(blackMovementFinal_temp);
+            }
+            if (c != null && c.isWhite != isWhiteTurn)
             {
                 // Capture a piece
 
@@ -143,7 +279,7 @@ public class BoardManager : NetworkBehaviour
             }
             if (x == EnPassantMove[0] && y == EnPassantMove[1])
             {
-                if (isWhiteTurn.Value)
+                if (isWhiteTurn)
                     c = Chessmans[x, y - 1];
                 else
                     c = Chessmans[x, y + 1];
@@ -180,7 +316,9 @@ public class BoardManager : NetworkBehaviour
             selectedChessman.transform.position = GetTileCenter(x, y);
             selectedChessman.SetPosition(x, y);
             Chessmans[x, y] = selectedChessman;
-            isWhiteTurn.Value = !isWhiteTurn.Value;
+
+            isWhiteTurn = !isWhiteTurn;
+            // ChangeTurnServerRPC();
         }
 
         selectedChessman.GetComponent<MeshRenderer>().material = previousMat;
@@ -198,7 +336,6 @@ public class BoardManager : NetworkBehaviour
         {
             selectionX = (int)hit.point.x;
             selectionY = (int)hit.point.z;
-            Debug.Log("Slection Y " + selectionY);
         }
         else
         {
@@ -211,21 +348,27 @@ public class BoardManager : NetworkBehaviour
     {
         Vector3 position = GetTileCenter(x, y);
         GameObject go;
+       
+            if (isWhite)
+            {
+                go = Instantiate(chessmanPrefabs[index], position, whiteOrientation) as GameObject;
+            }
+            else
+            {
+                go = Instantiate(chessmanPrefabs[index], position, blackOrientation) as GameObject;
+            }
+            
+            //go = FindGameObjectsInSpheres(position, 0.9f, mask);
+            // Debug.Log(go);
+            Chessmans[x, y] = go.GetComponent<Chessman>();
+            Chessmans[x, y].SetPosition(x, y);
+            activeChessman.Add(go);
+            go.transform.SetParent(transform);
 
-        if (isWhite)
-        {
-            go = Instantiate(chessmanPrefabs[index], position, whiteOrientation) as GameObject;
-        }
-        else
-        {
-            go = Instantiate(chessmanPrefabs[index], position, blackOrientation) as GameObject;
-        }
+           
 
-        go.GetComponent<NetworkObject>().Spawn();
-        Chessmans[x, y] = go.GetComponent<Chessman>();
-        Chessmans[x, y].SetPosition(x, y);
-        activeChessman.Add(go);
-        go.transform.SetParent(transform);
+       
+
     }
 
     private Vector3 GetTileCenter(int x, int y)
@@ -298,7 +441,7 @@ public class BoardManager : NetworkBehaviour
 
     private void EndGame()
     {
-        if (isWhiteTurn.Value)
+        if (isWhiteTurn)
             Debug.Log("White wins");
         else
             Debug.Log("Black wins");
@@ -308,9 +451,45 @@ public class BoardManager : NetworkBehaviour
             Destroy(go);
         }
 
-        isWhiteTurn.Value = true;
+        isWhiteTurn = true;
         BoardHighlights.Instance.HideHighlights();
         SpawnAllChessmans();
+    }
+
+
+    [ServerRpc(RequireOwnership = false)]
+    public void blackTurnServerRPC(CustomMovement blackData)
+    {
+        blackMovement.Value = new CustomMovement
+        {
+            _x = blackData._x,
+            _y = blackData._y
+        };
+    
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void blackTurnFinalServerRPC(CustomMovement blackData)
+    {
+        blackMovementFinal.Value = new CustomMovement
+        {
+            _x = blackData._x,
+            _y = blackData._y
+        };
+
+
+    }
+
+
+    //public void 
+
+
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ChangeTurnServerRPC()
+    {
+        Debug.Log("Turn Changed");
+        isWhiteTurn = !isWhiteTurn;
     }
 }
 

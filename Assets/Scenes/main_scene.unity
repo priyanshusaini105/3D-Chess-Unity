@@ -519,8 +519,7 @@ MonoBehaviour:
     NetworkTransport: {fileID: 1450084578}
     PlayerPrefab: {fileID: 0}
     Prefabs:
-      NetworkPrefabsLists:
-      - {fileID: 11400000, guid: f5baec1913a76114eb88626c06d430d4, type: 2}
+      NetworkPrefabsLists: []
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -698,7 +697,8 @@ MonoBehaviour:
   - {fileID: 1930024537875770, guid: 83a16142db6d08b4795f06c37dd083e9, type: 3}
   - {fileID: 1994935599750250, guid: 3cee9b547a45f1e47b92660172edb0ac, type: 3}
   - {fileID: 1943999446811244, guid: 49537dafe011879469dc1a1d27fc9519, type: 3}
-  isWhiteTurn: 1
+  isWhiteTurn:
+    m_InternalValue: 1
   selectedMat: {fileID: 2100000, guid: 0a7571208448b144fb9362d283afa71a, type: 2}
 --- !u!4 &1904881799
 Transform:
