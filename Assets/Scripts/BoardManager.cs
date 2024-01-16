@@ -11,8 +11,8 @@ public class BoardManager : NetworkBehaviour
     public static BoardManager Instance { get; set; }
     private bool[,] allowedMoves { get; set; }
     private bool isSpawn = false;
-    private const float TILE_SIZE = 1.0f;
-    private const float TILE_OFFSET = 0.5f;
+    public const float TILE_SIZE = 1.0f;
+    public const float TILE_OFFSET = 0.5f;
 
     private int selectionX = -1;
     private int selectionY = -1;
@@ -151,7 +151,7 @@ public class BoardManager : NetworkBehaviour
                     { 
                     SelectChessman(selectionX, selectionY);
                     }
-                    if(IsClient && !isWhiteTurn)
+                    if(!IsHost && !isWhiteTurn)
                     {
                         SelectChessman(selectionX, selectionY);
                     }
