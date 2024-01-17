@@ -20,8 +20,8 @@ public class BoardManager : NetworkBehaviour
     public List<GameObject> chessmanPrefabs;
     private List<GameObject> activeChessman;
 
-    private Quaternion whiteOrientation = Quaternion.Euler(0, 270, 0);
-    private Quaternion blackOrientation = Quaternion.Euler(0, 90, 0);
+    private Quaternion whiteOrientation = Quaternion.Euler(0, 0, 0);
+    private Quaternion blackOrientation = Quaternion.Euler(0, 180, 0);
 
     public Chessman[,] Chessmans { get; set; }
     private Chessman selectedChessman;

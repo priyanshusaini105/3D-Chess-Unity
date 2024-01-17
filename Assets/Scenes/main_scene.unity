@@ -958,10 +958,87 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1930236781491739373, guid: fb04e0e6fb9317c4292d92c0b60d9eec,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7881073145496104846, guid: 672b9ab5d771f904d97c721ebe329da0,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 5137172918947532165, guid: 6b8559e55cf3c66498fdad250457c20f,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 6949143319008478374, guid: e8d4c6240a55bf041878c2e64a6ef3bc,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 8982827807687862369, guid: 0c6de74543e55504e8034edb33fc2732,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 44718297162896834, guid: 82a5851a904669249a56ba1899e422ef,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 2514375380745477234, guid: cf34b9a6f329b194a8641815d5fc54b5,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 2447382879348911043, guid: a2ddcf5ec0bb33544b67981ee969fada,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: 6205950894017110247, guid: a6cb45fe04f6e374798fe430e0d99899,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: 2027871137272824034, guid: cc6702bebaf3ed848881071f004f2106,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[10]
+      value: 
+      objectReference: {fileID: 873435090676610075, guid: fb68672d6b6afb346bb7c4a7b44d867a,
+        type: 3}
+    - target: {fileID: 4970114082915790482, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: chessmanPrefabs.Array.data[11]
+      value: 
+      objectReference: {fileID: 1850288288472448431, guid: b4a903b4610c1d84bb128270372f09db,
+        type: 3}
     - target: {fileID: 5277345436151302730, guid: 836583c91d962364e82ca203a9ef3176,
         type: 3}
       propertyPath: GlobalObjectIdHash
       value: 203852026
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478448916762463729, guid: 836583c91d962364e82ca203a9ef3176,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5741887679372924541, guid: 836583c91d962364e82ca203a9ef3176,
         type: 3}
