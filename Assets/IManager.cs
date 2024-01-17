@@ -63,6 +63,7 @@ public class IManager : MonoBehaviour
     {
         // Instantiate the prefab at the hit pose
         Instantiate(prefabToSpawn, pose.position, pose.rotation);
+        crosshair.SetActive(false);
 
         // Set the flag to true to indicate that the prefab has been spawned
         hasSpawned = true;
