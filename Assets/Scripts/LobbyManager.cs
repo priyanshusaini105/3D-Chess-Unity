@@ -23,6 +23,7 @@ public class LobbyManager : MonoBehaviour
     public int playerNum = 1;
     public GameObject dialogBox;
     private float lobbyUpdateTimer;
+    private float heartBeatTimer;
     private Unity.Services.Lobbies.Models.Lobby joinedLobby;
     async void Start()
     {
@@ -40,7 +41,20 @@ public class LobbyManager : MonoBehaviour
     {
         HandleLobbyPollForUpdates();
     }
+    private async void HandleHeartBeatSync()
+    {
+        if(joinedLobby!=null)
+        {
+            heartBeatTimer -= Time.deltaTime;
+            if (heartBeatTimer<0f)
+            {
+                float heartBeatTimerMax = 15;
+                heartBeatTimer = heartBeatTimerMax;
+                await LobbyService.Instance.SendHeartbeatPingAsync(joinedLobby.Id);
+            }
 
+        }
+    }
     private async void HandleLobbyPollForUpdates()
     {
         if (joinedLobby != null)
@@ -48,7 +62,7 @@ public class LobbyManager : MonoBehaviour
             lobbyUpdateTimer -= Time.deltaTime;
             if (lobbyUpdateTimer < 0f)
             {
-                float lobbyUpdateTimerMax = 1.1f;
+                float lobbyUpdateTimerMax = 3.1f;
                 Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobby.Id);
                 lobbyUpdateTimer = lobbyUpdateTimerMax;
 
@@ -77,7 +91,7 @@ public class LobbyManager : MonoBehaviour
     {
         CreateLobbyOptions options = new CreateLobbyOptions
         {
-            IsLocked = true,
+            IsLocked = false,
             Data = new Dictionary<string, DataObject>
         {
             {"KEY_START_GAME" , new DataObject(DataObject.VisibilityOptions.Member , "0") }
