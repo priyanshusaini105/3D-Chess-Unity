@@ -94,6 +94,8 @@ public class SpawnObjectInAR : MonoBehaviour
 
             // Set the object's position to be slightly above the plane to avoid z-fighting
             spawnedObject.transform.position = arPlane.transform.position + Vector3.up * 0.01f;
+
+            crosshair.SetActive(false);
         }
     }
 
