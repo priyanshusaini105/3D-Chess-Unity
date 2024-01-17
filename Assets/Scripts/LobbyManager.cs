@@ -59,12 +59,12 @@ public class LobbyManager : MonoBehaviour
                 }
                 Debug.Log("Player COunt " + playerNum);
 
-                if (joinedLobby.Data["Key_Start_Game"].Value != "0")
+                if (joinedLobby.Data["KEY_START_GAME"].Value != "0")
                 {
                     if (!IsLobbyHost)
                    {
-                        Debug.Log("Relay Joined " + joinedLobby.Data["Key_Start_Game"].Value);
-                        JoinRelay(joinedLobby.Data["Key_Start_Game"].Value);
+                        Debug.Log("Relay Joined " + joinedLobby.Data["KEY_START_GAME"].Value);
+                        JoinRelay(joinedLobby.Data["KEY_START_GAME"].Value);
                     }
                     joinedLobby = null;
                 }
