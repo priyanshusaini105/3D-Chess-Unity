@@ -550,8 +550,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779966698}
-        m_TargetAssemblyTypeName: Lobby, Assembly-CSharp
+      - m_Target: {fileID: 1450084581}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: SpawnGameObject
         m_Mode: 1
         m_Arguments:
@@ -778,8 +778,8 @@ MonoBehaviour:
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779966698}
-        m_TargetAssemblyTypeName: Lobby, Assembly-CSharp
+      - m_Target: {fileID: 1450084581}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: JoinRoom
         m_Mode: 0
         m_Arguments:
@@ -839,53 +839,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778489756}
   m_CullTransparentMesh: 1
---- !u!1 &779966697
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 779966699}
-  - component: {fileID: 779966698}
-  m_Layer: 0
-  m_Name: LobbyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &779966698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779966697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3b55d6ba6561df4ab0e8a98a4c0a632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomId: 
-  playerNum: 1
-  dialogBox: {fileID: 265651322}
---- !u!4 &779966699
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779966697}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -794.8825, y: -504.8847, z: 39.55354}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1587715806}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862990554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1191,7 @@ GameObject:
   - component: {fileID: 1450084580}
   - component: {fileID: 1450084579}
   - component: {fileID: 1450084578}
+  - component: {fileID: 1450084581}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1323,6 +1277,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1450084581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450084577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45390deea0ebd6348b96923989733db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomId: 
+  IsLobbyHost: 0
+  playerNum: 1
+  dialogBox: {fileID: 265651322}
 --- !u!1 &1585565036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1415,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 779966699}
   - {fileID: 1943225225}
   - {fileID: 1604380352}
   m_Father: {fileID: 0}
@@ -1683,8 +1652,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779966698}
-        m_TargetAssemblyTypeName: Lobby, Assembly-CSharp
+      - m_Target: {fileID: 1450084581}
+        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
         m_MethodName: CreateLobby
         m_Mode: 1
         m_Arguments:
@@ -1751,7 +1720,6 @@ GameObject:
   - component: {fileID: 1904881798}
   - component: {fileID: 1904881800}
   - component: {fileID: 1904881801}
-  - component: {fileID: 1904881802}
   m_Layer: 0
   m_Name: ChessBoard
   m_TagString: Untagged
@@ -1838,19 +1806,6 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &1904881802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904881797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c975adf501b0b1c48ae544bd8f282a80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lobby: {fileID: 0}
 --- !u!1 &1943170163
 GameObject:
   m_ObjectHideFlags: 0

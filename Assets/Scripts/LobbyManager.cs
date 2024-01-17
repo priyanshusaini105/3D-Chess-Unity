@@ -5,13 +5,21 @@ using Unity.Services.Core;
 using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 using UnityEngine;
+using Unity.Services.Relay;
+using Unity.Services.Relay.Models;
+using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
 
 
-public class Lobby : MonoBehaviour
+
+public class LobbyManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public string roomId;
+    //[SerializeField] public NetworkManager networkManager; 
+    public bool IsLobbyHost = false;
     public int playerNum = 1;
     public GameObject dialogBox;
     private float lobbyUpdateTimer;
@@ -30,47 +38,55 @@ public class Lobby : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        HandleLobbyPollForUpdates();
     }
 
     private async void HandleLobbyPollForUpdates()
     {
-        if(joinedLobby!=null)
+        if (joinedLobby != null)
         {
-            lobbyUpdateTimer -= Time.deltatime;
-            if(lobbyUpdateTimer<0f)
+            lobbyUpdateTimer -= Time.deltaTime;
+            if (lobbyUpdateTimer < 0f)
             {
                 float lobbyUpdateTimerMax = 1.1f;
                 Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobby.Id);
                 lobbyUpdateTimer = lobbyUpdateTimerMax;
-                
 
-                if(joinedLobby.Data[Key_Start_Game].Value !="0")
+                playerNum = 0;
+                foreach (Player player in joinedLobby.Players)
                 {
-                    if(!IsLobbyHost())
-                    {
-                        //join the Relay
+                    playerNum += 1;
+                }
+                Debug.Log("Player COunt " + playerNum);
+
+                if (joinedLobby.Data["Key_Start_Game"].Value != "0")
+                {
+                    if (!IsLobbyHost)
+                   {
+                        Debug.Log("Relay Joined " + joinedLobby.Data["Key_Start_Game"].Value);
+                        JoinRelay(joinedLobby.Data["Key_Start_Game"].Value);
                     }
                     joinedLobby = null;
                 }
 
             }
-        }   
+        }
     }
 
     public async void CreateLobby()
     {
-        CreateLobbyOptions options = new CreateLobbyOptions {
-            IsLocked = true,
-        Data = new Dictionary<string , DataObject>
+        CreateLobbyOptions options = new CreateLobbyOptions
         {
-            {KEY_START_GAME , new DataObject(DataObject.VisibilityOptions.Member , "0") }
+            IsLocked = true,
+            Data = new Dictionary<string, DataObject>
+        {
+            {"KEY_START_GAME" , new DataObject(DataObject.VisibilityOptions.Member , "0") }
         }
-    };
+        };
         string lobbyName = "My lobby";
         int maxPlayers = 2;
-        options.
-        Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers , options);
+
+        Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
         joinedLobby = lobby;
         Debug.Log("Lobby Created with Id " + lobby.LobbyCode);
         roomId = lobby.LobbyCode;
@@ -78,7 +94,7 @@ public class Lobby : MonoBehaviour
     }
     public void SpawnGameObject()
     {
-        dialogBox.SetActive(true); 
+        dialogBox.SetActive(true);
     }
     public async void JoinRoom(string s)
     {
@@ -91,7 +107,7 @@ public class Lobby : MonoBehaviour
                 Debug.Log(player.Id);
             }
         }
-        catch(LobbyServiceException e)
+        catch (LobbyServiceException e)
         {
             Debug.Log(e);
         }
@@ -102,13 +118,22 @@ public class Lobby : MonoBehaviour
         try
         {
             Allocation allocation = await RelayService.Instance.CreateAllocationAsync(1);
-            string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+
+
+
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
+                allocation.RelayServer.IpV4,
+                (ushort)allocation.RelayServer.Port,
+                allocation.AllocationIdBytes,
+                allocation.Key,
+                allocation.ConnectionData
+                ) ;
+            var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
             Debug.Log(joinCode);
-            RelayServerData relayServerData = new RelayServerData(allocation, "dlts");
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+            IsLobbyHost = true;
             NetworkManager.Singleton.StartHost();
         }
-        catch(RelayServiceException e)
+        catch (RelayServiceException e)
         {
             Debug.Log(e);
         }
@@ -119,8 +144,14 @@ public class Lobby : MonoBehaviour
         {
             Debug.Log("Joining with joincode " + joinCode);
             JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
-            RelayServerData relayServerData = new RelayServerData(joinAllocation, "dlts");
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetClientRelayData(
+                joinAllocation.RelayServer.IpV4,
+                (ushort)joinAllocation.RelayServer.Port,
+                joinAllocation.AllocationIdBytes,
+                joinAllocation.Key,
+                joinAllocation.ConnectionData,
+                joinAllocation.HostConnectionData
+                );
             NetworkManager.Singleton.StartClient();
         }
         catch (RelayServiceException e)
@@ -131,9 +162,9 @@ public class Lobby : MonoBehaviour
 
     public async void StartGame()
     {
-        if(!IsLobbyHost)
-        {
-            try
-        }
+       // if (!IsLobbyHost())
+      //  {
+
+      //  }
     }
 }
