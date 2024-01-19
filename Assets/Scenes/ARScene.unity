@@ -963,12 +963,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b9dbdfda74c17646a5757e1bf47ea92, type: 3}
---- !u!1 &522334811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6473589580768800985, guid: 1b9dbdfda74c17646a5757e1bf47ea92,
-    type: 3}
-  m_PrefabInstance: {fileID: 522334810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &592153015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0f0fc29b42db4cbf60ae85ab410ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 522334811}
+  objectToSpawn: {fileID: 2212274121169568508, guid: 80cc7eeba67e39b499ffffb989cde400,
+    type: 3}
   crosshair: {fileID: 1294774177}
   arRaycastManager: {fileID: 1185337842}
   arPlaneManager: {fileID: 1185337841}
