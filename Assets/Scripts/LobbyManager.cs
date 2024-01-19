@@ -131,19 +131,24 @@ public class LobbyManager : MonoBehaviour
     {
         try
         {
-            Allocation allocation = await RelayService.Instance.CreateAllocationAsync(1);
+            Allocation allocation = await RelayService.Instance.CreateAllocationAsync(7);
 
+            Debug.Log("allocation ID: " + allocation.AllocationId.ToString());
 
+            string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
 
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
-                allocation.RelayServer.IpV4,
-                (ushort)allocation.RelayServer.Port,
-                allocation.AllocationIdBytes,
-                allocation.Key,
-                allocation.ConnectionData
-                ) ;
-            var joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
             Debug.Log(joinCode);
+
+            RelayServerData relayServerData = new RelayServerData(allocation, "dtls");
+
+            Debug.Log(relayServerData.ConnectionData);
+
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+
+            Debug.Log(NetworkManager.Singleton.GetComponent<UnityTransport>().ConnectionData.Address);
+
+            NetworkManager.Singleton.StartHost();
+
             IsLobbyHost = true;
             NetworkManager.Singleton.StartHost();
         }
@@ -157,15 +162,18 @@ public class LobbyManager : MonoBehaviour
         try
         {
             Debug.Log("Joining with joincode " + joinCode);
+            Debug.Log("Joining Relay with " + joinCode);
             JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetClientRelayData(
-                joinAllocation.RelayServer.IpV4,
-                (ushort)joinAllocation.RelayServer.Port,
-                joinAllocation.AllocationIdBytes,
-                joinAllocation.Key,
-                joinAllocation.ConnectionData,
-                joinAllocation.HostConnectionData
-                );
+
+            Debug.Log("allocation ID: " + joinAllocation.AllocationId.ToString() + "Join Code: " + joinCode);
+            RelayServerData relayServerData = new RelayServerData(joinAllocation, "dtls");
+
+            Debug.Log(relayServerData.ConnectionData);
+
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+
+            Debug.Log(NetworkManager.Singleton.GetComponent<UnityTransport>().ConnectionData.Address);
+
             NetworkManager.Singleton.StartClient();
         }
         catch (RelayServiceException e)
