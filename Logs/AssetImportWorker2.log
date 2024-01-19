@@ -2464,3 +2464,558 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:scripting/monoscript/fileName/DisplayFPS.cs: 8ce72969f3700590cf3c4bd6982edc40 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  4.003 seconds
+Refreshing native plugins compatible for Editor in 38.85 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 43.423 seconds
+Domain Reload Profiling: 47455ms
+	BeginReloadAssembly (1441ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (46ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (618ms)
+	RebuildCommonClasses (111ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (135ms)
+	LoadAllAssembliesAndSetupDomain (2305ms)
+		LoadAssemblies (2506ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (140ms)
+			TypeCache.Refresh (47ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (87ms)
+	FinalizeReload (43427ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5653ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (82ms)
+			SetLoadedEditorAssemblies (18ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (297ms)
+			ProcessInitializeOnLoadAttributes (1819ms)
+			ProcessInitializeOnLoadMethodAttributes (3420ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 74.92 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8148 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 306 unused Assets / (11.2 MB). Loaded Objects now: 8586.
+Memory consumption went from 322.5 MB to 311.3 MB.
+Total: 54.653700 ms (FindLiveObjects: 1.929000 ms CreateObjectMapping: 0.919600 ms MarkObjects: 40.208900 ms  DeleteObjects: 11.592800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/LightFlicker.cs: 5d47f1419a83110614ca14fe59b2f78f -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/DisplayFPS.cs: 8ce72969f3700590cf3c4bd6982edc40 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2582.106975 seconds.
+  path: Assets/Scenes/arscene.unity
+  artifactKey: Guid(469b53992ce4a1844ba67e7e98968642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/arscene.unity using Guid(469b53992ce4a1844ba67e7e98968642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b09dbfab24b884d2fe60278596cd14c') in 0.017380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.626881 seconds.
+  path: Assets/Scenes/anotherAR.unity
+  artifactKey: Guid(cbf204b50bfe4a6449c4645ded4b130c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anotherAR.unity using Guid(cbf204b50bfe4a6449c4645ded4b130c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf40c5e34099b0dc035af8e4f6155e9c') in 0.002623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 308.745370 seconds.
+  path: Assets/New folder
+  artifactKey: Guid(bb2ab84c04811274280b4f7740ec7785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder using Guid(bb2ab84c04811274280b4f7740ec7785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2ebd7c5ac5d839351c887656de0fa8') in 0.003824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.075632 seconds.
+  path: Assets/New folder/0.1bg.png
+  artifactKey: Guid(f094b861f3808a54eba1692f2a760a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/0.1bg.png using Guid(f094b861f3808a54eba1692f2a760a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84bf2281fdc61acc5d372f8dfc4d2ae') in 0.627960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/New folder/2bg.png
+  artifactKey: Guid(5b81f975d4441464ea3dbca6ba8d7e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/2bg.png using Guid(5b81f975d4441464ea3dbca6ba8d7e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b582d60db90122cb4b3b490b337de83') in 0.239180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/New folder/Rectangle 563.png
+  artifactKey: Guid(1397d9ce94e7f34428b5fbadd2fca35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 563.png using Guid(1397d9ce94e7f34428b5fbadd2fca35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed7057d02bcfe05c9b99217a102bf95') in 0.067151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/New folder/splashbg.png
+  artifactKey: Guid(2be7e6febeeabeb4297bf3b7f3e5e598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/splashbg.png using Guid(2be7e6febeeabeb4297bf3b7f3e5e598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcddb57b8e8d5fcb8a22b58a26e97b79') in 0.274758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/New folder/Vector.png
+  artifactKey: Guid(d03ee45fe40cf9a47b2722a58fe5d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Vector.png using Guid(d03ee45fe40cf9a47b2722a58fe5d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854b4aee78281e53123a84eddf101724') in 0.053664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 32.905460 seconds.
+  path: Assets/New folder/Group 1.png
+  artifactKey: Guid(98bdb57fe18396040ab3c6d656071aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 1.png using Guid(98bdb57fe18396040ab3c6d656071aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca529ccb7ca8bb436fabf82c34ff1c01') in 0.064230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/New folder/Rectangle 10.png
+  artifactKey: Guid(15a973b34cc55a54b9c52b40804b33bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 10.png using Guid(15a973b34cc55a54b9c52b40804b33bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d57382b8ffeeddc8dc28449823ff5b') in 0.069537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/New folder/Rectangle 14.png
+  artifactKey: Guid(c1b75949ba80a20419715e405043abd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 14.png using Guid(c1b75949ba80a20419715e405043abd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15df970f8f824c5b1bc1ccf8c891b974') in 0.042991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 18.445287 seconds.
+  path: Assets/New folder/Group 1.png
+  artifactKey: Guid(98bdb57fe18396040ab3c6d656071aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 1.png using Guid(98bdb57fe18396040ab3c6d656071aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4350658da7908ef5884dc3d6503057') in 0.050468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 14.566328 seconds.
+  path: Assets/New folder/iPhone 14 & 15 Pro Max - 2.png
+  artifactKey: Guid(1a20947d8ce79684d8d63a27a0eec27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/iPhone 14 & 15 Pro Max - 2.png using Guid(1a20947d8ce79684d8d63a27a0eec27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee5d23a405503059d6561d4e38c5a65') in 0.063611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 25.187272 seconds.
+  path: Assets/New folder/Rectangle 8.png
+  artifactKey: Guid(f27ee6547d0724c4ab1da1bcd7675528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 8.png using Guid(f27ee6547d0724c4ab1da1bcd7675528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f55dd883b657316fb6a39e48c01add0') in 0.084930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.046251 seconds.
+  path: Assets/New folder/Rectangle 9.png
+  artifactKey: Guid(c876e201172fc464e8d0eaa2d0847e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 9.png using Guid(c876e201172fc464e8d0eaa2d0847e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89de8b2ced36bb92e780b6016319b34e') in 0.061181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 198.801769 seconds.
+  path: Assets/New folder/Rectangle 14 (1).png
+  artifactKey: Guid(0bbf739a5e321c24192df3d6a14be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 14 (1).png using Guid(0bbf739a5e321c24192df3d6a14be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78e5e0224b0bae5e6cfdf60bc6a1ec3') in 0.040112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.760808 seconds.
+  path: Assets/New folder/Rectangle 14 (1).png
+  artifactKey: Guid(0bbf739a5e321c24192df3d6a14be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 14 (1).png using Guid(0bbf739a5e321c24192df3d6a14be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8bba63d84acdb1d9e6bb142d241ca44') in 0.057897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 211.389819 seconds.
+  path: Assets/New folder/iPhone 14 & 15 Pro Max - 2 (1).png
+  artifactKey: Guid(616eaffb65f6d944cb9bd5d30075a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/iPhone 14 & 15 Pro Max - 2 (1).png using Guid(616eaffb65f6d944cb9bd5d30075a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73b55732046a776819f787c65066639') in 0.123527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.745435 seconds.
+  path: Assets/New folder/iPhone 14 & 15 Pro Max - 2 (1).png
+  artifactKey: Guid(616eaffb65f6d944cb9bd5d30075a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/iPhone 14 & 15 Pro Max - 2 (1).png using Guid(616eaffb65f6d944cb9bd5d30075a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ee8564ca9e58742ec04bf2f9ed99cd') in 0.106998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 112.757791 seconds.
+  path: Assets/New folder/Frame 6.png
+  artifactKey: Guid(1773ac2c1d8de7b40aa445cc951f5331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Frame 6.png using Guid(1773ac2c1d8de7b40aa445cc951f5331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d93aa366245e33146c3283e435b95d') in 0.105871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.576841 seconds.
+  path: Assets/New folder/Frame 6.png
+  artifactKey: Guid(1773ac2c1d8de7b40aa445cc951f5331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Frame 6.png using Guid(1773ac2c1d8de7b40aa445cc951f5331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03b16bcee8d4f617f95de8fb7f0c1d3') in 0.097660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 148.173616 seconds.
+  path: Assets/New folder/Vector (1).png
+  artifactKey: Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Vector (1).png using Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca442d7d96df5620e9af263392e8286') in 0.066946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.879163 seconds.
+  path: Assets/New folder/Vector (1).png
+  artifactKey: Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Vector (1).png using Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ed8512b6a540010d39208b86293392') in 0.073660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 84.908788 seconds.
+  path: Assets/New folder/Vector (1).png
+  artifactKey: Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Vector (1).png using Guid(d189a3d3aa7f54f468b737eb27ac2400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3fa3c627af2963becab36f36590d46') in 0.047216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 577.681916 seconds.
+  path: Assets/New folder/AR BATTLEFIELD.png
+  artifactKey: Guid(5ea6c5c83550252419c690b054eceb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/AR BATTLEFIELD.png using Guid(5ea6c5c83550252419c690b054eceb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e12d9b6908ed2c52416fa67c69d576c') in 0.066464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 36.400252 seconds.
+  path: Assets/New folder/AR BATTLEFIELD.png
+  artifactKey: Guid(5ea6c5c83550252419c690b054eceb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/AR BATTLEFIELD.png using Guid(5ea6c5c83550252419c690b054eceb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eaec5798523a2474a0ae6568fc5cef3') in 0.076759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 303.895381 seconds.
+  path: Assets/New folder/Rectangle 16 (1).png
+  artifactKey: Guid(a7aece54e264a2f4f825cc4cafc24dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 16 (1).png using Guid(a7aece54e264a2f4f825cc4cafc24dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0246d8ddbff0e3f6aa00245c522b0545') in 0.079608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.333735 seconds.
+  path: Assets/New folder/Rectangle 16 (1).png
+  artifactKey: Guid(a7aece54e264a2f4f825cc4cafc24dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 16 (1).png using Guid(a7aece54e264a2f4f825cc4cafc24dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25aa95aa4e2080399da5303a7e45f26b') in 0.081317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.432 seconds
+Refreshing native plugins compatible for Editor in 34.21 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 11.366 seconds
+Domain Reload Profiling: 17810ms
+	BeginReloadAssembly (1462ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (33ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (756ms)
+	RebuildCommonClasses (123ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (215ms)
+	LoadAllAssembliesAndSetupDomain (4604ms)
+		LoadAssemblies (4861ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (34ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (96ms)
+	FinalizeReload (11370ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6594ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (85ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (352ms)
+			ProcessInitializeOnLoadAttributes (2109ms)
+			ProcessInitializeOnLoadMethodAttributes (4014ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 52.80 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 318 unused Assets / (11.3 MB). Loaded Objects now: 8614.
+Memory consumption went from 0.96 GB to 0.95 GB.
+Total: 137.195000 ms (FindLiveObjects: 5.877800 ms CreateObjectMapping: 1.884400 ms MarkObjects: 99.354500 ms  DeleteObjects: 30.072300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/LightFlicker.cs: 5d47f1419a83110614ca14fe59b2f78f -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/DisplayFPS.cs: 8ce72969f3700590cf3c4bd6982edc40 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11404.413695 seconds.
+  path: Assets/New folder/horse.png
+  artifactKey: Guid(b1383b16e29047640b0a96687f9c378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/horse.png using Guid(b1383b16e29047640b0a96687f9c378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f4b81ca8fad6cd40c6f29978032057') in 4.684509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.491693 seconds.
+  path: Assets/New folder/logo (1).png
+  artifactKey: Guid(e0e8ce54c9535c84fbb6a157bd50c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/logo (1).png using Guid(e0e8ce54c9535c84fbb6a157bd50c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fece4cf97221365b0074ecbb8a5fa63') in 0.352472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.964816 seconds.
+  path: Assets/New folder/horse.png
+  artifactKey: Guid(b1383b16e29047640b0a96687f9c378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/horse.png using Guid(b1383b16e29047640b0a96687f9c378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1030dd23aaab11029f565de61182252d') in 0.156899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 180.690527 seconds.
+  path: Assets/New folder/Group 3 (1).png
+  artifactKey: Guid(b79e763e0452d4c4ca343deeee5b0471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (1).png using Guid(b79e763e0452d4c4ca343deeee5b0471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af25d9ce183708f3e64e75f136ebd965') in 0.099947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.712835 seconds.
+  path: Assets/New folder/Group 3 (1).png
+  artifactKey: Guid(b79e763e0452d4c4ca343deeee5b0471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (1).png using Guid(b79e763e0452d4c4ca343deeee5b0471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e0286be406da31110bc75ed4b0e36f') in 0.081454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 161.938511 seconds.
+  path: Assets/New folder/Group 3 (2).png
+  artifactKey: Guid(81368c2b7d94df745a54bcff3cbddbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (2).png using Guid(81368c2b7d94df745a54bcff3cbddbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed0b61c998a6c6c8f1f852990163395') in 0.103604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.836416 seconds.
+  path: Assets/New folder/Group 3 (3).png
+  artifactKey: Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (3).png using Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd309d825d3f537af3382757b0b2005dc') in 0.090828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025611 seconds.
+  path: Assets/New folder/Group 3 (2).png
+  artifactKey: Guid(81368c2b7d94df745a54bcff3cbddbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (2).png using Guid(81368c2b7d94df745a54bcff3cbddbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de080a94cc7fa7544a912d4261ee617') in 0.078660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 45.081381 seconds.
+  path: Assets/New folder/Group 3 (3).png
+  artifactKey: Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (3).png using Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e80bbc2ad14c97b32bca6d1e7230a01') in 0.070825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 495.141217 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c137a719bde47750cfb7f18c0056e695') in 1.100914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
+  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a785ee3f924cb47ceead08dc0c83eb8') in 0.131570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a72023ef7b160af4a369a7f8e366d86') in 0.114047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663c73b89591772f8e3346019d359134') in 0.109710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

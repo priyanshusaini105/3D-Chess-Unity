@@ -1,0 +1,527 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.17f1 (4fc78088f837) revision 5228416'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7502 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/Unity/3D-Chess-Unity
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+59333
+Successfully changed project path to: D:/Unity/3D-Chess-Unity
+D:/Unity/3D-Chess-Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16312] Host "[IP] 172.30.49.38 [Port] 0 [Flags] 2 [Guid] 2785221837 [EditorId] 2785221837 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16312] Host "[IP] 172.30.49.38 [Port] 0 [Flags] 2 [Guid] 2785221837 [EditorId] 2785221837 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 2210.85 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/3D-Chess-Unity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
+    Vendor:   ATI
+    VRAM:     3751 MB
+    Driver:   31.0.12044.3
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019922 seconds.
+- Loaded All Assemblies, in  0.933 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 578 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.331 seconds
+Domain Reload Profiling: 2260ms
+	BeginReloadAssembly (317ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (364ms)
+		LoadAssemblies (311ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (357ms)
+			TypeCache.Refresh (352ms)
+				TypeCache.ScanAssembly (307ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1183ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (833ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.784 seconds
+Refreshing native plugins compatible for Editor in 64.66 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  5.773 seconds
+Domain Reload Profiling: 8563ms
+	BeginReloadAssembly (339ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (162ms)
+	LoadAllAssembliesAndSetupDomain (2183ms)
+		LoadAssemblies (1445ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (900ms)
+			TypeCache.Refresh (735ms)
+				TypeCache.ScanAssembly (669ms)
+			ScanForSourceGeneratedMonoScriptInfo (122ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (5774ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5110ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (86ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (293ms)
+			ProcessInitializeOnLoadAttributes (3250ms)
+			ProcessInitializeOnLoadMethodAttributes (1450ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 24.49 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 353 unused Assets / (11.9 MB). Loaded Objects now: 8436.
+Memory consumption went from 302.5 MB to 290.5 MB.
+Total: 39.889600 ms (FindLiveObjects: 0.932100 ms CreateObjectMapping: 0.504400 ms MarkObjects: 29.389900 ms  DeleteObjects: 9.061000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/IXRHandProcessor.cs: 4b007234d59c720c71a162c8aecc7e8b -> 
+  custom:scripting/monoscript/fileName/XRHandTrackingEventsEditor.cs: 457813090f21a949828c4debe70cdb9a -> 
+  custom:scripting/monoscript/fileName/XRHandMeshController.cs: 3bb5a4f8745ff5e091f329133fdd04cc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/XRHandTrackingEvents.cs: e7098a4b48df68ed2c13428b82f2ab35 -> 
+  custom:scripting/monoscript/fileName/MetaHandTrackingAim.deprecated.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
+  custom:scripting/monoscript/fileName/MetaAim.cs: 3fee3cb2a2deaca4b4454ffabc6c25d0 -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:scripting/monoscript/fileName/UpdateChecker.cs: 029b1daf8f3b497c0666e54f8685c8b9 -> 
+  custom:scripting/monoscript/fileName/ExternalLinks.cs: f57d4a4349423b09b7191c91a0e33dbb -> 
+  custom:scripting/monoscript/fileName/XRHandProviderUtility.cs: ada01f841a5bea721f0cf2006d549c0f -> 
+  custom:scripting/monoscript/fileName/ParrelSyncAssetModificationProcessor.cs: 98155902029fa8ed02f705a5843cf897 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/XRHandProviderUtility.deprecated.cs: 3b131c4273bf0804850beca6c4cbfe0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/XRHandProcessingUtility.cs: 1f1cc37d4d6243e68655bb128961b59a -> 
+  custom:scripting/monoscript/fileName/AskFeedbackDialog.cs: 87af38bcc9ff5fcc64e3b06dc3e06287 -> 
+  custom:scripting/monoscript/fileName/XRHandJoint.cs: 0c41b91f75c823c214b6b2570f979c1b -> 
+  custom:scripting/monoscript/fileName/OtherMenuItem.cs: 65154b4add18958b71906d4d02b7528b -> 
+  custom:scripting/monoscript/fileName/ParrelSyncProjectSettings.cs: 94f207732aa70d266b84e4949e224ceb -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XRHelpURLConstants.cs: 98df96a8d7c753553b3cf6b4316c07b9 -> 7a5beb455c744c93847a166db6e29e55
+  custom:scripting/monoscript/fileName/LightFlicker.cs: 5d47f1419a83110614ca14fe59b2f78f -> 
+  custom:scripting/monoscript/fileName/Enums.cs: f57a8de2bbdce64e12a5f7fbc7fbbde3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/HandTracking.cs: f2339f4f61c2bb3e80f63ac08cf1ae4f -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystemDescriptor.cs: 8fc8308b83c351d004f1cdc61ac89877 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriverEditor.cs: caf0e24f344854b7cc27ca3319d7777b -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystem.cs: cce6a52f7ecfbaa3b1c83aac0e79f949 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BaseXRHandsEditor.cs: a8d271c6e691cdaad1d19054786feae9 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriver.cs: a94537efa9fbd44b583cc72c547f79b6 -> 
+  custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystemProvider.cs: 3442d0025413d4be7b0238b13d67185b -> 
+  custom:scripting/monoscript/fileName/SpawnObjectToAR.cs: 734b8465c7a12781011ff0a2ab9721dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ClonesManagerWindow.cs: 480fe8f568c4df8018a3dadfa3e69d57 -> 
+  custom:scripting/monoscript/fileName/XRDeviceSimulatorHandsSubsystem.cs: 3e5716ae4db9edc623310fee0f2d15aa -> 
+  custom:scripting/monoscript/fileName/DisplayFPS.cs: 8ce72969f3700590cf3c4bd6982edc40 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriverUtility.cs: 361dff05ffecd6a6307e1658d5105f6f -> 
+  custom:scripting/monoscript/fileName/ValidateCopiedFoldersIntegrity.cs: 56f406d9e913419ab82dfb77d147492d -> 
+  custom:scripting/monoscript/fileName/XRHandDevice.cs: cacb17c4f08d3e689d973730f12b2fe5 -> 
+  custom:scripting/monoscript/fileName/XRHandJointsUpdatedEventArgs.cs: 839a1abe88068fde13fc7e5db800cc94 -> 
+  custom:scripting/monoscript/fileName/XRDeviceSimulatorHandsProvider.cs: 515172af02348bc81fcfb3007105b4d2 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/Project.cs: 25b2358f5b63e9e868b3730f2625984e -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/Preferences.cs: fc1c65ff2d399f273bddd63c0e50bbd2 -> 
+  custom:scripting/monoscript/fileName/FileUtilities.cs: a10705d35c8944054a18f4d05623f27c -> 771f43e67585e5fce72a68dee6f48c42
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/XRHand.cs: 975d9bc94476df585047a2b43a591f0c -> 
+  custom:scripting/monoscript/fileName/ModifyAndroidManifest.cs: bee6ef0afd024007d5a593cae1b1ae4f -> 
+  custom:scripting/monoscript/fileName/ClonesManager.cs: 56d4e9ba876d20feaa256fa586b68f63 -> 
+  custom:scripting/monoscript/fileName/OpenXRHandProvider.cs: 1527b59c6cc862366c1d4ec60efc49b4 -> 
+  custom:scripting/monoscript/fileName/PlacementManager2.cs: 4f47bdfad27c8c30d5d59b9acebd6099 -> 90ab49e923f8680afc11288715709fcd
+  custom:scripting/monoscript/fileName/XRHandSubsystem.deprecated.cs: cce6a52f7ecfbaa3b1c83aac0e79f949 -> 
+  custom:scripting/monoscript/fileName/EditorQuit.cs: 0d99020733aa7608452e4fa0cdb5cb7e -> 
+  custom:scripting/monoscript/fileName/MetaAim.deprecated.cs: 3fee3cb2a2deaca4b4454ffabc6c25d0 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18165.061362 seconds.
+  path: Assets/New folder/iPhone 14 & 15 Pro Max - 2.png
+  artifactKey: Guid(1a20947d8ce79684d8d63a27a0eec27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/iPhone 14 & 15 Pro Max - 2.png using Guid(1a20947d8ce79684d8d63a27a0eec27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4491f3b697e1bdba8bceb43ee0b7f97') in 0.231862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 58.414679 seconds.
+  path: Assets/New folder/Rectangle 10.png
+  artifactKey: Guid(15a973b34cc55a54b9c52b40804b33bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Rectangle 10.png using Guid(15a973b34cc55a54b9c52b40804b33bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a095fae73f267796b59c4e5e89677d50') in 0.103543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.074 seconds
+Refreshing native plugins compatible for Editor in 57.19 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 11.820 seconds
+Domain Reload Profiling: 17891ms
+	BeginReloadAssembly (967ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (450ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (4873ms)
+		LoadAssemblies (5008ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (59ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (60ms)
+	FinalizeReload (11823ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6569ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (74ms)
+			SetLoadedEditorAssemblies (24ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (335ms)
+			ProcessInitializeOnLoadAttributes (2073ms)
+			ProcessInitializeOnLoadMethodAttributes (4039ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (11ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Refreshing native plugins compatible for Editor in 70.65 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8164 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 322 unused Assets / (11.7 MB). Loaded Objects now: 8447.
+Memory consumption went from 0.56 GB to 0.55 GB.
+Total: 154.670100 ms (FindLiveObjects: 3.716500 ms CreateObjectMapping: 1.870200 ms MarkObjects: 121.140200 ms  DeleteObjects: 27.927000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/IXRHandProcessor.cs: 4b007234d59c720c71a162c8aecc7e8b -> 
+  custom:scripting/monoscript/fileName/XRHandTrackingEventsEditor.cs: 457813090f21a949828c4debe70cdb9a -> 
+  custom:scripting/monoscript/fileName/XRHandMeshController.cs: 3bb5a4f8745ff5e091f329133fdd04cc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/XRHandTrackingEvents.cs: e7098a4b48df68ed2c13428b82f2ab35 -> 
+  custom:scripting/monoscript/fileName/MetaHandTrackingAim.deprecated.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
+  custom:scripting/monoscript/fileName/MetaAim.cs: 3fee3cb2a2deaca4b4454ffabc6c25d0 -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:scripting/monoscript/fileName/UpdateChecker.cs: 029b1daf8f3b497c0666e54f8685c8b9 -> 
+  custom:scripting/monoscript/fileName/ExternalLinks.cs: f57d4a4349423b09b7191c91a0e33dbb -> 
+  custom:scripting/monoscript/fileName/XRHandProviderUtility.cs: ada01f841a5bea721f0cf2006d549c0f -> 
+  custom:scripting/monoscript/fileName/ParrelSyncAssetModificationProcessor.cs: 98155902029fa8ed02f705a5843cf897 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/XRHandProviderUtility.deprecated.cs: 3b131c4273bf0804850beca6c4cbfe0d -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/XRHandProcessingUtility.cs: 1f1cc37d4d6243e68655bb128961b59a -> 
+  custom:scripting/monoscript/fileName/AskFeedbackDialog.cs: 87af38bcc9ff5fcc64e3b06dc3e06287 -> 
+  custom:scripting/monoscript/fileName/XRHandJoint.cs: 0c41b91f75c823c214b6b2570f979c1b -> 
+  custom:scripting/monoscript/fileName/OtherMenuItem.cs: 65154b4add18958b71906d4d02b7528b -> 
+  custom:scripting/monoscript/fileName/ParrelSyncProjectSettings.cs: 94f207732aa70d266b84e4949e224ceb -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/XRHelpURLConstants.cs: 98df96a8d7c753553b3cf6b4316c07b9 -> 7a5beb455c744c93847a166db6e29e55
+  custom:scripting/monoscript/fileName/LightFlicker.cs: 5d47f1419a83110614ca14fe59b2f78f -> 
+  custom:scripting/monoscript/fileName/Enums.cs: f57a8de2bbdce64e12a5f7fbc7fbbde3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/HandTracking.cs: f2339f4f61c2bb3e80f63ac08cf1ae4f -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystemDescriptor.cs: 8fc8308b83c351d004f1cdc61ac89877 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriverEditor.cs: caf0e24f344854b7cc27ca3319d7777b -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystem.cs: cce6a52f7ecfbaa3b1c83aac0e79f949 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BaseXRHandsEditor.cs: a8d271c6e691cdaad1d19054786feae9 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriver.cs: a94537efa9fbd44b583cc72c547f79b6 -> 
+  custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
+  custom:scripting/monoscript/fileName/XRHandSubsystemProvider.cs: 3442d0025413d4be7b0238b13d67185b -> 
+  custom:scripting/monoscript/fileName/SpawnObjectToAR.cs: 734b8465c7a12781011ff0a2ab9721dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ClonesManagerWindow.cs: 480fe8f568c4df8018a3dadfa3e69d57 -> 
+  custom:scripting/monoscript/fileName/XRDeviceSimulatorHandsSubsystem.cs: 3e5716ae4db9edc623310fee0f2d15aa -> 
+  custom:scripting/monoscript/fileName/DisplayFPS.cs: 8ce72969f3700590cf3c4bd6982edc40 -> 
+  custom:scripting/monoscript/fileName/XRHandSkeletonDriverUtility.cs: 361dff05ffecd6a6307e1658d5105f6f -> 
+  custom:scripting/monoscript/fileName/ValidateCopiedFoldersIntegrity.cs: 56f406d9e913419ab82dfb77d147492d -> 
+  custom:scripting/monoscript/fileName/XRHandDevice.cs: cacb17c4f08d3e689d973730f12b2fe5 -> 
+  custom:scripting/monoscript/fileName/XRHandJointsUpdatedEventArgs.cs: 839a1abe88068fde13fc7e5db800cc94 -> 
+  custom:scripting/monoscript/fileName/XRDeviceSimulatorHandsProvider.cs: 515172af02348bc81fcfb3007105b4d2 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/Project.cs: 25b2358f5b63e9e868b3730f2625984e -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/Preferences.cs: fc1c65ff2d399f273bddd63c0e50bbd2 -> 
+  custom:scripting/monoscript/fileName/FileUtilities.cs: a10705d35c8944054a18f4d05623f27c -> 771f43e67585e5fce72a68dee6f48c42
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/XRHand.cs: 975d9bc94476df585047a2b43a591f0c -> 
+  custom:scripting/monoscript/fileName/ModifyAndroidManifest.cs: bee6ef0afd024007d5a593cae1b1ae4f -> 
+  custom:scripting/monoscript/fileName/ClonesManager.cs: 56d4e9ba876d20feaa256fa586b68f63 -> 
+  custom:scripting/monoscript/fileName/OpenXRHandProvider.cs: 1527b59c6cc862366c1d4ec60efc49b4 -> 
+  custom:scripting/monoscript/fileName/PlacementManager2.cs: 4f47bdfad27c8c30d5d59b9acebd6099 -> 90ab49e923f8680afc11288715709fcd
+  custom:scripting/monoscript/fileName/XRHandSubsystem.deprecated.cs: cce6a52f7ecfbaa3b1c83aac0e79f949 -> 
+  custom:scripting/monoscript/fileName/EditorQuit.cs: 0d99020733aa7608452e4fa0cdb5cb7e -> 
+  custom:scripting/monoscript/fileName/MetaAim.deprecated.cs: 3fee3cb2a2deaca4b4454ffabc6c25d0 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13146.770695 seconds.
+  path: Assets/New folder/logo (1).png
+  artifactKey: Guid(e0e8ce54c9535c84fbb6a157bd50c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/logo (1).png using Guid(e0e8ce54c9535c84fbb6a157bd50c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b286044f02e65ed8574c5f999036302') in 2.841231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 380.653193 seconds.
+  path: Assets/New folder/Group 3 (3).png
+  artifactKey: Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New folder/Group 3 (3).png using Guid(c7d2fc05ef4be7a4b968a5278420e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757a17bf45a6a1a85118943bff66d20d') in 0.124155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 551.330480 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f660e6f83f63bf5e8347e81d71f1b639') in 1.420398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1943c6d3822430eb080c2a697a7c80e0') in 0.104409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 184.302363 seconds.
+  path: Assets/Plugins/CW/LeanTouch/Examples/Textures/ArrowCurve.png
+  artifactKey: Guid(f57dfffc64d3e8040812ea901d65b96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/LeanTouch/Examples/Textures/ArrowCurve.png using Guid(f57dfffc64d3e8040812ea901d65b96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9df4d103e68b5c49072b68b749a0d9f') in 0.153066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png
+  artifactKey: Guid(8548d034b532fc64f9e26ecfe5f35ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoLeft.png using Guid(8548d034b532fc64f9e26ecfe5f35ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edddd666db3fb2cc4c8a4195c5dadf1') in 0.054155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/CW/LeanTouch/Examples/Textures/ArrowTwist.png
+  artifactKey: Guid(7b25799558afacf429800c96974fe5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/LeanTouch/Examples/Textures/ArrowTwist.png using Guid(7b25799558afacf429800c96974fe5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2618bc643b6b6a3f7ace4aa29cc897b6') in 0.046793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png
+  artifactKey: Guid(873b489a73575b14fa7f49597735beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/Shared/Common/Examples/Textures/DemoRight.png using Guid(873b489a73575b14fa7f49597735beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03eec938cf5b7eafedebc894995d18a') in 0.052044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Plugins/CW/LeanTouch/Examples/Textures/GlowingDot.png
+  artifactKey: Guid(9901a65a1d946ed4db1bc132812d1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/LeanTouch/Examples/Textures/GlowingDot.png using Guid(9901a65a1d946ed4db1bc132812d1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f183e3e2259c70a69fb85fea5aa134ab') in 0.058091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Plugins/CW/LeanCommon/Examples/Textures/Plus.png
+  artifactKey: Guid(db2224dd326a6f447817905cfc1a363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/LeanCommon/Examples/Textures/Plus.png using Guid(db2224dd326a6f447817905cfc1a363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e350bc8612c05e67f5624061f0ef0107') in 0.061064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Plugins/CW/LeanTouch/Examples/Textures/BigLogo+.png
+  artifactKey: Guid(864e18f746f74c347b411bcb8a69d426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CW/LeanTouch/Examples/Textures/BigLogo+.png using Guid(864e18f746f74c347b411bcb8a69d426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f40607b2717950d9d1bebe2d8398f4') in 0.051732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
