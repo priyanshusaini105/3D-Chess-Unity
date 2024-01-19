@@ -15,7 +15,7 @@ D:/Unity/3D-Chess-Unity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51502
+61797
 Successfully changed project path to: D:/Unity/3D-Chess-Unity
 D:/Unity/3D-Chess-Unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity/3D-Chess-Unity
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [59920] Host "[IP] 192.168.36.82 [Port] 0 [Flags] 2 [Guid] 3360431572 [EditorId] 3360431572 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18636] Host "[IP] 192.168.21.82 [Port] 0 [Flags] 2 [Guid] 1962325196 [EditorId] 1962325196 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [59920] Host "[IP] 192.168.36.82 [Port] 0 [Flags] 2 [Guid] 3360431572 [EditorId] 3360431572 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18636] Host "[IP] 192.168.21.82 [Port] 0 [Flags] 2 [Guid] 1962325196 [EditorId] 1962325196 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 2529.67 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 1427.79 ms, found 8 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.17f1 (4fc78088f837)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -70,62 +70,650 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018020 seconds.
-- Loaded All Assemblies, in  0.930 seconds
+Registered in 0.298945 seconds.
+- Loaded All Assemblies, in  7.633 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 671 ms
+Android Extension - Scanning For ADB Devices 436 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.447 seconds
-Domain Reload Profiling: 2374ms
-	BeginReloadAssembly (343ms)
+- Finished resetting the current domain, in  0.921 seconds
+Domain Reload Profiling: 8553ms
+	BeginReloadAssembly (5374ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (89ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (123ms)
-	LoadAllAssembliesAndSetupDomain (348ms)
-		LoadAssemblies (336ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (484ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (372ms)
+	LoadAllAssembliesAndSetupDomain (1382ms)
+		LoadAssemblies (5367ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (342ms)
-			TypeCache.Refresh (339ms)
-				TypeCache.ScanAssembly (310ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (1375ms)
+			TypeCache.Refresh (1372ms)
+				TypeCache.ScanAssembly (1122ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1448ms)
+	FinalizeReload (922ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1323ms)
+		SetupLoadedEditorAssemblies (854ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (928ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (652ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (271ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.626 seconds
-Refreshing native plugins compatible for Editor in 54.78 ms, found 11 plugins.
+- Loaded All Assemblies, in  7.975 seconds
+Refreshing native plugins compatible for Editor in 16.43 ms, found 8 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.577 seconds
+Domain Reload Profiling: 10552ms
+	BeginReloadAssembly (256ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (7590ms)
+		LoadAssemblies (7401ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (340ms)
+			TypeCache.Refresh (287ms)
+				TypeCache.ScanAssembly (267ms)
+			ScanForSourceGeneratedMonoScriptInfo (37ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2578ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2338ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (348ms)
+			ProcessInitializeOnLoadMethodAttributes (1832ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 11.40 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4760 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.4 MB). Loaded Objects now: 5208.
+Memory consumption went from 201.4 MB to 199.1 MB.
+Total: 11.824500 ms (FindLiveObjects: 1.486500 ms CreateObjectMapping: 0.455800 ms MarkObjects: 7.232900 ms  DeleteObjects: 2.646800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81152.867314 seconds.
+  path: Assets/Prefabs/Black_Rook.prefab
+  artifactKey: Guid(d10c8c5c8455c4e498b531b6d1ebfcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_Rook.prefab using Guid(d10c8c5c8455c4e498b531b6d1ebfcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ee8dc4d898668f9f5081b29bc9a565') in 0.435472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Prefabs/Black_Bishop.prefab
+  artifactKey: Guid(83a16142db6d08b4795f06c37dd083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_Bishop.prefab using Guid(83a16142db6d08b4795f06c37dd083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200771fa8d602387051073438bd4dead') in 0.096726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Prefabs/White_Bishop.prefab
+  artifactKey: Guid(cc9c9f92fe83ab241b85c9a80163d7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/White_Bishop.prefab using Guid(cc9c9f92fe83ab241b85c9a80163d7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f38110d9d49aa3dd1258ed078cab8a') in 0.032217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Prefabs/White_Queen.prefab
+  artifactKey: Guid(e4a9aa39001e5c94290e04172bd1d5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/White_Queen.prefab using Guid(e4a9aa39001e5c94290e04172bd1d5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b94dec38d62e236a79616ad428c0b2') in 0.031050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Prefabs/Black_Queen.prefab
+  artifactKey: Guid(faee2d38ed4c40a4680388b7089db13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_Queen.prefab using Guid(faee2d38ed4c40a4680388b7089db13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14a46e453840a03cc40089bdcdd5308') in 0.037281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.536 seconds
+Refreshing native plugins compatible for Editor in 10.33 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.897 seconds
+Domain Reload Profiling: 2432ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (340ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1898ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (606ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (260ms)
+			ProcessInitializeOnLoadMethodAttributes (222ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 12.55 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.3 MB). Loaded Objects now: 5219.
+Memory consumption went from 179.6 MB to 177.4 MB.
+Total: 10.921600 ms (FindLiveObjects: 1.157900 ms CreateObjectMapping: 0.161900 ms MarkObjects: 7.075500 ms  DeleteObjects: 2.523400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.455 seconds
+Refreshing native plugins compatible for Editor in 10.01 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.994 seconds
+Domain Reload Profiling: 1447ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (228ms)
+		LoadAssemblies (288ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (994ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (604ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (258ms)
+			ProcessInitializeOnLoadMethodAttributes (226ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 12.58 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.2 MB). Loaded Objects now: 5223.
+Memory consumption went from 181.5 MB to 179.3 MB.
+Total: 10.910200 ms (FindLiveObjects: 0.925600 ms CreateObjectMapping: 0.903100 ms MarkObjects: 6.257800 ms  DeleteObjects: 2.820400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.461 seconds
+Refreshing native plugins compatible for Editor in 9.03 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.991 seconds
+Domain Reload Profiling: 1449ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (220ms)
+		LoadAssemblies (280ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (991ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (589ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (225ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 13.10 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.2 MB). Loaded Objects now: 5227.
+Memory consumption went from 183.4 MB to 181.2 MB.
+Total: 10.504100 ms (FindLiveObjects: 1.145200 ms CreateObjectMapping: 0.367400 ms MarkObjects: 5.748000 ms  DeleteObjects: 3.240500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 481.688813 seconds.
+  path: Assets/Scripts/SpawnObjectInAR.cs
+  artifactKey: Guid(d62befc624cdaf04994824c22f075b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnObjectInAR.cs using Guid(d62befc624cdaf04994824c22f075b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4965a55ae2b67d5f4d22f116eb8b08b') in 0.003254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.925 seconds
+Refreshing native plugins compatible for Editor in 30.16 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.858 seconds
+Domain Reload Profiling: 4781ms
+	BeginReloadAssembly (891ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (53ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (312ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (913ms)
+		LoadAssemblies (1060ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (47ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (76ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2859ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1239ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (60ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (576ms)
+			ProcessInitializeOnLoadMethodAttributes (446ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 31.77 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4642 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.2 MB). Loaded Objects now: 5232.
+Memory consumption went from 185.4 MB to 183.2 MB.
+Total: 8.340000 ms (FindLiveObjects: 0.619200 ms CreateObjectMapping: 0.360600 ms MarkObjects: 5.830100 ms  DeleteObjects: 1.527600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38.800148 seconds.
+  path: Assets/Scripts/SpawnObjectInAR.cs
+  artifactKey: Guid(d62befc624cdaf04994824c22f075b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnObjectInAR.cs using Guid(d62befc624cdaf04994824c22f075b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1810c118a8e95cae03cbdb582afaab') in 0.002308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 33.985911 seconds.
+  path: Assets/Scripts/PlacementManager2.cs
+  artifactKey: Guid(c1b2d3b0a49170e44a238560f2888ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlacementManager2.cs using Guid(c1b2d3b0a49170e44a238560f2888ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13daf04686d536c259c03275b89c8aaa') in 0.002745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.722 seconds
+Refreshing native plugins compatible for Editor in 10.12 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.823 seconds
+Domain Reload Profiling: 2543ms
+	BeginReloadAssembly (224ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (408ms)
+		LoadAssemblies (481ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (65ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1823ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (777ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadMethodAttributes (291ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 11.86 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.1 MB). Loaded Objects now: 5237.
+Memory consumption went from 187.2 MB to 185.1 MB.
+Total: 8.751600 ms (FindLiveObjects: 0.866900 ms CreateObjectMapping: 0.533800 ms MarkObjects: 5.435500 ms  DeleteObjects: 1.913600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 29.230894 seconds.
+  path: Assets/Scripts/PlacementManager2.cs
+  artifactKey: Guid(c1b2d3b0a49170e44a238560f2888ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlacementManager2.cs using Guid(c1b2d3b0a49170e44a238560f2888ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294eff7d27736bb8996fa12be9aec82a') in 0.002822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 28.584530 seconds.
+  path: Assets/Art Deco Furniture
+  artifactKey: Guid(ff044bc6965f2fc40b23c6317cc03167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Deco Furniture using Guid(ff044bc6965f2fc40b23c6317cc03167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ab3815c2b54184cc6eb7d9a06ca74f') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.838343 seconds.
+  path: Assets/Art Deco Furniture/Prefabs/MM-removebg-preview.png
+  artifactKey: Guid(27409d33032bb454b8cef394d957460d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Deco Furniture/Prefabs/MM-removebg-preview.png using Guid(27409d33032bb454b8cef394d957460d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca49aef02fc090b8b426f6e2e3b2768') in 0.172496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.154039 seconds.
+  path: Assets/Art Deco Furniture/Prefabs/New Material.mat
+  artifactKey: Guid(5cd214c82f9d8c54d8aa80dcf079a8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Deco Furniture/Prefabs/New Material.mat using Guid(5cd214c82f9d8c54d8aa80dcf079a8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb06148e9e680e4d5d3098965c142a2') in 0.111006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 125.015400 seconds.
+  path: Assets/Art Deco Furniture/Prefabs/New Material.mat
+  artifactKey: Guid(5cd214c82f9d8c54d8aa80dcf079a8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Deco Furniture/Prefabs/New Material.mat using Guid(5cd214c82f9d8c54d8aa80dcf079a8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663dac44a25b9d90945dd985c14ce47b') in 0.104487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.821 seconds
+Refreshing native plugins compatible for Editor in 29.20 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:48)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+InvalidCastException: Specified cast is not valid.
+  at Unity.VisualScripting.PluginConfiguration.LoadOrCreateProjectSettingsAsset () [0x0003e] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:184 
+  at Unity.VisualScripting.PluginConfiguration.LoadProjectSettings () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:149 
+  at Unity.VisualScripting.PluginConfiguration.Load () [0x00006] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:75 
+  at Unity.VisualScripting.PluginConfiguration.Initialize () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:23 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x004a3] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:199 
+Rethrow as Exception: Failed to initialize plugin module 'VisualScripting.Core.BoltCoreConfiguration'.
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.VisualScripting.PluginContainer:Initialize() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:204)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed(Boolean) (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48)
+Unity.VisualScripting.VSUsageUtility:.cctor() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs Line: 204)
+
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
   at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
   at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
@@ -150,324 +738,70 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  6.218 seconds
-Domain Reload Profiling: 8842ms
-	BeginReloadAssembly (427ms)
+- Finished resetting the current domain, in 23.153 seconds
+Domain Reload Profiling: 27973ms
+	BeginReloadAssembly (861ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (24ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (89ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (170ms)
-	LoadAllAssembliesAndSetupDomain (1906ms)
-		LoadAssemblies (1247ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (367ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (3794ms)
+		LoadAssemblies (1947ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (905ms)
-			TypeCache.Refresh (737ms)
-				TypeCache.ScanAssembly (665ms)
-			ScanForSourceGeneratedMonoScriptInfo (121ms)
-			ResolveRequiredComponents (43ms)
-	FinalizeReload (6219ms)
+		AnalyzeDomain (2154ms)
+			TypeCache.Refresh (2045ms)
+				TypeCache.ScanAssembly (719ms)
+			ScanForSourceGeneratedMonoScriptInfo (79ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (23154ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5737ms)
+		SetupLoadedEditorAssemblies (4990ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (61ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (264ms)
-			ProcessInitializeOnLoadAttributes (2743ms)
-			ProcessInitializeOnLoadMethodAttributes (2643ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (1459ms)
+			ProcessInitializeOnLoadMethodAttributes (3332ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (3ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 22.92 ms, found 11 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 36.10 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7861 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 371 unused Assets / (2.3 MB). Loaded Objects now: 8078.
-Memory consumption went from 328.1 MB to 325.7 MB.
-Total: 42.918800 ms (FindLiveObjects: 1.560700 ms CreateObjectMapping: 0.985200 ms MarkObjects: 35.673600 ms  DeleteObjects: 4.695700 ms)
+Unloading 7736 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 815 unused Assets / (5.8 MB). Loaded Objects now: 8150.
+Memory consumption went from 379.0 MB to 373.2 MB.
+Total: 164.041800 ms (FindLiveObjects: 1.796400 ms CreateObjectMapping: 0.697800 ms MarkObjects: 128.735900 ms  DeleteObjects: 32.808900 ms)
 
+Prepare: number of updated asset objects reloaded= 33
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/Deprecated.cs: b9d2f8144598e6824885e8739759b01e -> c490571978d72951839b06a2825608d2
-  custom:scripting/monoscript/fileName/FixedList.gen.cs: 61852e4544d489e0d5903eb98b98e308 -> 
-  custom:scripting/monoscript/fileName/NetworkTransport.cs: 02aa7363c66830bf60e6de875ba306e2 -> 
-  custom:scripting/monoscript/fileName/SceneEventData.cs: da390a83a67886593e104db14fd81a3f -> 
-  custom:scripting/monoscript/fileName/ByteBool.cs: fa079abe851cce7291e90b6cea590e4d -> 
-  custom:scripting/monoscript/fileName/INetworkMessage.cs: dcf3bb31758f8bf5812efb417901a058 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/ISceneManagerHandler.cs: e6f8786ee1c80c18570f6fc1ff21bd77 -> 
-  custom:scripting/monoscript/fileName/RelayMessageBind.cs: 9ccad22758442a1e73fba9818da057a8 -> 
-  custom:scripting/monoscript/fileName/NotListeningException.cs: 3f7b3b1b4f5852c3c04fe77018e507fb -> 
-  custom:scripting/monoscript/fileName/NetworkBatchHeader.cs: debb07d5699d1363972b294af6561902 -> 
-  custom:scripting/monoscript/fileName/FastBufferReader.cs: 8513d847dd12fa467b200788844968e5 -> 
-  custom:scripting/monoscript/fileName/FastBufferWriter.cs: 1e26245c7ba0fa0a11e67804d1702dba -> 
-  custom:scripting/monoscript/fileName/NetworkList.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
-  custom:scripting/monoscript/fileName/DeferredMessageManager.cs: 4516c26bdcc9ea987f6db224d021e5d8 -> 
-  custom:scripting/monoscript/fileName/SimulatorPipelineStage.cs: ba4d0ab2b1a54517e3f6421cfeffc79c -> 
-  custom:scripting/monoscript/fileName/RelayAllocationId.cs: 492d752e0aad24c2edfed375d0d7525a -> 
-  custom:scripting/monoscript/fileName/RelayMessagePing.cs: 79dc63e73f156a5f43776fc7879c1591 -> 
-  custom:scripting/monoscript/fileName/RealTimeProvider.cs: 0d7bc7c1138c242d43d9d40fc8b929e1 -> 
-  custom:scripting/monoscript/fileName/NetworkConfig.cs: 91cc5011ef219705a541c0073b8f06e7 -> 
-  custom:scripting/monoscript/fileName/SHA256.cs: 99bc3f026885ee77510971488cfcde04 -> 
   custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
-  custom:scripting/monoscript/fileName/NetworkMessageHeader.cs: 139a2c2e283b9642c4cd453ba9555eba -> 
-  custom:scripting/monoscript/fileName/UnsafeUtilityEx.cs: 51fdf80e1733ea661389b0969168e4eb -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/BitWriter.cs: 36912492eb02c955a69572a18c02e40d -> 
-  custom:scripting/monoscript/fileName/SessionIdToken.cs: 205bfe2247db3d45a3449ff0e4f05ec7 -> 
-  custom:scripting/monoscript/fileName/NetworkPipeline.cs: 70d28bdd3dc828fd4c167b9881db0050 -> 
-  custom:scripting/monoscript/fileName/RelayConnectionData.cs: 659fdc58c857ad1b213f82a5000d44dc -> 
-  custom:scripting/monoscript/fileName/UTF8ArrayUnsafeUtility.cs: 98dd75294b6f494d8648143302130ee6 -> 
-  custom:scripting/monoscript/fileName/NetworkLog.cs: a563f3c16454f145f9a41ef0dd93ed59 -> 
-  custom:scripting/monoscript/fileName/NetworkConfigurationException.cs: 56f557a94ae37464ac8b938ebbac45d7 -> 
-  custom:scripting/monoscript/fileName/RelayMessageAccepted.cs: 6200d76b6e6985460eac6caef44f5940 -> 
-  custom:scripting/monoscript/fileName/NetworkConnectionManager.cs: ce39b56ddce35447c2bfda7f75374037 -> 
-  custom:scripting/monoscript/fileName/FixedStringFormat.gen.cs: bee80dd64417b695a3ab4edd137d6566 -> 
-  custom:scripting/monoscript/fileName/RelayNetworkProtocol.cs: 6c7a45c101c93a067ff86901af01f4bf -> 
-  custom:scripting/monoscript/fileName/SecureNetworkProtocol.cs: 5c3cc90362d99f71c6f6c3bf17fbceae -> 
-  custom:scripting/monoscript/fileName/NetworkEndPoint.cs: b1dec3714b9b289f8892ff0123eaeee1 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourEditor.cs: a05e29a9f9fbb9542dd690d3dbb5c1f5 -> 
-  custom:scripting/monoscript/fileName/Unicode.cs: f97bf556b0d99c0ed9d5ebf00a173353 -> 
-  custom:scripting/monoscript/fileName/NetworkVariable.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/NetworkManagerEditor.cs: 2c598c1edd8d7202c54c788bca75189c -> 
-  custom:scripting/monoscript/fileName/UnsafeAppendBuffer.cs: 5a9572fb3414d7d386993b9deda40896 -> 
-  custom:scripting/monoscript/fileName/NetworkVariableSerialization.cs: 445c413be6993f150a80965fc54aa74f -> 
-  custom:scripting/monoscript/fileName/NetworkMetricsManager.cs: b88c76262c9baa2b48f2df647e570a64 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourILPP.cs: 314e1be425ddbea30b94313dbcbc1e7c -> 
   custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
-  custom:scripting/monoscript/fileName/SceneEventProgress.cs: 49c6adb8ee9cc0924ec05eba76f89442 -> 
-  custom:scripting/monoscript/fileName/TimeSyncMessage.cs: 986b394bf41fc432571ee2027d55e040 -> 
-  custom:scripting/monoscript/fileName/UnsafeBitArray.cs: be9a302f17ebba9c8bfe6d9fc79836b3 -> 
-  custom:scripting/monoscript/fileName/NativeHashSetExtensions.gen.cs: 63db070ab3fd6601a2653ee7ef6af335 -> 
-  custom:scripting/monoscript/fileName/NativeHashMapExtensions.cs: a0b4921e21fd612511729421feb17818 -> 
-  custom:scripting/monoscript/fileName/INetworkInterface.cs: 8198f5690c95503d7d4d3252cbf7ec17 -> 
-  custom:scripting/monoscript/fileName/UpdateChecker.cs: 029b1daf8f3b497c0666e54f8685c8b9 -> 
-  custom:scripting/monoscript/fileName/INetworkMessageProvider.cs: 855204b84fb829792d6cf395e360d015 -> 
-  custom:scripting/monoscript/fileName/ProfilingHooks.cs: cec47ca6b38dd9fc23d1f3f0a371a8d7 -> 
-  custom:scripting/monoscript/fileName/INetworkMetrics.cs: 741c72a0988b013e8aaeb541b4e1f88b -> 
-  custom:scripting/monoscript/fileName/xxHash3.AVX2.cs: bbc99b1bfd2f994ebd53a189bfb34bc9 -> 
-  custom:scripting/monoscript/fileName/UnsafeStream.cs: 256399a9cf220f56a541766f1fe0b55f -> 
-  custom:scripting/monoscript/fileName/ExternalLinks.cs: f57d4a4349423b09b7191c91a0e33dbb -> 
-  custom:scripting/monoscript/fileName/NetworkSettings.cs: e69e35ff8abfe612dad603a5aed62b24 -> 
-  custom:scripting/monoscript/fileName/NamedMessage.cs: 061ac80dde43c0b6a5c6ed7d6ac9d05a -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabProcessor.cs: 6fb1018d96ed46c37bea2034d51b936c -> 
-  custom:scripting/monoscript/fileName/NetworkCompressionModel.cs: a0e92192cd5454204b92e8ea6a1f8a42 -> 
-  custom:scripting/monoscript/fileName/NetcodeSettingsProvider.cs: 9f864a8099b157e12c4bd0b707a7831d -> 
-  custom:scripting/monoscript/fileName/PendingClient.cs: cf90b1fe3604e2a7dbb24acba05d40b2 -> 
-  custom:scripting/monoscript/fileName/IRealTimeProvider.cs: fbda76c826b5d1625e9f8d35e0425830 -> 
-  custom:scripting/monoscript/fileName/HeapString.gen.cs: 2f8bea3137363b1eadd89d8db8473288 -> 
-  custom:scripting/monoscript/fileName/ParrelSyncAssetModificationProcessor.cs: 98155902029fa8ed02f705a5843cf897 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/UnsafeMultiHashMap.cs: 0ecf0b5b4a9207402e80b603ad9a119c -> 
-  custom:scripting/monoscript/fileName/NetworkMetricsContext.cs: a6b40bde08ae3073ac47bf4ac43df2bf -> 
-  custom:scripting/monoscript/fileName/NetworkManager.cs: dc86db8fd97ad906d4d587f98282523b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/NativeHashMap.cs: 0ecf0b5b4a9207402e80b603ad9a119c -> 
-  custom:scripting/monoscript/fileName/ReliableUtility.cs: e188a43572ae343cc5abf780af338947 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviour.cs: dddff45b190ef3f6400ae35eeccba835 -> 
-  custom:scripting/monoscript/fileName/UnityTransportProtocol.cs: c8c411f42307b747bcdab2855e352dcc -> 
-  custom:scripting/monoscript/fileName/FixedStringFormatMethods.gen.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/RewindableAllocator.cs: ff203a8232e03cdb6b2db057c0882a0f -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/CreateObjectMessage.cs: 48f548aa2583d46ddca4f0d5b8ec00bc -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/PostProcessorAssemblyResolver.cs: 52fdfad72e90bce76f7f726a4de310b8 -> 
-  custom:scripting/monoscript/fileName/XXHash.cs: b85afc5d6d5dd2bcc7be4d1cd9d4001c -> 
-  custom:scripting/monoscript/fileName/NetworkAnimator.cs: d529df6c783f4e5d8bd2b49777fa2b70 -> 
-  custom:scripting/monoscript/fileName/FixedString.gen.cs: 546503330a4423d9e22205762e6dc907 -> 
-  custom:scripting/monoscript/fileName/NetworkVariableBase.cs: a8044b6096b938124f933a337521a106 -> 
-  custom:scripting/monoscript/fileName/NativeList.cs: 3e39181d220491b697fd73718c9e6b89 -> 
-  custom:scripting/monoscript/fileName/NetworkSpawnManager.cs: 9fee0c0becfe634a396c61e013f6016e -> 
-  custom:scripting/monoscript/fileName/UnsafeHashSetExtensions.gen.cs: 08ce05b79144f37e3fa725c81fe15267 -> 
-  custom:scripting/monoscript/fileName/ReliableSequencedPipelineStage.cs: 55e26111f0427795e6fc7ed05d10f899 -> 
-  custom:scripting/monoscript/fileName/RelayMessageDisconnect.cs: 63f8bd8d113e597c01bff5b42683bdd6 -> 
-  custom:scripting/monoscript/fileName/AskFeedbackDialog.cs: 87af38bcc9ff5fcc64e3b06dc3e06287 -> 
-  custom:scripting/monoscript/fileName/NetworkObjectEditor.cs: b161d957a620104e1330197b177739ca -> 
-  custom:scripting/monoscript/fileName/NetworkTimeSystem.cs: 8a36224f4e5af72de8861bc20a662d8d -> 
-  custom:scripting/monoscript/fileName/BurstCompatibleAttribute.cs: 5516bac227e59cc058e743022f755993 -> 
-  custom:scripting/monoscript/fileName/UnsafeAtomicCounter.cs: 9e2f4dbe854338916842c8ff7fbe03de -> 
-  custom:scripting/monoscript/fileName/NetworkUpdateLoop.cs: b8256c767b5a355322affc063e3326dd -> 
-  custom:scripting/monoscript/fileName/FixedStringMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/RelayMessageError.cs: 8067aeb189a135baba30f5616af8f7d0 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabs.cs: bfa337434e2a01edeaa8bb75f2aa274d -> 
-  custom:scripting/monoscript/fileName/UnsafeNotBurstCompatible.cs: 9920b2dcf54d07855dc87b05b9a22299 -> 
-  custom:scripting/monoscript/fileName/NetworkDeltaPosition.cs: d0e208809001a67de8980e21044d4912 -> 
-  custom:scripting/monoscript/fileName/OtherMenuItem.cs: 65154b4add18958b71906d4d02b7528b -> 
-  custom:scripting/monoscript/fileName/ByteUtility.cs: 139878367860a1da7de1331b53a6120c -> 
-  custom:scripting/monoscript/fileName/VisibilityChangeException.cs: 0271e1394f438dff28e3ebcdf75e74aa -> 
-  custom:scripting/monoscript/fileName/ParrelSyncProjectSettings.cs: 94f207732aa70d266b84e4949e224ceb -> 
-  custom:scripting/monoscript/fileName/FixedStringInternalMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/HiddenScriptEditor.cs: e928d67789d50b895e87f77064dc3177 -> 
   custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
-  custom:scripting/monoscript/fileName/CodeGenHelpers.cs: e3d8869d3146a88f879599439ae62797 -> 
-  custom:scripting/monoscript/fileName/DataStream.cs: 616e9e4f6d72be91b635abd0245635e9 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabsEditor.cs: f4e95db7326d1b249ebe7a636cdc5947 -> 
-  custom:scripting/monoscript/fileName/BufferedLinearInterpolator.cs: 43b43538502e321934de3cab9e663a70 -> 
-  custom:scripting/monoscript/fileName/BaselibNetworkInterface.cs: ba97e74dd48df9864200353d6734815d -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/NativeText.gen.cs: 963d74023cd13b0e64909bb76f1d047a -> 
-  custom:scripting/monoscript/fileName/ConcurrentMask.cs: d56a0fef284c9e5059f89974aedb695c -> 
-  custom:scripting/monoscript/fileName/MessageMetadata.cs: daa480dc4a17735fa59bb7753388c88b -> 
-  custom:scripting/monoscript/fileName/NativeReference.cs: 707aa775b4e3cc858cb239cb84a29e93 -> 
-  custom:scripting/monoscript/fileName/ForceNetworkSerializeByMemcpy.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/NativeNotBurstCompatible.cs: 8e8b404b4fa69e1b7cea25947e47b9bd -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourUpdater.cs: 1d6a04b0c9830845c8dffcd0d7dc518b -> 
-  custom:scripting/monoscript/fileName/NetworkObject.cs: c0ee3651b3dd6fe1d13f1139bcf71861 -> 
-  custom:scripting/monoscript/fileName/UnsafeRingQueue.cs: beeb81b22bb86e018042f1eea3e37e38 -> 
-  custom:scripting/monoscript/fileName/BitCounter.cs: 548f751b1625798af97aad19d8dc1023 -> 
-  custom:scripting/monoscript/fileName/NetworkTickSystem.cs: c303f1a7c88c965a36e83d6097d6804b -> 
-  custom:scripting/monoscript/fileName/ConnectionRequestMessage.cs: e11d6d3527440624515f05f3967e0f75 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourReference.cs: e857ea89c7cb42d42460461ea5d76006 -> 
-  custom:scripting/monoscript/fileName/NetworkClient.cs: fb29c40ba2505e699f65ff4654af4d54 -> 
-  custom:scripting/monoscript/fileName/Memory.cs: 24fa5e8e684139a9a6b2bb764c620a28 -> 
-  custom:scripting/monoscript/fileName/UnsafeList.cs: d4153fc6c06f3c788b1e8373e28421fd -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/IPCManager.cs: 6c08f025fb5d831a58fe190e7e0758ff -> 
-  custom:scripting/monoscript/fileName/FragmentationUtility.cs: 1e633bbb1b5694fcd744011c97aacc86 -> 
-  custom:scripting/monoscript/fileName/HalfVector4.cs: 203e830c874ce5d56d1d4c556d650cd4 -> 
-  custom:scripting/monoscript/fileName/NetworkConnection.cs: 3f066405165637e85c0f79e2dac82bb3 -> 
-  custom:scripting/monoscript/fileName/NetworkTransformEditor.cs: 933db28a74cc8127efd0db778ba31cad -> 
-  custom:scripting/monoscript/fileName/NetworkObjectReference.cs: 8743e46bf8664162060711a7e5801101 -> 
-  custom:scripting/monoscript/fileName/xxHash3.cs: d876f695d67b3d527466020445c50eb8 -> 
-  custom:scripting/monoscript/fileName/Attributes.cs: d94dab8e1cad1d516625e289629ba937 -> 9d3861389974f0823e7e341aa6c23dae
-  custom:scripting/monoscript/fileName/SecretsLoaderHelper.cs: e9a3b6d7c1263e6b6cab0df3270e0be3 -> 
-  custom:scripting/monoscript/fileName/DebugView.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
-  custom:scripting/monoscript/fileName/NativeHashSet.cs: 5e2ab9cfe81e04de31d18dbafae66b8c -> 
-  custom:scripting/monoscript/fileName/RuntimeAccessModifiersILPP.cs: 710f2fa6999a5d5d2566d32f7c5739b6 -> 
-  custom:scripting/monoscript/fileName/BitReader.cs: 49bc3d481da470043a8945e240557501 -> 
-  custom:scripting/monoscript/fileName/ListExtensions.cs: 7aa01450824b139fec139620e85f6e1f -> dc08b0e81401b7052a787865553578e4
-  custom:scripting/monoscript/fileName/BufferSerializerReader.cs: dd45efd60602155bcb553ee156111be9 -> 
-  custom:scripting/monoscript/fileName/NetworkRigidbody.cs: 95039632bde9a68d043daff839ccf980 -> 
-  custom:scripting/monoscript/fileName/CollectionsAllocationExamples.cs: 72ea6f1c8990c690aca4410bcc8d43b6 -> 
-  custom:scripting/monoscript/fileName/NetworkObjectRefreshTool.cs: f08a5a5ce9410befed12c880e7a11d4b -> 
-  custom:scripting/monoscript/fileName/Arithmetic.cs: a7b7c17b1cd9c05bbbdf34bcc4089d90 -> 
-  custom:scripting/monoscript/fileName/ConnectionApprovedMessage.cs: ed3d79551502ea547a6907f318a331a9 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabsList.cs: 32a5456a7c28b58eb9408da8a93ef18f -> 
-  custom:scripting/monoscript/fileName/NetworkProtocol.cs: 26a98a05dffdeea627f93182ce2c6cc1 -> 
-  custom:scripting/monoscript/fileName/NetworkTime.cs: d0016190071180cb19c72d61d3207cfc -> 
-  custom:scripting/monoscript/fileName/UnityTransport.cs: d10982aa913af4f7c2573ed406401ad2 -> 
-  custom:scripting/monoscript/fileName/SceneEventMessage.cs: a54ca612fe559926a56356c5834e34a1 -> 
-  custom:scripting/monoscript/fileName/SecureParameters.cs: f1d88e84e15861efec1fee7304224660 -> 
-  custom:scripting/monoscript/fileName/UnnamedMessage.cs: c398b7d7cb47e9d74c47301c7552078d -> 
-  custom:scripting/monoscript/fileName/NullNetworkMetrics.cs: 470cdbef1e1173c806470b2cf2f35b2f -> 
-  custom:scripting/monoscript/fileName/UnsafeScratchAllocator.cs: 4face5614d3825fa48ae79289f69aa1b -> 
-  custom:scripting/monoscript/fileName/UIntFloat.cs: 94aaf89d89cbe558dfbe57e0eb69f75e -> 
-  custom:scripting/monoscript/fileName/BurstCompatibilityTests.cs: 7d7c24becd314d1054104dfc27a7e1e1 -> 
-  custom:scripting/monoscript/fileName/SimulatorUtility.cs: f0e0732866b862d8bc77bce3114331fa -> 
-  custom:scripting/monoscript/fileName/BitField.cs: 435cec31f980ea5ce1d1e89b13684a57 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/NativeQueue.cs: 0e981ce8b9429d0fa5b8752248b5a6fd -> 
-  custom:scripting/monoscript/fileName/NetworkVariableDeltaMessage.cs: 001e7d6f7ca3478ada2109862aa4c07b -> 
-  custom:scripting/monoscript/fileName/RelayMessageRelay.cs: c98ae91cd46c469d0457213817d83a4e -> 
-  custom:scripting/monoscript/fileName/NativeArrayExtensions.cs: 480ae80e25a67512135651e8db7b75bc -> 
-  custom:scripting/monoscript/fileName/QuaternionCompressor.cs: 4a0797597600d5c1e3b3cea2e469befc -> 
-  custom:scripting/monoscript/fileName/NetworkRigidbody2D.cs: 99601db3013c9f01627c572e6735e1bb -> 
-  custom:scripting/monoscript/fileName/NetworkManagerHooks.cs: 8945a80465ac4eac42db4a904b158b67 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefab.cs: 8c18350563dca0564346732dd42dddda -> 
-  custom:scripting/monoscript/fileName/AtomicFreeList.cs: a8dd8908b6032505859286fb3945a4ab -> 
-  custom:scripting/monoscript/fileName/NativeSort.cs: 928f4174a21486fd6ff139d2de03d8ce -> 
-  custom:scripting/monoscript/fileName/ParentSyncMessage.cs: 2ce8261636bc853f2b92e8e50083aa6f -> 
-  custom:scripting/monoscript/fileName/PostProcessorReflectionImporterProvider.cs: aec8203d830f7edb79d4140ee801944f -> 
   custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
-  custom:scripting/monoscript/fileName/BatchedReceiveQueue.cs: c6ee3f7d9eb51ca496b00c554cde523d -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/FixedStringParseMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/ClonesManagerWindow.cs: 480fe8f568c4df8018a3dadfa3e69d57 -> 
-  custom:scripting/monoscript/fileName/DefaultMessageSender.cs: c64ad98bb8c1f9b0a83db1b6d1e8e1fc -> 
-  custom:scripting/monoscript/fileName/NetworkTransform.cs: 25045a9deee8e8ac3f0b4df98baefd8e -> 
-  custom:scripting/monoscript/fileName/Utilities.cs: b525f78d26b94e5cac8fd179dbc84df3 -> 3b7f3ca8a797f5aa000bca2637e43e42
-  custom:scripting/monoscript/fileName/NetcodeForGameObjectsProjectSettings.cs: 85a8a381728f00963dcc3a11b813cf91 -> 
-  custom:scripting/monoscript/fileName/ValidateCopiedFoldersIntegrity.cs: 56f406d9e913419ab82dfb77d147492d -> 
-  custom:scripting/monoscript/fileName/AllocatorManager.cs: 38c7b2bd1aa48880a7078890d02430db -> 
-  custom:scripting/monoscript/fileName/RelayMessageConnectRequest.cs: 122325b519d1611e2cfe0cad71f104c8 -> 
-  custom:scripting/monoscript/fileName/HMACSHA256.cs: 075451742cd7018a1d69316af47006de -> 
-  custom:scripting/monoscript/fileName/FixedStringAppendMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/NetworkMessageManager.cs: a6627fe7f5b963efa577471b5bd0529e -> 
-  custom:scripting/monoscript/fileName/DisconnectReasonMessage.cs: 8dc28c089afa7a92671d3399506a209b -> 
-  custom:scripting/monoscript/fileName/ILPPMessageProvider.cs: b7d7beb99225402ea4614285f5c112d2 -> 
-  custom:scripting/monoscript/fileName/BatchedSendQueue.cs: 3cf9ab588444af87b39254394c6fdf73 -> 
-  custom:scripting/monoscript/fileName/IDeferredNetworkMessageManager.cs: 6ca6ce9b7cd936c1e2ae9670e4a26257 -> 
-  custom:scripting/monoscript/fileName/RoslynAnalyzerFix.cs: afe82e9eb31cc2201e3885e0f9b241a3 -> 
-  custom:scripting/monoscript/fileName/SpawnStateException.cs: d1fd3409f01fcb9be2d92f83c533701b -> 
-  custom:scripting/monoscript/fileName/NetworkContext.cs: 33aca22b6aaa264afdb95b0f787ec6eb -> 
-  custom:scripting/monoscript/fileName/CustomMessageManager.cs: 4ed046a118960409ed5f873d7e1c2e1b -> 
-  custom:scripting/monoscript/fileName/INetworkSerializableILPP.cs: dac3026a3ef1bf8b897646aee1b236ff -> 
-  custom:scripting/monoscript/fileName/BytePacker.cs: 1f03268f301c1074858245210473c9e6 -> 
-  custom:scripting/monoscript/fileName/NetcodeForGameObjectsSettings.cs: c0fb31a1cceb2a21dfeb25ce22eb4519 -> 
-  custom:scripting/monoscript/fileName/BufferSerializerWriter.cs: 2135e5db35b5dcf9ddaf677d1376666c -> 
-  custom:scripting/monoscript/fileName/UnsafeHashSet.cs: 5e2ab9cfe81e04de31d18dbafae66b8c -> 
-  custom:scripting/monoscript/fileName/NetworkDriver.cs: c78adf1a0dcc3d22c5dee607983cd012 -> 
-  custom:scripting/monoscript/fileName/NativeStream.cs: f901789de80a9ec3530751f3f60eb2f8 -> 
-  custom:scripting/monoscript/fileName/ChangeOwnershipMessage.cs: e9a065956b97e56545e7ce90157bf718 -> 
-  custom:scripting/monoscript/fileName/NotServerException.cs: e7549090787893621f5b712cd26a7ce7 -> 
   custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
-  custom:scripting/monoscript/fileName/INetworkSerializeByMemcpy.cs: 02e3a255a0b7c13ccb9c8c4908f3fbe4 -> 
-  custom:scripting/monoscript/fileName/NetworkEventQueue.cs: 821ee5df3b5b0b5de6c7d82ae4e0d639 -> 
-  custom:scripting/monoscript/fileName/Base64.cs: 8c9045fb9419d92a6de76451e0d2db21 -> 
-  custom:scripting/monoscript/fileName/Project.cs: 25b2358f5b63e9e868b3730f2625984e -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/INetworkMessageSender.cs: 52a02c5c5c403cb34cf0b225c71180cc -> 
-  custom:scripting/monoscript/fileName/RpcAttributes.cs: 87cb1825773f28238aad8680d31f2d29 -> 
-  custom:scripting/monoscript/fileName/RpcParams.cs: 44cf8e87d7643357e3bc1e8ef4f647f7 -> 
-  custom:scripting/monoscript/fileName/NetworkConstants.cs: c6aed9d6dda697ae574c3b8aa7685e58 -> 
-  custom:scripting/monoscript/fileName/NetworkManagerHelper.cs: 78ef2af65b64b9c7486a0908bdddfa87 -> 
-  custom:scripting/monoscript/fileName/Preferences.cs: fc1c65ff2d399f273bddd63c0e50bbd2 -> 
-  custom:scripting/monoscript/fileName/GenerateSerializationForGenericParameterAttribute.cs: c089dbab34a4d61f957719358d4f42cd -> 
-  custom:scripting/monoscript/fileName/ByteUnpacker.cs: 904cd14b3f30b92353a7743b06ced28a -> 
-  custom:scripting/monoscript/fileName/INetworkMessageILPP.cs: 6b6f5e9624f5a339c239e9ecbec8dd47 -> 
-  custom:scripting/monoscript/fileName/FileUtilities.cs: a10705d35c8944054a18f4d05623f27c -> 771f43e67585e5fce72a68dee6f48c42
-  custom:scripting/monoscript/fileName/RelayServerData.cs: d2d8dc285f830ad4928018166de595e6 -> 
-  custom:scripting/monoscript/fileName/RpcMessages.cs: 185a12c3568890172287041522f9a79a -> 
-  custom:scripting/monoscript/fileName/PostProcessorReflectionImporter.cs: 515038af6ae3bfe26acd479f4bb2a0b4 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkParams.cs: 3d9ef90f50f31629c0eed901a2880111 -> 
-  custom:scripting/monoscript/fileName/UnreliableSequencedPipelineStage.cs: 1cdc2db533fd37672ea69d5662917b06 -> 
-  custom:scripting/monoscript/fileName/UnsafeHashMap.cs: b3f5721fae0d7c31e90553a3a7b10d6f -> 
-  custom:scripting/monoscript/fileName/DestroyObjectMessage.cs: 15a670d028872294a71fb552cc121054 -> 
-  custom:scripting/monoscript/fileName/BaselibNetworkArray.cs: f7e7d62e1934b21465c75f7a44dab169 -> 
-  custom:scripting/monoscript/fileName/BufferSerializer.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/ComponentFactory.cs: 14bb3cb9c435887d692ae3506125ec6b -> 
-  custom:scripting/monoscript/fileName/InvalidParentException.cs: 993f25198a317e590068e96e262f6354 -> 
-  custom:scripting/monoscript/fileName/RelayHMACKey.cs: 0a11fe2bda777ba273883ca0c3f24b7e -> 
-  custom:scripting/monoscript/fileName/IReaderWriter.cs: e423429d8b3776a14f7b467db3885d63 -> 
-  custom:scripting/monoscript/fileName/FixedStringUtils.cs: 114eb023c5774372990da700f8c2456f -> 
-  custom:scripting/monoscript/fileName/NativeBitArray.cs: 744f6e29d77560522710809b14557136 -> 
-  custom:scripting/monoscript/fileName/NativeMultiHashMap.cs: 232e6e149bb81d9963c795b02084c8f4 -> 
-  custom:scripting/monoscript/fileName/xxHash3.StreamingState.cs: 73af6f62e3ccfaecb2c43562b8c60a23 -> 
-  custom:scripting/monoscript/fileName/CollectionsExamples.cs: 5c3c7e50116fce8e4387bbf68d9603e4 -> 
-  custom:scripting/monoscript/fileName/HalfVector3.cs: ac9bc2d1b8640d4ccb0d1df94db69e52 -> 
-  custom:scripting/monoscript/fileName/IPCNetworkInterface.cs: edd45f2f3d4a1467bbcd6370a5251934 -> 
-  custom:scripting/monoscript/fileName/ClonesManager.cs: 56d4e9ba876d20feaa256fa586b68f63 -> 
-  custom:scripting/monoscript/fileName/TransportFunctionPointer.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/ReleasedNetworkId.cs: 5c69d1641d908cf6b6e3b619d8fba892 -> 
-  custom:scripting/monoscript/fileName/GenerateSerializationForTypeAttribute.cs: 48c7023597b4c6f3b6eafa279b9d2d23 -> 
-  custom:scripting/monoscript/fileName/FragmentationPipelineStage.cs: f5c80d6bb8a2010baf914912a146535d -> 
-  custom:scripting/monoscript/fileName/MetricHooks.cs: 3cbfdf603d903a15295cd064934d5e39 -> 
-  custom:scripting/monoscript/fileName/RelayMessageHeader.cs: 3a97bdb09130b853737ceb480d8d8ffa -> 
-  custom:scripting/monoscript/fileName/NetworkDriverRelayExtensions.cs: cd52b20ca1f7b6857c56d6e088d0a0e1 -> 
-  custom:scripting/monoscript/fileName/DefaultSceneManagerHandler.cs: c6c30a91b1e5a3b7e54576c3b8581893 -> 
-  custom:scripting/monoscript/fileName/UnsafeText.cs: 252c4eef6eb1893b89e3a585d7b05a84 -> 
-  custom:scripting/monoscript/fileName/EditorQuit.cs: 0d99020733aa7608452e4fa0cdb5cb7e -> 
-  custom:scripting/monoscript/fileName/INetworkSerializable.cs: a80c6eca2e427ab3a50ca08dcab3a083 -> 
-  custom:scripting/monoscript/fileName/NullPipelineStage.cs: cfdd3afb432e431460ddc39ad47d5cac -> 
-  custom:scripting/monoscript/fileName/INetworkHooks.cs: b0f6a9717ad435057a76d13a57d82e98 -> 
-  custom:scripting/monoscript/fileName/NetworkProtocols.cs: 69ec420e8f7a3ff6155e5a4c7adf9325 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: ee3fff20f3eb3d51a2c4e3ea26c293d8 -> 
-  custom:scripting/monoscript/fileName/CollectionHelper.cs: f2f5ea727aa85849eaae278bca48a36c -> 
-  custom:scripting/monoscript/fileName/NetworkSceneManager.cs: e85d1ad401afdfd086e2a5281b90cead -> 
-  custom:scripting/monoscript/fileName/ServerLogMessage.cs: c93ff6a1699a1762d066f036a4ce6711 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.664 seconds
-Refreshing native plugins compatible for Editor in 27.83 ms, found 11 plugins.
+- Loaded All Assemblies, in  3.507 seconds
+Refreshing native plugins compatible for Editor in 36.53 ms, found 11 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -491,6 +825,30 @@ System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.Runti
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 (Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+InvalidCastException: Specified cast is not valid.
+  at Unity.VisualScripting.PluginConfiguration.LoadOrCreateProjectSettingsAsset () [0x0003e] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:184 
+  at Unity.VisualScripting.PluginConfiguration.LoadProjectSettings () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:149 
+  at Unity.VisualScripting.PluginConfiguration.Load () [0x00006] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:75 
+  at Unity.VisualScripting.PluginConfiguration.Initialize () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:23 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x004a3] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:199 
+Rethrow as Exception: Failed to initialize plugin module 'VisualScripting.Core.BoltCoreConfiguration'.
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.VisualScripting.PluginContainer:Initialize() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:204)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed(Boolean) (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs Line: 204)
 
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
   at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
@@ -516,337 +874,78 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in 13.481 seconds
-Domain Reload Profiling: 15138ms
-	BeginReloadAssembly (497ms)
+- Finished resetting the current domain, in  4.588 seconds
+Domain Reload Profiling: 8093ms
+	BeginReloadAssembly (592ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (128ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (133ms)
-	LoadAllAssembliesAndSetupDomain (909ms)
-		LoadAssemblies (1105ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (258ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (2739ms)
+		LoadAssemblies (2543ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (66ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (49ms)
-	FinalizeReload (13482ms)
+		AnalyzeDomain (435ms)
+			TypeCache.Refresh (343ms)
+				TypeCache.ScanAssembly (264ms)
+			ScanForSourceGeneratedMonoScriptInfo (65ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (4589ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (7964ms)
+		SetupLoadedEditorAssemblies (2710ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (59ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (206ms)
-			ProcessInitializeOnLoadAttributes (1721ms)
-			ProcessInitializeOnLoadMethodAttributes (5953ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (2ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (1149ms)
+			ProcessInitializeOnLoadMethodAttributes (1390ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (40ms)
-Refreshing native plugins compatible for Editor in 58.89 ms, found 11 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 12.14 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7636 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 332 unused Assets / (2.3 MB). Loaded Objects now: 8084.
-Memory consumption went from 352.6 MB to 350.3 MB.
-Total: 33.011900 ms (FindLiveObjects: 1.205300 ms CreateObjectMapping: 0.864400 ms MarkObjects: 27.904700 ms  DeleteObjects: 3.034600 ms)
+Unloading 7670 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 370 unused Assets / (5.5 MB). Loaded Objects now: 8156.
+Memory consumption went from 310.4 MB to 304.9 MB.
+Total: 22.001400 ms (FindLiveObjects: 1.089000 ms CreateObjectMapping: 0.504500 ms MarkObjects: 16.436700 ms  DeleteObjects: 3.968500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/Deprecated.cs: b9d2f8144598e6824885e8739759b01e -> c490571978d72951839b06a2825608d2
-  custom:scripting/monoscript/fileName/FixedList.gen.cs: 61852e4544d489e0d5903eb98b98e308 -> 
-  custom:scripting/monoscript/fileName/NetworkTransport.cs: 02aa7363c66830bf60e6de875ba306e2 -> 
-  custom:scripting/monoscript/fileName/SceneEventData.cs: da390a83a67886593e104db14fd81a3f -> 
-  custom:scripting/monoscript/fileName/ByteBool.cs: fa079abe851cce7291e90b6cea590e4d -> 
-  custom:scripting/monoscript/fileName/INetworkMessage.cs: dcf3bb31758f8bf5812efb417901a058 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/ISceneManagerHandler.cs: e6f8786ee1c80c18570f6fc1ff21bd77 -> 
-  custom:scripting/monoscript/fileName/RelayMessageBind.cs: 9ccad22758442a1e73fba9818da057a8 -> 
-  custom:scripting/monoscript/fileName/NotListeningException.cs: 3f7b3b1b4f5852c3c04fe77018e507fb -> 
-  custom:scripting/monoscript/fileName/NetworkBatchHeader.cs: debb07d5699d1363972b294af6561902 -> 
-  custom:scripting/monoscript/fileName/FastBufferReader.cs: 8513d847dd12fa467b200788844968e5 -> 
-  custom:scripting/monoscript/fileName/FastBufferWriter.cs: 1e26245c7ba0fa0a11e67804d1702dba -> 
-  custom:scripting/monoscript/fileName/NetworkList.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
-  custom:scripting/monoscript/fileName/DeferredMessageManager.cs: 4516c26bdcc9ea987f6db224d021e5d8 -> 
-  custom:scripting/monoscript/fileName/SimulatorPipelineStage.cs: ba4d0ab2b1a54517e3f6421cfeffc79c -> 
-  custom:scripting/monoscript/fileName/RelayAllocationId.cs: 492d752e0aad24c2edfed375d0d7525a -> 
-  custom:scripting/monoscript/fileName/RelayMessagePing.cs: 79dc63e73f156a5f43776fc7879c1591 -> 
-  custom:scripting/monoscript/fileName/RealTimeProvider.cs: 0d7bc7c1138c242d43d9d40fc8b929e1 -> 
-  custom:scripting/monoscript/fileName/NetworkConfig.cs: 91cc5011ef219705a541c0073b8f06e7 -> 
-  custom:scripting/monoscript/fileName/SHA256.cs: 99bc3f026885ee77510971488cfcde04 -> 
   custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
-  custom:scripting/monoscript/fileName/NetworkMessageHeader.cs: 139a2c2e283b9642c4cd453ba9555eba -> 
-  custom:scripting/monoscript/fileName/UnsafeUtilityEx.cs: 51fdf80e1733ea661389b0969168e4eb -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/BitWriter.cs: 36912492eb02c955a69572a18c02e40d -> 
-  custom:scripting/monoscript/fileName/SessionIdToken.cs: 205bfe2247db3d45a3449ff0e4f05ec7 -> 
-  custom:scripting/monoscript/fileName/NetworkPipeline.cs: 70d28bdd3dc828fd4c167b9881db0050 -> 
-  custom:scripting/monoscript/fileName/RelayConnectionData.cs: 659fdc58c857ad1b213f82a5000d44dc -> 
-  custom:scripting/monoscript/fileName/UTF8ArrayUnsafeUtility.cs: 98dd75294b6f494d8648143302130ee6 -> 
-  custom:scripting/monoscript/fileName/NetworkLog.cs: a563f3c16454f145f9a41ef0dd93ed59 -> 
-  custom:scripting/monoscript/fileName/NetworkConfigurationException.cs: 56f557a94ae37464ac8b938ebbac45d7 -> 
-  custom:scripting/monoscript/fileName/RelayMessageAccepted.cs: 6200d76b6e6985460eac6caef44f5940 -> 
-  custom:scripting/monoscript/fileName/NetworkConnectionManager.cs: ce39b56ddce35447c2bfda7f75374037 -> 
-  custom:scripting/monoscript/fileName/FixedStringFormat.gen.cs: bee80dd64417b695a3ab4edd137d6566 -> 
-  custom:scripting/monoscript/fileName/RelayNetworkProtocol.cs: 6c7a45c101c93a067ff86901af01f4bf -> 
-  custom:scripting/monoscript/fileName/SecureNetworkProtocol.cs: 5c3cc90362d99f71c6f6c3bf17fbceae -> 
-  custom:scripting/monoscript/fileName/NetworkEndPoint.cs: b1dec3714b9b289f8892ff0123eaeee1 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourEditor.cs: a05e29a9f9fbb9542dd690d3dbb5c1f5 -> 
-  custom:scripting/monoscript/fileName/Unicode.cs: f97bf556b0d99c0ed9d5ebf00a173353 -> 
-  custom:scripting/monoscript/fileName/NetworkVariable.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/NetworkManagerEditor.cs: 2c598c1edd8d7202c54c788bca75189c -> 
-  custom:scripting/monoscript/fileName/UnsafeAppendBuffer.cs: 5a9572fb3414d7d386993b9deda40896 -> 
-  custom:scripting/monoscript/fileName/NetworkVariableSerialization.cs: 445c413be6993f150a80965fc54aa74f -> 
-  custom:scripting/monoscript/fileName/NetworkMetricsManager.cs: b88c76262c9baa2b48f2df647e570a64 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourILPP.cs: 314e1be425ddbea30b94313dbcbc1e7c -> 
   custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
-  custom:scripting/monoscript/fileName/SceneEventProgress.cs: 49c6adb8ee9cc0924ec05eba76f89442 -> 
-  custom:scripting/monoscript/fileName/TimeSyncMessage.cs: 986b394bf41fc432571ee2027d55e040 -> 
-  custom:scripting/monoscript/fileName/UnsafeBitArray.cs: be9a302f17ebba9c8bfe6d9fc79836b3 -> 
-  custom:scripting/monoscript/fileName/NativeHashSetExtensions.gen.cs: 63db070ab3fd6601a2653ee7ef6af335 -> 
-  custom:scripting/monoscript/fileName/NativeHashMapExtensions.cs: a0b4921e21fd612511729421feb17818 -> 
-  custom:scripting/monoscript/fileName/INetworkInterface.cs: 8198f5690c95503d7d4d3252cbf7ec17 -> 
-  custom:scripting/monoscript/fileName/UpdateChecker.cs: 029b1daf8f3b497c0666e54f8685c8b9 -> 
-  custom:scripting/monoscript/fileName/INetworkMessageProvider.cs: 855204b84fb829792d6cf395e360d015 -> 
-  custom:scripting/monoscript/fileName/ProfilingHooks.cs: cec47ca6b38dd9fc23d1f3f0a371a8d7 -> 
-  custom:scripting/monoscript/fileName/INetworkMetrics.cs: 741c72a0988b013e8aaeb541b4e1f88b -> 
-  custom:scripting/monoscript/fileName/xxHash3.AVX2.cs: bbc99b1bfd2f994ebd53a189bfb34bc9 -> 
-  custom:scripting/monoscript/fileName/UnsafeStream.cs: 256399a9cf220f56a541766f1fe0b55f -> 
-  custom:scripting/monoscript/fileName/ExternalLinks.cs: f57d4a4349423b09b7191c91a0e33dbb -> 
-  custom:scripting/monoscript/fileName/NetworkSettings.cs: e69e35ff8abfe612dad603a5aed62b24 -> 
-  custom:scripting/monoscript/fileName/NamedMessage.cs: 061ac80dde43c0b6a5c6ed7d6ac9d05a -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabProcessor.cs: 6fb1018d96ed46c37bea2034d51b936c -> 
-  custom:scripting/monoscript/fileName/NetworkCompressionModel.cs: a0e92192cd5454204b92e8ea6a1f8a42 -> 
-  custom:scripting/monoscript/fileName/NetcodeSettingsProvider.cs: 9f864a8099b157e12c4bd0b707a7831d -> 
-  custom:scripting/monoscript/fileName/PendingClient.cs: cf90b1fe3604e2a7dbb24acba05d40b2 -> 
-  custom:scripting/monoscript/fileName/IRealTimeProvider.cs: fbda76c826b5d1625e9f8d35e0425830 -> 
-  custom:scripting/monoscript/fileName/HeapString.gen.cs: 2f8bea3137363b1eadd89d8db8473288 -> 
-  custom:scripting/monoscript/fileName/ParrelSyncAssetModificationProcessor.cs: 98155902029fa8ed02f705a5843cf897 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/UnsafeMultiHashMap.cs: 0ecf0b5b4a9207402e80b603ad9a119c -> 
-  custom:scripting/monoscript/fileName/NetworkMetricsContext.cs: a6b40bde08ae3073ac47bf4ac43df2bf -> 
-  custom:scripting/monoscript/fileName/NetworkManager.cs: dc86db8fd97ad906d4d587f98282523b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/NativeHashMap.cs: 0ecf0b5b4a9207402e80b603ad9a119c -> 
-  custom:scripting/monoscript/fileName/ReliableUtility.cs: e188a43572ae343cc5abf780af338947 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviour.cs: dddff45b190ef3f6400ae35eeccba835 -> 
-  custom:scripting/monoscript/fileName/UnityTransportProtocol.cs: c8c411f42307b747bcdab2855e352dcc -> 
-  custom:scripting/monoscript/fileName/FixedStringFormatMethods.gen.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/RewindableAllocator.cs: ff203a8232e03cdb6b2db057c0882a0f -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/CreateObjectMessage.cs: 48f548aa2583d46ddca4f0d5b8ec00bc -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/PostProcessorAssemblyResolver.cs: 52fdfad72e90bce76f7f726a4de310b8 -> 
-  custom:scripting/monoscript/fileName/XXHash.cs: b85afc5d6d5dd2bcc7be4d1cd9d4001c -> 
-  custom:scripting/monoscript/fileName/NetworkAnimator.cs: d529df6c783f4e5d8bd2b49777fa2b70 -> 
-  custom:scripting/monoscript/fileName/FixedString.gen.cs: 546503330a4423d9e22205762e6dc907 -> 
-  custom:scripting/monoscript/fileName/NetworkVariableBase.cs: a8044b6096b938124f933a337521a106 -> 
-  custom:scripting/monoscript/fileName/NativeList.cs: 3e39181d220491b697fd73718c9e6b89 -> 
-  custom:scripting/monoscript/fileName/NetworkSpawnManager.cs: 9fee0c0becfe634a396c61e013f6016e -> 
-  custom:scripting/monoscript/fileName/UnsafeHashSetExtensions.gen.cs: 08ce05b79144f37e3fa725c81fe15267 -> 
-  custom:scripting/monoscript/fileName/ReliableSequencedPipelineStage.cs: 55e26111f0427795e6fc7ed05d10f899 -> 
-  custom:scripting/monoscript/fileName/RelayMessageDisconnect.cs: 63f8bd8d113e597c01bff5b42683bdd6 -> 
-  custom:scripting/monoscript/fileName/AskFeedbackDialog.cs: 87af38bcc9ff5fcc64e3b06dc3e06287 -> 
-  custom:scripting/monoscript/fileName/NetworkObjectEditor.cs: b161d957a620104e1330197b177739ca -> 
-  custom:scripting/monoscript/fileName/NetworkTimeSystem.cs: 8a36224f4e5af72de8861bc20a662d8d -> 
-  custom:scripting/monoscript/fileName/BurstCompatibleAttribute.cs: 5516bac227e59cc058e743022f755993 -> 
-  custom:scripting/monoscript/fileName/UnsafeAtomicCounter.cs: 9e2f4dbe854338916842c8ff7fbe03de -> 
-  custom:scripting/monoscript/fileName/NetworkUpdateLoop.cs: b8256c767b5a355322affc063e3326dd -> 
-  custom:scripting/monoscript/fileName/FixedStringMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/RelayMessageError.cs: 8067aeb189a135baba30f5616af8f7d0 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabs.cs: bfa337434e2a01edeaa8bb75f2aa274d -> 
-  custom:scripting/monoscript/fileName/UnsafeNotBurstCompatible.cs: 9920b2dcf54d07855dc87b05b9a22299 -> 
-  custom:scripting/monoscript/fileName/NetworkDeltaPosition.cs: d0e208809001a67de8980e21044d4912 -> 
-  custom:scripting/monoscript/fileName/OtherMenuItem.cs: 65154b4add18958b71906d4d02b7528b -> 
-  custom:scripting/monoscript/fileName/ByteUtility.cs: 139878367860a1da7de1331b53a6120c -> 
-  custom:scripting/monoscript/fileName/VisibilityChangeException.cs: 0271e1394f438dff28e3ebcdf75e74aa -> 
-  custom:scripting/monoscript/fileName/ParrelSyncProjectSettings.cs: 94f207732aa70d266b84e4949e224ceb -> 
-  custom:scripting/monoscript/fileName/FixedStringInternalMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/HiddenScriptEditor.cs: e928d67789d50b895e87f77064dc3177 -> 
   custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
-  custom:scripting/monoscript/fileName/CodeGenHelpers.cs: e3d8869d3146a88f879599439ae62797 -> 
-  custom:scripting/monoscript/fileName/DataStream.cs: 616e9e4f6d72be91b635abd0245635e9 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabsEditor.cs: f4e95db7326d1b249ebe7a636cdc5947 -> 
-  custom:scripting/monoscript/fileName/BufferedLinearInterpolator.cs: 43b43538502e321934de3cab9e663a70 -> 
-  custom:scripting/monoscript/fileName/BaselibNetworkInterface.cs: ba97e74dd48df9864200353d6734815d -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/NativeText.gen.cs: 963d74023cd13b0e64909bb76f1d047a -> 
-  custom:scripting/monoscript/fileName/ConcurrentMask.cs: d56a0fef284c9e5059f89974aedb695c -> 
-  custom:scripting/monoscript/fileName/MessageMetadata.cs: daa480dc4a17735fa59bb7753388c88b -> 
-  custom:scripting/monoscript/fileName/NativeReference.cs: 707aa775b4e3cc858cb239cb84a29e93 -> 
-  custom:scripting/monoscript/fileName/ForceNetworkSerializeByMemcpy.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/NativeNotBurstCompatible.cs: 8e8b404b4fa69e1b7cea25947e47b9bd -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourUpdater.cs: 1d6a04b0c9830845c8dffcd0d7dc518b -> 
-  custom:scripting/monoscript/fileName/NetworkObject.cs: c0ee3651b3dd6fe1d13f1139bcf71861 -> 
-  custom:scripting/monoscript/fileName/UnsafeRingQueue.cs: beeb81b22bb86e018042f1eea3e37e38 -> 
-  custom:scripting/monoscript/fileName/BitCounter.cs: 548f751b1625798af97aad19d8dc1023 -> 
-  custom:scripting/monoscript/fileName/NetworkTickSystem.cs: c303f1a7c88c965a36e83d6097d6804b -> 
-  custom:scripting/monoscript/fileName/ConnectionRequestMessage.cs: e11d6d3527440624515f05f3967e0f75 -> 
-  custom:scripting/monoscript/fileName/NetworkBehaviourReference.cs: e857ea89c7cb42d42460461ea5d76006 -> 
-  custom:scripting/monoscript/fileName/NetworkClient.cs: fb29c40ba2505e699f65ff4654af4d54 -> 
-  custom:scripting/monoscript/fileName/Memory.cs: 24fa5e8e684139a9a6b2bb764c620a28 -> 
-  custom:scripting/monoscript/fileName/UnsafeList.cs: d4153fc6c06f3c788b1e8373e28421fd -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/IPCManager.cs: 6c08f025fb5d831a58fe190e7e0758ff -> 
-  custom:scripting/monoscript/fileName/FragmentationUtility.cs: 1e633bbb1b5694fcd744011c97aacc86 -> 
-  custom:scripting/monoscript/fileName/HalfVector4.cs: 203e830c874ce5d56d1d4c556d650cd4 -> 
-  custom:scripting/monoscript/fileName/NetworkConnection.cs: 3f066405165637e85c0f79e2dac82bb3 -> 
-  custom:scripting/monoscript/fileName/NetworkTransformEditor.cs: 933db28a74cc8127efd0db778ba31cad -> 
-  custom:scripting/monoscript/fileName/NetworkObjectReference.cs: 8743e46bf8664162060711a7e5801101 -> 
-  custom:scripting/monoscript/fileName/xxHash3.cs: d876f695d67b3d527466020445c50eb8 -> 
-  custom:scripting/monoscript/fileName/Attributes.cs: d94dab8e1cad1d516625e289629ba937 -> 9d3861389974f0823e7e341aa6c23dae
-  custom:scripting/monoscript/fileName/SecretsLoaderHelper.cs: e9a3b6d7c1263e6b6cab0df3270e0be3 -> 
-  custom:scripting/monoscript/fileName/DebugView.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
-  custom:scripting/monoscript/fileName/NativeHashSet.cs: 5e2ab9cfe81e04de31d18dbafae66b8c -> 
-  custom:scripting/monoscript/fileName/RuntimeAccessModifiersILPP.cs: 710f2fa6999a5d5d2566d32f7c5739b6 -> 
-  custom:scripting/monoscript/fileName/BitReader.cs: 49bc3d481da470043a8945e240557501 -> 
-  custom:scripting/monoscript/fileName/ListExtensions.cs: 7aa01450824b139fec139620e85f6e1f -> dc08b0e81401b7052a787865553578e4
-  custom:scripting/monoscript/fileName/BufferSerializerReader.cs: dd45efd60602155bcb553ee156111be9 -> 
-  custom:scripting/monoscript/fileName/NetworkRigidbody.cs: 95039632bde9a68d043daff839ccf980 -> 
-  custom:scripting/monoscript/fileName/CollectionsAllocationExamples.cs: 72ea6f1c8990c690aca4410bcc8d43b6 -> 
-  custom:scripting/monoscript/fileName/NetworkObjectRefreshTool.cs: f08a5a5ce9410befed12c880e7a11d4b -> 
-  custom:scripting/monoscript/fileName/Arithmetic.cs: a7b7c17b1cd9c05bbbdf34bcc4089d90 -> 
-  custom:scripting/monoscript/fileName/ConnectionApprovedMessage.cs: ed3d79551502ea547a6907f318a331a9 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabsList.cs: 32a5456a7c28b58eb9408da8a93ef18f -> 
-  custom:scripting/monoscript/fileName/NetworkProtocol.cs: 26a98a05dffdeea627f93182ce2c6cc1 -> 
-  custom:scripting/monoscript/fileName/NetworkTime.cs: d0016190071180cb19c72d61d3207cfc -> 
-  custom:scripting/monoscript/fileName/UnityTransport.cs: d10982aa913af4f7c2573ed406401ad2 -> 
-  custom:scripting/monoscript/fileName/SceneEventMessage.cs: a54ca612fe559926a56356c5834e34a1 -> 
-  custom:scripting/monoscript/fileName/SecureParameters.cs: f1d88e84e15861efec1fee7304224660 -> 
-  custom:scripting/monoscript/fileName/UnnamedMessage.cs: c398b7d7cb47e9d74c47301c7552078d -> 
-  custom:scripting/monoscript/fileName/NullNetworkMetrics.cs: 470cdbef1e1173c806470b2cf2f35b2f -> 
-  custom:scripting/monoscript/fileName/UnsafeScratchAllocator.cs: 4face5614d3825fa48ae79289f69aa1b -> 
-  custom:scripting/monoscript/fileName/UIntFloat.cs: 94aaf89d89cbe558dfbe57e0eb69f75e -> 
-  custom:scripting/monoscript/fileName/BurstCompatibilityTests.cs: 7d7c24becd314d1054104dfc27a7e1e1 -> 
-  custom:scripting/monoscript/fileName/SimulatorUtility.cs: f0e0732866b862d8bc77bce3114331fa -> 
-  custom:scripting/monoscript/fileName/BitField.cs: 435cec31f980ea5ce1d1e89b13684a57 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/NativeQueue.cs: 0e981ce8b9429d0fa5b8752248b5a6fd -> 
-  custom:scripting/monoscript/fileName/NetworkVariableDeltaMessage.cs: 001e7d6f7ca3478ada2109862aa4c07b -> 
-  custom:scripting/monoscript/fileName/RelayMessageRelay.cs: c98ae91cd46c469d0457213817d83a4e -> 
-  custom:scripting/monoscript/fileName/NativeArrayExtensions.cs: 480ae80e25a67512135651e8db7b75bc -> 
-  custom:scripting/monoscript/fileName/QuaternionCompressor.cs: 4a0797597600d5c1e3b3cea2e469befc -> 
-  custom:scripting/monoscript/fileName/NetworkRigidbody2D.cs: 99601db3013c9f01627c572e6735e1bb -> 
-  custom:scripting/monoscript/fileName/NetworkManagerHooks.cs: 8945a80465ac4eac42db4a904b158b67 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefab.cs: 8c18350563dca0564346732dd42dddda -> 
-  custom:scripting/monoscript/fileName/AtomicFreeList.cs: a8dd8908b6032505859286fb3945a4ab -> 
-  custom:scripting/monoscript/fileName/NativeSort.cs: 928f4174a21486fd6ff139d2de03d8ce -> 
-  custom:scripting/monoscript/fileName/ParentSyncMessage.cs: 2ce8261636bc853f2b92e8e50083aa6f -> 
-  custom:scripting/monoscript/fileName/PostProcessorReflectionImporterProvider.cs: aec8203d830f7edb79d4140ee801944f -> 
   custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
-  custom:scripting/monoscript/fileName/BatchedReceiveQueue.cs: c6ee3f7d9eb51ca496b00c554cde523d -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/FixedStringParseMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/ClonesManagerWindow.cs: 480fe8f568c4df8018a3dadfa3e69d57 -> 
-  custom:scripting/monoscript/fileName/DefaultMessageSender.cs: c64ad98bb8c1f9b0a83db1b6d1e8e1fc -> 
-  custom:scripting/monoscript/fileName/NetworkTransform.cs: 25045a9deee8e8ac3f0b4df98baefd8e -> 
-  custom:scripting/monoscript/fileName/Utilities.cs: b525f78d26b94e5cac8fd179dbc84df3 -> 3b7f3ca8a797f5aa000bca2637e43e42
-  custom:scripting/monoscript/fileName/NetcodeForGameObjectsProjectSettings.cs: 85a8a381728f00963dcc3a11b813cf91 -> 
-  custom:scripting/monoscript/fileName/ValidateCopiedFoldersIntegrity.cs: 56f406d9e913419ab82dfb77d147492d -> 
-  custom:scripting/monoscript/fileName/AllocatorManager.cs: 38c7b2bd1aa48880a7078890d02430db -> 
-  custom:scripting/monoscript/fileName/RelayMessageConnectRequest.cs: 122325b519d1611e2cfe0cad71f104c8 -> 
-  custom:scripting/monoscript/fileName/HMACSHA256.cs: 075451742cd7018a1d69316af47006de -> 
-  custom:scripting/monoscript/fileName/FixedStringAppendMethods.cs: fcdca1abcdc2fd593bd0d11b27b9b2c5 -> 
-  custom:scripting/monoscript/fileName/NetworkMessageManager.cs: a6627fe7f5b963efa577471b5bd0529e -> 
-  custom:scripting/monoscript/fileName/DisconnectReasonMessage.cs: 8dc28c089afa7a92671d3399506a209b -> 
-  custom:scripting/monoscript/fileName/ILPPMessageProvider.cs: b7d7beb99225402ea4614285f5c112d2 -> 
-  custom:scripting/monoscript/fileName/BatchedSendQueue.cs: 3cf9ab588444af87b39254394c6fdf73 -> 
-  custom:scripting/monoscript/fileName/IDeferredNetworkMessageManager.cs: 6ca6ce9b7cd936c1e2ae9670e4a26257 -> 
-  custom:scripting/monoscript/fileName/RoslynAnalyzerFix.cs: afe82e9eb31cc2201e3885e0f9b241a3 -> 
-  custom:scripting/monoscript/fileName/SpawnStateException.cs: d1fd3409f01fcb9be2d92f83c533701b -> 
-  custom:scripting/monoscript/fileName/NetworkContext.cs: 33aca22b6aaa264afdb95b0f787ec6eb -> 
-  custom:scripting/monoscript/fileName/CustomMessageManager.cs: 4ed046a118960409ed5f873d7e1c2e1b -> 
-  custom:scripting/monoscript/fileName/INetworkSerializableILPP.cs: dac3026a3ef1bf8b897646aee1b236ff -> 
-  custom:scripting/monoscript/fileName/BytePacker.cs: 1f03268f301c1074858245210473c9e6 -> 
-  custom:scripting/monoscript/fileName/NetcodeForGameObjectsSettings.cs: c0fb31a1cceb2a21dfeb25ce22eb4519 -> 
-  custom:scripting/monoscript/fileName/BufferSerializerWriter.cs: 2135e5db35b5dcf9ddaf677d1376666c -> 
-  custom:scripting/monoscript/fileName/UnsafeHashSet.cs: 5e2ab9cfe81e04de31d18dbafae66b8c -> 
-  custom:scripting/monoscript/fileName/NetworkDriver.cs: c78adf1a0dcc3d22c5dee607983cd012 -> 
-  custom:scripting/monoscript/fileName/NativeStream.cs: f901789de80a9ec3530751f3f60eb2f8 -> 
-  custom:scripting/monoscript/fileName/ChangeOwnershipMessage.cs: e9a065956b97e56545e7ce90157bf718 -> 
-  custom:scripting/monoscript/fileName/NotServerException.cs: e7549090787893621f5b712cd26a7ce7 -> 
   custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
-  custom:scripting/monoscript/fileName/INetworkSerializeByMemcpy.cs: 02e3a255a0b7c13ccb9c8c4908f3fbe4 -> 
-  custom:scripting/monoscript/fileName/NetworkEventQueue.cs: 821ee5df3b5b0b5de6c7d82ae4e0d639 -> 
-  custom:scripting/monoscript/fileName/Base64.cs: 8c9045fb9419d92a6de76451e0d2db21 -> 
-  custom:scripting/monoscript/fileName/Project.cs: 25b2358f5b63e9e868b3730f2625984e -> 90647cc400823b41df847a6cbfc29026
-  custom:scripting/monoscript/fileName/INetworkMessageSender.cs: 52a02c5c5c403cb34cf0b225c71180cc -> 
-  custom:scripting/monoscript/fileName/RpcAttributes.cs: 87cb1825773f28238aad8680d31f2d29 -> 
-  custom:scripting/monoscript/fileName/RpcParams.cs: 44cf8e87d7643357e3bc1e8ef4f647f7 -> 
-  custom:scripting/monoscript/fileName/NetworkConstants.cs: c6aed9d6dda697ae574c3b8aa7685e58 -> 
-  custom:scripting/monoscript/fileName/NetworkManagerHelper.cs: 78ef2af65b64b9c7486a0908bdddfa87 -> 
-  custom:scripting/monoscript/fileName/Preferences.cs: fc1c65ff2d399f273bddd63c0e50bbd2 -> 
-  custom:scripting/monoscript/fileName/GenerateSerializationForGenericParameterAttribute.cs: c089dbab34a4d61f957719358d4f42cd -> 
-  custom:scripting/monoscript/fileName/ByteUnpacker.cs: 904cd14b3f30b92353a7743b06ced28a -> 
-  custom:scripting/monoscript/fileName/INetworkMessageILPP.cs: 6b6f5e9624f5a339c239e9ecbec8dd47 -> 
-  custom:scripting/monoscript/fileName/FileUtilities.cs: a10705d35c8944054a18f4d05623f27c -> 771f43e67585e5fce72a68dee6f48c42
-  custom:scripting/monoscript/fileName/RelayServerData.cs: d2d8dc285f830ad4928018166de595e6 -> 
-  custom:scripting/monoscript/fileName/RpcMessages.cs: 185a12c3568890172287041522f9a79a -> 
-  custom:scripting/monoscript/fileName/PostProcessorReflectionImporter.cs: 515038af6ae3bfe26acd479f4bb2a0b4 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/NetworkParams.cs: 3d9ef90f50f31629c0eed901a2880111 -> 
-  custom:scripting/monoscript/fileName/UnreliableSequencedPipelineStage.cs: 1cdc2db533fd37672ea69d5662917b06 -> 
-  custom:scripting/monoscript/fileName/UnsafeHashMap.cs: b3f5721fae0d7c31e90553a3a7b10d6f -> 
-  custom:scripting/monoscript/fileName/DestroyObjectMessage.cs: 15a670d028872294a71fb552cc121054 -> 
-  custom:scripting/monoscript/fileName/BaselibNetworkArray.cs: f7e7d62e1934b21465c75f7a44dab169 -> 
-  custom:scripting/monoscript/fileName/BufferSerializer.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/ComponentFactory.cs: 14bb3cb9c435887d692ae3506125ec6b -> 
-  custom:scripting/monoscript/fileName/InvalidParentException.cs: 993f25198a317e590068e96e262f6354 -> 
-  custom:scripting/monoscript/fileName/RelayHMACKey.cs: 0a11fe2bda777ba273883ca0c3f24b7e -> 
-  custom:scripting/monoscript/fileName/IReaderWriter.cs: e423429d8b3776a14f7b467db3885d63 -> 
-  custom:scripting/monoscript/fileName/FixedStringUtils.cs: 114eb023c5774372990da700f8c2456f -> 
-  custom:scripting/monoscript/fileName/NativeBitArray.cs: 744f6e29d77560522710809b14557136 -> 
-  custom:scripting/monoscript/fileName/NativeMultiHashMap.cs: 232e6e149bb81d9963c795b02084c8f4 -> 
-  custom:scripting/monoscript/fileName/xxHash3.StreamingState.cs: 73af6f62e3ccfaecb2c43562b8c60a23 -> 
-  custom:scripting/monoscript/fileName/CollectionsExamples.cs: 5c3c7e50116fce8e4387bbf68d9603e4 -> 
-  custom:scripting/monoscript/fileName/HalfVector3.cs: ac9bc2d1b8640d4ccb0d1df94db69e52 -> 
-  custom:scripting/monoscript/fileName/IPCNetworkInterface.cs: edd45f2f3d4a1467bbcd6370a5251934 -> 
-  custom:scripting/monoscript/fileName/ClonesManager.cs: 56d4e9ba876d20feaa256fa586b68f63 -> 
-  custom:scripting/monoscript/fileName/TransportFunctionPointer.cs: 90647cc400823b41df847a6cbfc29026 -> 
-  custom:scripting/monoscript/fileName/ReleasedNetworkId.cs: 5c69d1641d908cf6b6e3b619d8fba892 -> 
-  custom:scripting/monoscript/fileName/GenerateSerializationForTypeAttribute.cs: 48c7023597b4c6f3b6eafa279b9d2d23 -> 
-  custom:scripting/monoscript/fileName/FragmentationPipelineStage.cs: f5c80d6bb8a2010baf914912a146535d -> 
-  custom:scripting/monoscript/fileName/MetricHooks.cs: 3cbfdf603d903a15295cd064934d5e39 -> 
-  custom:scripting/monoscript/fileName/RelayMessageHeader.cs: 3a97bdb09130b853737ceb480d8d8ffa -> 
-  custom:scripting/monoscript/fileName/NetworkDriverRelayExtensions.cs: cd52b20ca1f7b6857c56d6e088d0a0e1 -> 
-  custom:scripting/monoscript/fileName/DefaultSceneManagerHandler.cs: c6c30a91b1e5a3b7e54576c3b8581893 -> 
-  custom:scripting/monoscript/fileName/UnsafeText.cs: 252c4eef6eb1893b89e3a585d7b05a84 -> 
-  custom:scripting/monoscript/fileName/EditorQuit.cs: 0d99020733aa7608452e4fa0cdb5cb7e -> 
-  custom:scripting/monoscript/fileName/INetworkSerializable.cs: a80c6eca2e427ab3a50ca08dcab3a083 -> 
-  custom:scripting/monoscript/fileName/NullPipelineStage.cs: cfdd3afb432e431460ddc39ad47d5cac -> 
-  custom:scripting/monoscript/fileName/INetworkHooks.cs: b0f6a9717ad435057a76d13a57d82e98 -> 
-  custom:scripting/monoscript/fileName/NetworkProtocols.cs: 69ec420e8f7a3ff6155e5a4c7adf9325 -> 
-  custom:scripting/monoscript/fileName/NetworkPrefabHandler.cs: ee3fff20f3eb3d51a2c4e3ea26c293d8 -> 
-  custom:scripting/monoscript/fileName/CollectionHelper.cs: f2f5ea727aa85849eaae278bca48a36c -> 
-  custom:scripting/monoscript/fileName/NetworkSceneManager.cs: e85d1ad401afdfd086e2a5281b90cead -> 
-  custom:scripting/monoscript/fileName/ServerLogMessage.cs: c93ff6a1699a1762d066f036a4ce6711 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 207413.191652 seconds.
+  Time since last request: 1228.808809 seconds.
   path: Assets/UniversalRenderPipelineGlobalSettings.asset
   artifactKey: Guid(9aed983487b243543979293d14add950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(9aed983487b243543979293d14add950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2ce24f6a5c93f0dc1c71943b6268be') in 0.054474 seconds
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(9aed983487b243543979293d14add950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2ce24f6a5c93f0dc1c71943b6268be') in 0.051759 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 209.955025 seconds.
-  path: Assets/SpawnObjectInAR.cs
-  artifactKey: Guid(a944a55ee1de649419dc931d29b08f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SpawnObjectInAR.cs using Guid(a944a55ee1de649419dc931d29b08f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594e453d11922975439fb3bd100c69e7') in 0.001025 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 199.704227 seconds.
-  path: Assets/PlacementManager2.cs
-  artifactKey: Guid(6fa2f32ae73a4b44d80cd531b35419de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlacementManager2.cs using Guid(6fa2f32ae73a4b44d80cd531b35419de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c372ef4d3458a311069ecc70430ab2') in 0.006753 seconds
+  Time since last request: 6.955597 seconds.
+  path: Assets/Scenes/main_scene.unity
+  artifactKey: Guid(890249be201c6bc4ebe76ddbaedc24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main_scene.unity using Guid(890249be201c6bc4ebe76ddbaedc24a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2953f04e2247b428c674b4aa1d69c738') in 0.000856 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
