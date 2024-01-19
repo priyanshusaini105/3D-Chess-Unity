@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 230185129}
-  - component: {fileID: 230185128}
   - component: {fileID: 230185130}
   m_Layer: 0
   m_Name: IManager
@@ -141,22 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &230185128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230185127}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 393cc03b6694a284f941c68fb1d5ccbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arCam: {fileID: 1299378296}
-  _raycastManager: {fileID: 527692159}
-  crosshair: {fileID: 1314516507}
-  prefabToSpawn: {fileID: 968196033}
 --- !u!4 &230185129
 Transform:
   m_ObjectHideFlags: 0
@@ -451,8 +434,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 543702615}
   m_Father: {fileID: 0}
@@ -1335,12 +1318,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
---- !u!1 &968196033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6878849825424696354, guid: 91fa4428e8296f2448ea8900e5eff9d9,
-    type: 3}
-  m_PrefabInstance: {fileID: 2101165574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1015859477
 GameObject:
   m_ObjectHideFlags: 0
