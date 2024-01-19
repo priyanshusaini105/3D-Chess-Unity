@@ -15,7 +15,7 @@ D:/Unity/3D-Chess-Unity
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49754
+61797
 Successfully changed project path to: D:/Unity/3D-Chess-Unity
 D:/Unity/3D-Chess-Unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity/3D-Chess-Unity
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2676] Host "[IP] 192.168.225.82 [Port] 0 [Flags] 2 [Guid] 3344356781 [EditorId] 3344356781 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22308] Host "[IP] 192.168.21.82 [Port] 0 [Flags] 2 [Guid] 251377537 [EditorId] 251377537 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2676] Host "[IP] 192.168.225.82 [Port] 0 [Flags] 2 [Guid] 3344356781 [EditorId] 3344356781 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22308] Host "[IP] 192.168.21.82 [Port] 0 [Flags] 2 [Guid] 251377537 [EditorId] 251377537 [Version] 1048832 [Id] WindowsEditor(7,Abhi-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 1555.61 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 1428.42 ms, found 8 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.17f1 (4fc78088f837)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -70,63 +70,578 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.027105 seconds.
-- Loaded All Assemblies, in  3.433 seconds
+Registered in 0.301843 seconds.
+- Loaded All Assemblies, in  7.636 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 693 ms
+Android Extension - Scanning For ADB Devices 433 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.543 seconds
-Domain Reload Profiling: 4973ms
-	BeginReloadAssembly (439ms)
+- Finished resetting the current domain, in  0.913 seconds
+Domain Reload Profiling: 8548ms
+	BeginReloadAssembly (5375ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (4ms)
-	RebuildCommonClasses (818ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (178ms)
-	LoadAllAssembliesAndSetupDomain (1957ms)
-		LoadAssemblies (430ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (483ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (380ms)
+	LoadAllAssembliesAndSetupDomain (1384ms)
+		LoadAssemblies (5367ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1951ms)
-			TypeCache.Refresh (1945ms)
-				TypeCache.ScanAssembly (1345ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (1544ms)
+		AnalyzeDomain (1378ms)
+			TypeCache.Refresh (1376ms)
+				TypeCache.ScanAssembly (1119ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (914ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1395ms)
+		SetupLoadedEditorAssemblies (844ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (974ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (645ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (275ms)
-			ProcessInitializeOnLoadMethodAttributes (131ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  7.424 seconds
-Refreshing native plugins compatible for Editor in 97.02 ms, found 11 plugins.
+- Loaded All Assemblies, in  7.980 seconds
+Refreshing native plugins compatible for Editor in 12.43 ms, found 8 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.569 seconds
+Domain Reload Profiling: 10544ms
+	BeginReloadAssembly (242ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (7615ms)
+		LoadAssemblies (7413ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (344ms)
+			TypeCache.Refresh (292ms)
+				TypeCache.ScanAssembly (272ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2570ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2351ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (360ms)
+			ProcessInitializeOnLoadMethodAttributes (1828ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 11.58 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4760 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 5208.
+Memory consumption went from 201.1 MB to 198.9 MB.
+Total: 11.939000 ms (FindLiveObjects: 1.514700 ms CreateObjectMapping: 0.317600 ms MarkObjects: 7.624600 ms  DeleteObjects: 2.479300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81152.866927 seconds.
+  path: Assets/Prefabs/White_King.prefab
+  artifactKey: Guid(49b6a10cd83dc7f40b8a9575b992f22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/White_King.prefab using Guid(49b6a10cd83dc7f40b8a9575b992f22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902881d5d24488bb456951b122c1ba71') in 0.435838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefabs/Black_King.prefab
+  artifactKey: Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_King.prefab using Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30658462547a5558d297c3f35109a5e') in 0.056408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/chess board 3d model.prefab
+  artifactKey: Guid(836583c91d962364e82ca203a9ef3176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/chess board 3d model.prefab using Guid(836583c91d962364e82ca203a9ef3176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdcd0a91b49a2330d973fd680c3ee45') in 0.375343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1010
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.536 seconds
+Refreshing native plugins compatible for Editor in 11.20 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.913 seconds
+Domain Reload Profiling: 2447ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (262ms)
+		LoadAssemblies (343ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1913ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (619ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (225ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 12.46 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.2 MB). Loaded Objects now: 5220.
+Memory consumption went from 179.7 MB to 177.5 MB.
+Total: 10.698600 ms (FindLiveObjects: 1.053700 ms CreateObjectMapping: 0.382200 ms MarkObjects: 6.446400 ms  DeleteObjects: 2.812200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.452 seconds
+Refreshing native plugins compatible for Editor in 9.54 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.965 seconds
+Domain Reload Profiling: 1415ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (221ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (966ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (567ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (253ms)
+			ProcessInitializeOnLoadMethodAttributes (199ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 11.70 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.3 MB). Loaded Objects now: 5224.
+Memory consumption went from 181.7 MB to 179.4 MB.
+Total: 10.165600 ms (FindLiveObjects: 0.949500 ms CreateObjectMapping: 0.183800 ms MarkObjects: 5.818400 ms  DeleteObjects: 3.210800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.467 seconds
+Refreshing native plugins compatible for Editor in 10.02 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.999 seconds
+Domain Reload Profiling: 1464ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (222ms)
+		LoadAssemblies (290ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (999ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (599ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (223ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 11.67 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.3 MB). Loaded Objects now: 5228.
+Memory consumption went from 183.6 MB to 181.3 MB.
+Total: 12.344900 ms (FindLiveObjects: 1.008700 ms CreateObjectMapping: 0.168100 ms MarkObjects: 8.058200 ms  DeleteObjects: 3.106100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.691 seconds
+Refreshing native plugins compatible for Editor in 39.23 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.850 seconds
+Domain Reload Profiling: 4541ms
+	BeginReloadAssembly (717ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (57ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (233ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (859ms)
+		LoadAssemblies (898ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (132ms)
+			TypeCache.Refresh (32ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (78ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (2851ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (60ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (577ms)
+			ProcessInitializeOnLoadMethodAttributes (431ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 31.70 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4642 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.2 MB). Loaded Objects now: 5233.
+Memory consumption went from 185.5 MB to 183.3 MB.
+Total: 8.034900 ms (FindLiveObjects: 0.694500 ms CreateObjectMapping: 0.205200 ms MarkObjects: 5.055800 ms  DeleteObjects: 2.076300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.739 seconds
+Refreshing native plugins compatible for Editor in 14.23 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.818 seconds
+Domain Reload Profiling: 2555ms
+	BeginReloadAssembly (228ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (423ms)
+		LoadAssemblies (490ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (74ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1818ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (783ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (317ms)
+			ProcessInitializeOnLoadMethodAttributes (296ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 11.00 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4643 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (2.4 MB). Loaded Objects now: 5238.
+Memory consumption went from 187.7 MB to 185.3 MB.
+Total: 8.171600 ms (FindLiveObjects: 0.723200 ms CreateObjectMapping: 0.490000 ms MarkObjects: 5.045500 ms  DeleteObjects: 1.910200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 613.051204 seconds.
+  path: Assets/Art Deco Furniture/Prefabs
+  artifactKey: Guid(606bd7749988a3a41af6299ee8d7f635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Deco Furniture/Prefabs using Guid(606bd7749988a3a41af6299ee8d7f635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3148c22caff249a83a1fb70f2dacd62') in 0.015440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.790 seconds
+Refreshing native plugins compatible for Editor in 25.49 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:48)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+InvalidCastException: Specified cast is not valid.
+  at Unity.VisualScripting.PluginConfiguration.LoadOrCreateProjectSettingsAsset () [0x0003e] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:184 
+  at Unity.VisualScripting.PluginConfiguration.LoadProjectSettings () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:149 
+  at Unity.VisualScripting.PluginConfiguration.Load () [0x00006] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:75 
+  at Unity.VisualScripting.PluginConfiguration.Initialize () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:23 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x004a3] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:199 
+Rethrow as Exception: Failed to initialize plugin module 'VisualScripting.Core.BoltCoreConfiguration'.
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.VisualScripting.PluginContainer:Initialize() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:204)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed(Boolean) (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48)
+Unity.VisualScripting.VSUsageUtility:.cctor() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs Line: 204)
+
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
   at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
   at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
@@ -151,1307 +666,198 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  7.264 seconds
-Domain Reload Profiling: 15283ms
-	BeginReloadAssembly (441ms)
+- Finished resetting the current domain, in 23.151 seconds
+Domain Reload Profiling: 27939ms
+	BeginReloadAssembly (832ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (24ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (88ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (190ms)
-	LoadAllAssembliesAndSetupDomain (7265ms)
-		LoadAssemblies (5324ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (377ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (3797ms)
+		LoadAssemblies (1918ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1629ms)
-			TypeCache.Refresh (1373ms)
-				TypeCache.ScanAssembly (1155ms)
-			ScanForSourceGeneratedMonoScriptInfo (201ms)
-			ResolveRequiredComponents (50ms)
-	FinalizeReload (7265ms)
+		AnalyzeDomain (2158ms)
+			TypeCache.Refresh (2046ms)
+				TypeCache.ScanAssembly (806ms)
+			ScanForSourceGeneratedMonoScriptInfo (81ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (23153ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (6704ms)
+		SetupLoadedEditorAssemblies (4992ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (54ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (50ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (268ms)
-			ProcessInitializeOnLoadAttributes (3233ms)
-			ProcessInitializeOnLoadMethodAttributes (3112ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (13ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (1468ms)
+			ProcessInitializeOnLoadMethodAttributes (3320ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (4ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
-Refreshing native plugins compatible for Editor in 34.66 ms, found 11 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 11.86 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7762 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 321 unused Assets / (2.1 MB). Loaded Objects now: 8029.
-Memory consumption went from 317.3 MB to 315.2 MB.
-Total: 108.632700 ms (FindLiveObjects: 2.530000 ms CreateObjectMapping: 1.417000 ms MarkObjects: 98.466000 ms  DeleteObjects: 6.215900 ms)
+Unloading 7736 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 815 unused Assets / (6.1 MB). Loaded Objects now: 8116.
+Memory consumption went from 464.1 MB to 458.0 MB.
+Total: 188.266000 ms (FindLiveObjects: 5.136900 ms CreateObjectMapping: 1.018100 ms MarkObjects: 153.801900 ms  DeleteObjects: 28.306300 ms)
 
+Prepare: number of updated asset objects reloaded= 33
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 2605.368678 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-3_comp_light.exr
-  artifactKey: Guid(bf555ef4267b1f141bf0537cd5187aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-3_comp_light.exr using Guid(bf555ef4267b1f141bf0537cd5187aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43d288817218e574f7a6d1c0b2eb526') in 0.349111 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Chair_2.prefab
-  artifactKey: Guid(63d1dcb66a43f6048b46981a4abc3fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Chair_2.prefab using Guid(63d1dcb66a43f6048b46981a4abc3fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470192bd7c8a24547eb68375677d4e33') in 0.683790 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_Albedo.tif
-  artifactKey: Guid(daabdafdc2d4a3b4b820f224213f0035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_Albedo.tif using Guid(daabdafdc2d4a3b4b820f224213f0035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0316ef7e96937b104f88f13c7b2287dd') in 0.043201 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Chair_MetallicSmooth.tif
-  artifactKey: Guid(1b213521cd84364439c5fb030fd7aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Chair_MetallicSmooth.tif using Guid(1b213521cd84364439c5fb030fd7aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a7c0fa0e173564e690c6eb9e362f08') in 0.048194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/XR/Settings/ARKitSettings.asset
-  artifactKey: Guid(47e745be929250c48a7d0e6fa110b221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Settings/ARKitSettings.asset using Guid(47e745be929250c48a7d0e6fa110b221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f69e02d2454194bfade5c0373072dc9') in 0.002806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000424 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-4_comp_light.exr
-  artifactKey: Guid(feb005ad6b6e2f84ca43e0b2dac8194e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-4_comp_light.exr using Guid(feb005ad6b6e2f84ca43e0b2dac8194e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a12f225ce2ce8185daa8538db9049a5') in 0.040100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/DoorPost_Albedo.tif
-  artifactKey: Guid(09fbe434f49e3d14db90d6bcc8ab8383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/DoorPost_Albedo.tif using Guid(09fbe434f49e3d14db90d6bcc8ab8383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f122e575090177ed7e8d5b65f94759b') in 0.043724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Grass_BaseColor.png
-  artifactKey: Guid(ad8132bffce6a9e4096181f1f04d2b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Grass_BaseColor.png using Guid(ad8132bffce6a9e4096181f1f04d2b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82969b5818c5c1e2187971b9b9668001') in 0.046863 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/_ARPortal/Source Files/Animations/Witcheshut/BookOfSpells@Animation.fbx
-  artifactKey: Guid(83c217d13a9930c4181a945d55a69c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Animations/Witcheshut/BookOfSpells@Animation.fbx using Guid(83c217d13a9930c4181a945d55a69c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea4fef7a586cef4e97121f45cb77afb') in 0.215887 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-2_comp_dir.png
-  artifactKey: Guid(48b6f623f6d189948b0ddb09057a81b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-2_comp_dir.png using Guid(48b6f623f6d189948b0ddb09057a81b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9eb4420ccf6086e4c0d39819cb386e8') in 0.052270 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Floor_Corridor_Occlusion.tif
-  artifactKey: Guid(19dbd5766a358144d94e26ebae51f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Floor_Corridor_Occlusion.tif using Guid(19dbd5766a358144d94e26ebae51f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f4550b8425d5e24ed5c4d4241810d5') in 0.052599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/UI/Button.prefab
-  artifactKey: Guid(9863883327f4a934f8322795e26762e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/UI/Button.prefab using Guid(9863883327f4a934f8322795e26762e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206729185cc1b0e5bfb0e19d6ac362ef') in 0.027953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Normal.tif
-  artifactKey: Guid(b2bf2fce6ac5acf41b89f5759488edae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Normal.tif using Guid(b2bf2fce6ac5acf41b89f5759488edae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe581522915b853f1a6bad75692f60c') in 0.057259 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_Normal.tif
-  artifactKey: Guid(bc5dcc79315da614384872c43bc93923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_Normal.tif using Guid(bc5dcc79315da614384872c43bc93923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bc47291fb52135be506f0505a71d63') in 0.044795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Characters/Ghost.fbx
-  artifactKey: Guid(563ac48ff656d49478fd93213f4c0eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Characters/Ghost.fbx using Guid(563ac48ff656d49478fd93213f4c0eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce34948e30b3d0a3e9ed15af1c61afb9') in 0.150320 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 58
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/BookBrown.fbx
-  artifactKey: Guid(69d25300cfe0ff34cab94eabf22210ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/BookBrown.fbx using Guid(69d25300cfe0ff34cab94eabf22210ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80583a84c4389f8d1fa47c5779145ca5') in 0.097105 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/CaudronFlush.fbx
-  artifactKey: Guid(825f6c1d307a67b41822de80e3aa4f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/CaudronFlush.fbx using Guid(825f6c1d307a67b41822de80e3aa4f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247f381b9807839b928788b1bfede0ee') in 0.117493 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/Dust/DustParticles.prefab
-  artifactKey: Guid(375c807b465f68d4889b7ba4d5014197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/Dust/DustParticles.prefab using Guid(375c807b465f68d4889b7ba4d5014197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c546cec66f684b48f23fa62bddc85e1') in 0.091791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/System/CCIndicator.prefab
-  artifactKey: Guid(e391440c91e82f8459029f1bce8f6fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/System/CCIndicator.prefab using Guid(e391440c91e82f8459029f1bce8f6fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c114b1fa3bd18ce0d5012413ddf9b4d7') in 0.007786 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Characters/JohnLemon.fbx
-  artifactKey: Guid(b44f3940c4940544a8c2c6aee5fa086f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Characters/JohnLemon.fbx using Guid(b44f3940c4940544a8c2c6aee5fa086f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36cab656b5341d447417fa551119bbe') in 0.163195 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Clock.prefab
-  artifactKey: Guid(836b935a856cf8842a48d2069e17341f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Clock.prefab using Guid(836b935a856cf8842a48d2069e17341f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f6e131d42a2e3dc84f47e133f4e1dd') in 0.048574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Chair_Occlusion.tif
-  artifactKey: Guid(25b06585b03a2d04186cd8b4f92ccc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Chair_Occlusion.tif using Guid(25b06585b03a2d04186cd8b4f92ccc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8803ff6bf7a54c866e8e3147ce20a229') in 0.041481 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-1_comp_light.exr
-  artifactKey: Guid(9e4c7681f0696c84caa6c8df59fe5c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-1_comp_light.exr using Guid(9e4c7681f0696c84caa6c8df59fe5c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10645ac13be2f17d639b3d9e015f49d5') in 0.048014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Prefabs/Black_Knight.prefab
-  artifactKey: Guid(3cee9b547a45f1e47b92660172edb0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Black_Knight.prefab using Guid(3cee9b547a45f1e47b92660172edb0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28f0254b0391dc94827245fca06cfd2') in 0.063503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/BedSide_Albedo.tif
-  artifactKey: Guid(b4d856ea788f6514cb8dc3c068fb48a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/BedSide_Albedo.tif using Guid(b4d856ea788f6514cb8dc3c068fb48a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef0e827eb3d56597f95a94a330b2b3e') in 0.043385 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/BookVanilla.fbx
-  artifactKey: Guid(bf943320b75f4c7459c045b229d3f6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/BookVanilla.fbx using Guid(bf943320b75f4c7459c045b229d3f6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20eb479640355caec7a8e83a2ff7a0f5') in 0.179418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-0_comp_light.exr
-  artifactKey: Guid(2eef0c2228953fc4499945dc90855ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-0_comp_light.exr using Guid(2eef0c2228953fc4499945dc90855ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3166738470c8507197f4fa1c2d30573') in 0.086969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/BookSignIcon.FBX
-  artifactKey: Guid(4ad8130979943274488648ade2843261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/BookSignIcon.FBX using Guid(4ad8130979943274488648ade2843261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55fa0fd8a2d1516ce7969941ab900689') in 0.067468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Prefabs/Black_King.prefab
-  artifactKey: Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Black_King.prefab using Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7166a7424863b2841bc43b7aed844eb7') in 0.065583 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Bed_MetallicSmooth.tif
-  artifactKey: Guid(e142a5b58f3559844b4be8596b56c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Bed_MetallicSmooth.tif using Guid(e142a5b58f3559844b4be8596b56c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f24d76a8efba0e510a4ac20fb7eddfa') in 0.040214 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/PictureFrame_GhostMan.FBX
-  artifactKey: Guid(ff679918594d2cb44996e920ec16ca62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/PictureFrame_GhostMan.FBX using Guid(ff679918594d2cb44996e920ec16ca62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be6b08dbd6a069f7f48fb2e8cd6d9e1') in 0.089001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-0_comp_dir.png
-  artifactKey: Guid(ace65b6d363a9aa499b0435e18768514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-0_comp_dir.png using Guid(ace65b6d363a9aa499b0435e18768514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edce13aa6483dc7dddc2c2d31aa1baf') in 0.041184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Cthulhu_Lamp_Albedo.tif
-  artifactKey: Guid(6c90b46487020c3469499200b000cdb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Cthulhu_Lamp_Albedo.tif using Guid(6c90b46487020c3469499200b000cdb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07588a7ff07810382000051cd203f1c3') in 0.038480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_ARPortal/Source Files/Shaders/Toon/CustomLighting.hlsl
-  artifactKey: Guid(933a4c278452da5439f18725676f1720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Shaders/Toon/CustomLighting.hlsl using Guid(933a4c278452da5439f18725676f1720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd37bf03b8c6d1365f23b4a7376122b') in 0.003702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Fireplace.prefab
-  artifactKey: Guid(de12a8ff68064d149b96fd74850abce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Fireplace.prefab using Guid(de12a8ff68064d149b96fd74850abce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263c777bde1457817220f5eabe743494') in 0.041288 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Emissive.tif
-  artifactKey: Guid(be14171909e301d4c8c926d395216a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Emissive.tif using Guid(be14171909e301d4c8c926d395216a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1965eace0fdc8d4db8d4c45ebbbc5b10') in 0.041770 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/DoorPost_MetallicSmooth.tif
-  artifactKey: Guid(d87c5e66b380a074fa2264fd4da58aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/DoorPost_MetallicSmooth.tif using Guid(d87c5e66b380a074fa2264fd4da58aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c976606ba3df8d246bbd094e69e2725f') in 0.049194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Prefabs/White_King.prefab
-  artifactKey: Guid(49b6a10cd83dc7f40b8a9575b992f22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/White_King.prefab using Guid(49b6a10cd83dc7f40b8a9575b992f22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd362fc1b2caf4d865381c586b109a5a') in 0.040231 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff
-  artifactKey: Guid(c258689f69bdf4f3c9c06075929e847c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_normalmap_S.tiff using Guid(c258689f69bdf4f3c9c06075929e847c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdaccb58d5e52059bb2903afe021245') in 0.043373 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/Wristwatch.fbx
-  artifactKey: Guid(e1913292ecadc644e93488c1e3d216e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/Wristwatch.fbx using Guid(e1913292ecadc644e93488c1e3d216e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6153a20687a07e59b6287df2b0fb5433') in 0.204640 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-3_comp_dir.png
-  artifactKey: Guid(80632f7e0053c194cbaa686f180688b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-3_comp_dir.png using Guid(80632f7e0053c194cbaa686f180688b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce27ddeb9c20bd3e5f6109c1e603828') in 0.044850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/CandleStick_Normal.tif
-  artifactKey: Guid(45ab703b0a5a43c4698f496148039fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/CandleStick_Normal.tif using Guid(45ab703b0a5a43c4698f496148039fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ce9536e9502613fb0fe27c5737f2ef') in 0.035974 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-3_comp_dir.png
-  artifactKey: Guid(9653d69c3d85d714181cd8c589cf533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-3_comp_dir.png using Guid(9653d69c3d85d714181cd8c589cf533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9dad09200a4a64e148f2e9030787d7') in 0.042561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Floor_Corridor_Albedo.tif
-  artifactKey: Guid(f5ff39d7903508740a7f4625ca6d8deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Floor_Corridor_Albedo.tif using Guid(f5ff39d7903508740a7f4625ca6d8deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df18043bbe57f4fa3dee26f0f882a8be') in 0.040709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/Bubbles/BubblesRising.prefab
-  artifactKey: Guid(037998945ed1e6c4e928736f80182f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/Bubbles/BubblesRising.prefab using Guid(037998945ed1e6c4e928736f80182f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f2992805058c176ca1baa8338db999') in 0.055060 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Clock_Albedo.tif
-  artifactKey: Guid(efe1f09805965e647a2bec8250b72349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Clock_Albedo.tif using Guid(efe1f09805965e647a2bec8250b72349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df3b3dbdd4b37d9fc1c15a9ea149adc') in 0.037533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/_ARPortal/Prefabs/Portals/JohnLemon_VerticalPortal__PictureFrame.prefab
-  artifactKey: Guid(77aef2b178b0c7c4bb6639073cbcceb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Portals/JohnLemon_VerticalPortal__PictureFrame.prefab using Guid(77aef2b178b0c7c4bb6639073cbcceb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984fa800e08d77efb2d85c6d64ada769') in 0.060915 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/SharedTextures/CenterGradient.png
-  artifactKey: Guid(1b30e935cd9392841a8c65048733c5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/SharedTextures/CenterGradient.png using Guid(1b30e935cd9392841a8c65048733c5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e084a7ab23ad705efdfb9cd5878da7') in 0.051411 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Monster_Lamp.prefab
-  artifactKey: Guid(c4cfdd186096c1842a81a4293d1b80da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Monster_Lamp.prefab using Guid(c4cfdd186096c1842a81a4293d1b80da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f54f7dada553d8776de5e6abc3a4d5') in 0.042665 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 34
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/Carpet.fbx
-  artifactKey: Guid(379d0e8bcb7263044ba0fbca05d6a5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/Carpet.fbx using Guid(379d0e8bcb7263044ba0fbca05d6a5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0121496325a888acd07a930598c5fd') in 0.097849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_ARPortal/Source Files/Animations/JohnLemon/John@Walk.fbx
-  artifactKey: Guid(da1625e6a723d1745a6ba7f6565a130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Animations/JohnLemon/John@Walk.fbx using Guid(da1625e6a723d1745a6ba7f6565a130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac77ca0022ac926bda8bf22eccbc471') in 0.059725 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 78
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Prefabs/Black_Queen.prefab
-  artifactKey: Guid(faee2d38ed4c40a4680388b7089db13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Black_Queen.prefab using Guid(faee2d38ed4c40a4680388b7089db13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13bc88cfcb918bf2196c60128fed216') in 0.050801 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Candlestick.prefab
-  artifactKey: Guid(d775be624a1870245b73e82cbc922cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Candlestick.prefab using Guid(d775be624a1870245b73e82cbc922cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2878dbbbcf05fc516d5afdf46e8c1a36') in 0.072819 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff
-  artifactKey: Guid(d77b7fa7692814e3ebcebfae45064c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_roughness_S.tiff using Guid(d77b7fa7692814e3ebcebfae45064c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb72acbfcb7c09682834b42a46052320') in 0.042668 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/_ARPortal/Prefabs/Portals/Street_HorizontalPortal_Skylight.prefab
-  artifactKey: Guid(7d6177285db014637bdfdf67805377c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Portals/Street_HorizontalPortal_Skylight.prefab using Guid(7d6177285db014637bdfdf67805377c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b77b6c076a0da5dc35fd3ca8418934c') in 0.401944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-1_comp_light.exr
-  artifactKey: Guid(d160ec3937edd144c9f8eb0f7cc6b471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-1_comp_light.exr using Guid(d160ec3937edd144c9f8eb0f7cc6b471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2aa4b9a435b0a82a4d30c58231c106') in 0.090348 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Cthulhu_Lamp_Normal.tif
-  artifactKey: Guid(8bf179a14d694db4cacb3a54934ee81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Cthulhu_Lamp_Normal.tif using Guid(8bf179a14d694db4cacb3a54934ee81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5767c9bb173a9251918a3fdd269666') in 0.038000 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/Chair_01.FBX
-  artifactKey: Guid(636ef07689e5cb94db6f568e6cb15df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/Chair_01.FBX using Guid(636ef07689e5cb94db6f568e6cb15df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144554fd715fe0d5368580d2328b7999') in 0.052404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-1_comp_dir.png
-  artifactKey: Guid(c28293cfd5b438b4fbde31162f918251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-1_comp_dir.png using Guid(c28293cfd5b438b4fbde31162f918251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a89452a991142bc4d44a2fe361cc96') in 0.050124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/CauldronPipe.fbx
-  artifactKey: Guid(ad77cbe223d0f5e459175facc032b464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/CauldronPipe.fbx using Guid(ad77cbe223d0f5e459175facc032b464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1aaf09a15bc696a8b2c38153533d0f') in 0.113647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-4_comp_light.exr
-  artifactKey: Guid(ea9c66b947cc79a488f6f2fad1558d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-4_comp_light.exr using Guid(ea9c66b947cc79a488f6f2fad1558d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1c9fb796fb7ba0b1c854ea68c1912e') in 0.039265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000432 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Bed_Occlusion.tif
-  artifactKey: Guid(060bae91606084849a8ee3fdc288af12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Bed_Occlusion.tif using Guid(060bae91606084849a8ee3fdc288af12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63278fd432978a071ec08a701ddb24d1') in 0.039706 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/ExitDoor.fbx
-  artifactKey: Guid(9e19df0f58a75e94c94e163777b11ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/ExitDoor.fbx using Guid(9e19df0f58a75e94c94e163777b11ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd3c50c5f2bd639d6b258c5c0135023') in 0.116524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/_ARPortal/Prefabs/Portals/JohnLemon_HorizontalPortal__Trapdoor.prefab
-  artifactKey: Guid(ba82c2ad484f24daab641702ff8a6d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Portals/JohnLemon_HorizontalPortal__Trapdoor.prefab using Guid(ba82c2ad484f24daab641702ff8a6d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea67981846a844e3f9c3b49567a78d8') in 0.064550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/CandleStick.FBX
-  artifactKey: Guid(e22a5b6ca349db446bb2a6d28267d80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/CandleStick.FBX using Guid(e22a5b6ca349db446bb2a6d28267d80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2e91fbebe74740c3d108bb6ae61767') in 0.054029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Occlusion.tif
-  artifactKey: Guid(d0a98f268b60d0441ae4e70dc8560a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Ghost_Occlusion.tif using Guid(d0a98f268b60d0441ae4e70dc8560a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc663a5772a00becc86a3527ff8b71a') in 0.044418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Settings/LightmapParameters.giparams
-  artifactKey: Guid(6d9ff5e9080084e4595e936715cfccfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Settings/LightmapParameters.giparams using Guid(6d9ff5e9080084e4595e936715cfccfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f1dbbfcdfe04199e26a7dca6681171') in 0.003356 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx
-  artifactKey: Guid(4ed40abe3301f47969aa44350488c7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Queen.fbx using Guid(4ed40abe3301f47969aa44350488c7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c847fd65b90698f9d9bf63bcd3782b4') in 0.041958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/_ARPortal/Source Files/Shaders/Toon/Get Main Light.shadersubgraph
-  artifactKey: Guid(06f72859652db3940be2639f0259c42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Shaders/Toon/Get Main Light.shadersubgraph using Guid(06f72859652db3940be2639f0259c42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27350493879a95c60db67cf2f012b9c') in 0.008483 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-2_comp_light.exr
-  artifactKey: Guid(014dd164b36c0394795c7f82732cc03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-2_comp_light.exr using Guid(014dd164b36c0394795c7f82732cc03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abafc7f0befc2138391922c4324c0df8') in 0.045998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/CandleStick_Albedo.tif
-  artifactKey: Guid(5cd10124400cb26478cd41db912ce90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/CandleStick_Albedo.tif using Guid(5cd10124400cb26478cd41db912ce90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcc6049a49f8da66fc990ddc3e0e328') in 0.032612 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-4_comp_light.exr
-  artifactKey: Guid(70b71d20a1952814baea395f5e2f613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/WitchesHut/Lightmap-4_comp_light.exr using Guid(70b71d20a1952814baea395f5e2f613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3071c90200e86f20ebc65a237bd129') in 0.034754 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/ForceInstructions.prefab
-  artifactKey: Guid(56f6794acfbf2874aa3db517260149b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/ForceInstructions.prefab using Guid(56f6794acfbf2874aa3db517260149b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d461a41fd113218c235e03762044f97') in 0.104297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_King.fbx
-  artifactKey: Guid(9c7ba5185d28d475b902a82911b83e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_King.fbx using Guid(9c7ba5185d28d475b902a82911b83e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da7e8cda394dceb75494a2ea60ee631') in 0.035893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/BookGreen.fbx
-  artifactKey: Guid(8bf410868a62ffd49834417a557e760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/BookGreen.fbx using Guid(8bf410868a62ffd49834417a557e760c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9538079b64fa7a39ac3113542346518') in 0.091435 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Albedo.tif
-  artifactKey: Guid(a5fd5ae3aaf893e4197df481b8c9346e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Albedo.tif using Guid(a5fd5ae3aaf893e4197df481b8c9346e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12947217b25638ce35b35672e4f0b6e') in 0.045981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/BalconyElement.fbx
-  artifactKey: Guid(88ee65a08997c154980573c40f026fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/BalconyElement.fbx using Guid(88ee65a08997c154980573c40f026fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b048f137299c47c3f8c70bdfe4dbe16') in 0.138882 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Bedroom/Bed.FBX
-  artifactKey: Guid(eede23dbd9838a3408d728dbd8496a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Bedroom/Bed.FBX using Guid(eede23dbd9838a3408d728dbd8496a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a20ebb4a76b17df555435cf2f7ea52') in 0.051309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/InstructionsBookAndShootingWand.prefab
-  artifactKey: Guid(022b22f3c99f40d4391a1227940613f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/InstructionsBookAndShootingWand.prefab using Guid(022b22f3c99f40d4391a1227940613f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec7ef7fbcf68da6107cee4401d831ab') in 0.119128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_MetallicSmooth.tif
-  artifactKey: Guid(b619d081df43cab4c8bb698f67effe3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Floor_Diningroom_MetallicSmooth.tif using Guid(b619d081df43cab4c8bb698f67effe3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe2b95d560451b38f055982fdd434dd') in 0.044989 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-0_comp_light.exr
-  artifactKey: Guid(acad224f48af27f449649c5baaf624ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/JohnLemon/Lightmap-0_comp_light.exr using Guid(acad224f48af27f449649c5baaf624ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e7da86ff6900ac0f2a22a8c0aade4f') in 0.037066 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff
-  artifactKey: Guid(5e5b4aa08c56e4403bc302f81a80de06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/Materials/Textures/TexturesCom_Marble Polished White 2_diffuse_S.tiff using Guid(5e5b4aa08c56e4403bc302f81a80de06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae37a3a796e0a9910d27ffa9f82903fa') in 0.039018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/ControlRow.prefab
-  artifactKey: Guid(b6a26f020d44b1a4aa35cda05851aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/ControlRow.prefab using Guid(b6a26f020d44b1a4aa35cda05851aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c35a951d5a16266a030ae94d62558438') in 0.012661 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/Feather.FBX
-  artifactKey: Guid(b1a4fecd72cff5f43938365167c80fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/Feather.FBX using Guid(b1a4fecd72cff5f43938365167c80fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c397b4217b0e94d9aaf87b06870920c') in 0.089753 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/SharedTextures/LockIcon.png
-  artifactKey: Guid(2c55161e8e862894c861597025ae91b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/SharedTextures/LockIcon.png using Guid(2c55161e8e862894c861597025ae91b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf9ec1a069199d749ad0a1c3a4c7a12') in 0.235199 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/Onion.FBX
-  artifactKey: Guid(e30b5a1c26bf93042a901424824f3c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/Onion.FBX using Guid(e30b5a1c26bf93042a901424824f3c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5979bd1930acf4735c23f65f8268be6') in 0.088804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/Other/Particle_Sinlge_Texture.png
-  artifactKey: Guid(5eb22527d30a14543a632d09929b477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/Other/Particle_Sinlge_Texture.png using Guid(5eb22527d30a14543a632d09929b477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0ab9561ad21dced264ab5f599bc23a') in 0.039544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Portals/PictureFrame_Portal.fbx
-  artifactKey: Guid(39316f71fb1f2a84eb1d5e77718ef6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Portals/PictureFrame_Portal.fbx using Guid(39316f71fb1f2a84eb1d5e77718ef6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea55ed80664482bde97ff3238290811') in 0.091098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx
-  artifactKey: Guid(dab6c0dea21994386a57acc588faa9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Pawn.fbx using Guid(dab6c0dea21994386a57acc588faa9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc828ac77965b5a3aca5fef6e0b36e4') in 0.040203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/Clock.FBX
-  artifactKey: Guid(91811fda631823c49b536c0b67dfec68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Diningroom/Clock.FBX using Guid(91811fda631823c49b536c0b67dfec68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3fd329d68415d9ce45080b42f5a49f') in 0.047529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/HandWitch.fbx
-  artifactKey: Guid(1f5a20cf402ae624e969edbaf519daf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/HandWitch.fbx using Guid(1f5a20cf402ae624e969edbaf519daf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2364df09f0a965b9b0a89d46125d48e4') in 0.102250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 58
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/VFX/DustMotesEffect.prefab
-  artifactKey: Guid(5ca4c580b3888314581688fa46fb142d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/VFX/DustMotesEffect.prefab using Guid(5ca4c580b3888314581688fa46fb142d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fb50aae84335e501c35adcdc4811a7') in 0.033974 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-2_comp_light.exr
-  artifactKey: Guid(07fa86be050a17b488ecb70599a21a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-2_comp_light.exr using Guid(07fa86be050a17b488ecb70599a21a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f31a9bcbd7f043d8534c02cde380445') in 0.037181 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002771 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx
-  artifactKey: Guid(4b1b985d7c66d4cba91946bc280878ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Knight.fbx using Guid(4b1b985d7c66d4cba91946bc280878ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76053f7fe1c28eb9214c4872da93aa13') in 0.045342 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Gargoyle.prefab
-  artifactKey: Guid(39d0626ce76d1884da050e0e509a5540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Gargoyle.prefab using Guid(39d0626ce76d1884da050e0e509a5540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0986693343bee5fa9afc48aa59e92a') in 0.116582 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/Bubbles/Bubble_Particle.png
-  artifactKey: Guid(a5a53166b7679ed4bb3c7eb70833a444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/Bubbles/Bubble_Particle.png using Guid(a5a53166b7679ed4bb3c7eb70833a444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df762658dc1420e7ee91d9ac040c003') in 0.048888 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/Light.FBX
-  artifactKey: Guid(fc0082b7f28474047b0d08e22d9a0a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/Light.FBX using Guid(fc0082b7f28474047b0d08e22d9a0a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef442ed452104d208c7511b40dea5137') in 0.090940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/_ARPortal/Source Files/Shaders/Toon/Calculate Main Light.shadersubgraph
-  artifactKey: Guid(329fa1bf1e7447a4d9569a565af12434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Shaders/Toon/Calculate Main Light.shadersubgraph using Guid(329fa1bf1e7447a4d9569a565af12434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7be8e6b871c98e91bd7cbe1aed4293') in 0.003434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.001724 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Floor_Bedroom_Albedo.tif
-  artifactKey: Guid(56c954657cc3f50449a5c668ebf4b18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Floor_Bedroom_Albedo.tif using Guid(56c954657cc3f50449a5c668ebf4b18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ecb585a6d990b0b3720397a41c427c') in 0.042211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/Ingredients/Pumpking.prefab
-  artifactKey: Guid(55368765a9112f74389e5e019bb3844b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/Ingredients/Pumpking.prefab using Guid(55368765a9112f74389e5e019bb3844b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de250c2e70a2f0cc7d7137c855a12511') in 0.074823 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/PictureFrame_Wolf.FBX
-  artifactKey: Guid(16359bd0c00e50e4580e93430782bac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/PictureFrame_Wolf.FBX using Guid(16359bd0c00e50e4580e93430782bac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2add9452409590a7fedc3948e4628a') in 0.055230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Floor_Bedroom_Normal.tif
-  artifactKey: Guid(08c9198dcd6c19e459e53914775ecbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/Floor_Bedroom_Normal.tif using Guid(08c9198dcd6c19e459e53914775ecbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd56393649a3fc8ca9550616b652cc4') in 0.036600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/painting3.fbx
-  artifactKey: Guid(5aff463ff3c15074188bc8e24c6da077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/painting3.fbx using Guid(5aff463ff3c15074188bc8e24c6da077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28aa7468d35d1b98905b2a705f975afd') in 0.085975 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Normal.tif
-  artifactKey: Guid(34c958df8066e254c9fe19021fb928f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Normal.tif using Guid(34c958df8066e254c9fe19021fb928f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3356bd7b3a3a727189c4cd439c84ce') in 0.047486 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/Poster1.fbx
-  artifactKey: Guid(f239614e43466754c9ffb46e9fb52b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/Poster1.fbx using Guid(f239614e43466754c9ffb46e9fb52b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9366de1712b4c39e5646f259f599be9f') in 0.130522 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/WitchHouse.fbx
-  artifactKey: Guid(b46a848a5ea4d0f4d9784aaaff85e23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/WitchHouse.fbx using Guid(b46a848a5ea4d0f4d9784aaaff85e23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c455f5d5825ddb034005c352fdb5345') in 0.641772 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 176
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/Stations/Chest.prefab
-  artifactKey: Guid(0d5fafde81cf5664b8cd5516d11976c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/Stations/Chest.prefab using Guid(0d5fafde81cf5664b8cd5516d11976c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa59c04901b56376e051b1d24ecaae86') in 0.081186 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/PotionBottle2.FBX
-  artifactKey: Guid(6ba54a1627a566744b4e94ee90aa14b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/PotionBottle2.FBX using Guid(6ba54a1627a566744b4e94ee90aa14b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a343894407c8ede112e404f1d21c214e') in 0.154707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/BookOfSpells.prefab
-  artifactKey: Guid(942fad8a26445c44596b9797de96bc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/BookOfSpells.prefab using Guid(942fad8a26445c44596b9797de96bc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6bca873a24c33a4d85b58bb9110af0') in 0.118054 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx
-  artifactKey: Guid(c5f20314b232248d3972665d64a42a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx using Guid(c5f20314b232248d3972665d64a42a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a454641029dc96c67a5c8229849c4f63') in 0.046534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/VFX/CandleFlame.prefab
-  artifactKey: Guid(a24956b5a0e552047a522ea09e794d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/VFX/CandleFlame.prefab using Guid(a24956b5a0e552047a522ea09e794d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14ee71cdca194bca6be21dd4268eaeb') in 0.053466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/FireBoy.fbx
-  artifactKey: Guid(c7be5e3d1b69f3b4a8853a4daec7d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/FireBoy.fbx using Guid(c7be5e3d1b69f3b4a8853a4daec7d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e24771c829f130616fca442da88154') in 0.130424 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 118
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Light_Albedo.tif
-  artifactKey: Guid(d25150811c8ba0c4b9d1fdcf72d3b54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Light_Albedo.tif using Guid(d25150811c8ba0c4b9d1fdcf72d3b54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7e3adf8266a9d909bb6bfb10e302d9') in 0.042403 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/Key.FBX
-  artifactKey: Guid(fb4295e3462ff9648a34f8d626c9e25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/Key.FBX using Guid(fb4295e3462ff9648a34f8d626c9e25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3057a3bba43dfb6f346e39e74f81eff') in 0.091595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-4_comp_dir.png
-  artifactKey: Guid(01c9212fc3b6c3e4bbd19e75e3e483ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/Lightmap-4_comp_dir.png using Guid(01c9212fc3b6c3e4bbd19e75e3e483ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87827d517f65451ecfd08d68cf31e2c') in 0.043746 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/XR/Loaders/ARKitLoader.asset
-  artifactKey: Guid(e42a402ec037de24e8fa4113ded437d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Loaders/ARKitLoader.asset using Guid(e42a402ec037de24e8fa4113ded437d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417fe8e684c65fd9c845e4cdb098ec62') in 0.015844 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Occlusion.tif
-  artifactKey: Guid(d3bc81db12f03c84091f40384beda6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Characters/Gargoyle_Occlusion.tif using Guid(d3bc81db12f03c84091f40384beda6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45dc37a88734310cf66af25ad67d0020') in 0.040654 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Clock_MetallicSmooth.tif
-  artifactKey: Guid(18814287f2e3240419c37dd2a9abf1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Clock_MetallicSmooth.tif using Guid(18814287f2e3240419c37dd2a9abf1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e609b9d6e749c14ac2c136dc8a300502') in 0.045230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Grass_Normal.png
-  artifactKey: Guid(d8d595d6d75184448b52315e07c1db21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Grass_Normal.png using Guid(d8d595d6d75184448b52315e07c1db21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934e01f42919d691c6d649ef6c826ebe') in 0.046982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/BedSide_Occlusion.tif
-  artifactKey: Guid(6fece7bb55bcfd54c9ea204b2b93753a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/BedRoom/BedSide_Occlusion.tif using Guid(6fece7bb55bcfd54c9ea204b2b93753a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b044792966e66f3e70293f6df2d443e0') in 0.031926 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.560126 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/ReflectionProbe-0.exr
-  artifactKey: Guid(342b7ca5014c0da42b31851a2d298672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/ReflectionProbe-0.exr using Guid(342b7ca5014c0da42b31851a2d298672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973a64dcc5f87921141e83ebb1a47d1b') in 0.111788 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/_ARPortal/Source Files/Sample Scenes/Street/ReflectionProbe-2.exr
-  artifactKey: Guid(3494d98b9870ce047a1e0be36ee05c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Sample Scenes/Street/ReflectionProbe-2.exr using Guid(3494d98b9870ce047a1e0be36ee05c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1f7353e5ed152e5c93477cf0abeee4') in 1.137737 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.537714 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Rug_Albedo.tif
-  artifactKey: Guid(a4e930220a796944783b228565f03152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Rug_Albedo.tif using Guid(a4e930220a796944783b228565f03152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56be141016726622a877a25637e8b6c') in 0.064711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/Rug_Corridor.FBX
-  artifactKey: Guid(16117d52108da314aaa138a6a9144186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/JohnLemon/Corridor/Rug_Corridor.FBX using Guid(16117d52108da314aaa138a6a9144186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211d93777757f824b2499ea988ba1cd3') in 0.075387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Rug_Occlusion.tif
-  artifactKey: Guid(e65e9bbfc83d7584ba2dd378cfe4f98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Rug_Occlusion.tif using Guid(e65e9bbfc83d7584ba2dd378cfe4f98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89f0a36f561f42672c247189204ba79') in 0.045311 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Rug_Diningroom.prefab
-  artifactKey: Guid(fba3762311c1bb54eb2cea0b832496ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Dinigroom/Rug_Diningroom.prefab using Guid(fba3762311c1bb54eb2cea0b832496ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e52154250d393f4f30c7575c1f5f32') in 0.070124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.797297 seconds.
-  path: Assets/XR/Loaders/SimulationLoader.asset
-  artifactKey: Guid(db05dde0f2a2e0d4d98a0200890e95ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Loaders/SimulationLoader.asset using Guid(db05dde0f2a2e0d4d98a0200890e95ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37ceeb17f70d941ef6db1410261963c') in 0.005700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Skybox.jpg
-  artifactKey: Guid(1f62764bc6da1c54babf5980adb79c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Skybox.jpg using Guid(1f62764bc6da1c54babf5980adb79c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9601ea111b3916e2a98d5dedc299ccc') in 0.117446 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/Skyplane.FBX
-  artifactKey: Guid(65c8b5c8f58ba414380d70ff4d78ac02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/LibraryStreet/Environment/Skyplane.FBX using Guid(65c8b5c8f58ba414380d70ff4d78ac02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516ee1c1564358d822a26070456e4b5f') in 0.050755 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/SmaltSign_Base_Color.png
-  artifactKey: Guid(d41298f545eec5445872428caf295e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/SmaltSign_Base_Color.png using Guid(d41298f545eec5445872428caf295e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e81608d98441c23cc0eb2bf13a65a8') in 0.083808 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.583723 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/Sparkle/Sparkles.prefab
-  artifactKey: Guid(206276fdb59a6ee4b89d52fa01642f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/Sparkle/Sparkles.prefab using Guid(206276fdb59a6ee4b89d52fa01642f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbe0058dbf9a62d443533d822f0f6ed') in 0.082213 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.085409 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Street_Props_MetallicSmoothness.png
-  artifactKey: Guid(d3313bffdd241dd4bbd06f45cc75f636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Street_Props_MetallicSmoothness.png using Guid(d3313bffdd241dd4bbd06f45cc75f636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e472ec685e4d4c2bbb323221274638') in 0.062071 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/_ARPortal/Prefabs/Portals/Street_VerticalPortal_Window.prefab
-  artifactKey: Guid(2fa7d0e46cbecad4083cd521a29f1aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Portals/Street_VerticalPortal_Window.prefab using Guid(2fa7d0e46cbecad4083cd521a29f1aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79d0dcb7fcc28bd8d173e6a58ce97af') in 0.173297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Streets_AO.png
-  artifactKey: Guid(1f275fc9a2e5da64bbffd3d8c6e73a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Streets_AO.png using Guid(1f275fc9a2e5da64bbffd3d8c6e73a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f2f739eabab2d8d85207d337e81f1f') in 0.074842 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Streets_Normal_OpenGL.png
-  artifactKey: Guid(ab15051338f1fd844a3de3a5637dd9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Streets_Normal_OpenGL.png using Guid(ab15051338f1fd844a3de3a5637dd9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726fff5c9c76ea04e0ebe0b27922ba2a') in 0.075973 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Street_Props_Normal.png
-  artifactKey: Guid(2142e34dfcbb9434192aecb20dcdceeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Environment/Street_Props_Normal.png using Guid(2142e34dfcbb9434192aecb20dcdceeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059a6e292000ed36c159298abf3751e5') in 0.090338 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.008041 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Table_MetallicSmooth.tif
-  artifactKey: Guid(51492d8b7b17e0f40bb8f410f5a1d1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Table_MetallicSmooth.tif using Guid(51492d8b7b17e0f40bb8f410f5a1d1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89a5eb8a4494972811c12b369991406') in 0.040455 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Visual Scripts/TapToPlace.asset
-  artifactKey: Guid(44958ac2b855ec94d88761aff12b8981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Visual Scripts/TapToPlace.asset using Guid(44958ac2b855ec94d88761aff12b8981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60999605f5572d02e709d88d4d00acf') in 1.786766 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.547391 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Corner_Interior.prefab
-  artifactKey: Guid(5a088a5f9e886a64b90e23ed9d048b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Corner_Interior.prefab using Guid(5a088a5f9e886a64b90e23ed9d048b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fd94cd6775dfd5c3d4d7eb7ac1de3c') in 0.071084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Wall_DiningRoom_Albedo.tif
-  artifactKey: Guid(039d0ebbd0d67b24ab08bcf5d4c80fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Wall_DiningRoom_Albedo.tif using Guid(039d0ebbd0d67b24ab08bcf5d4c80fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcadda6c78697a12dd7508600e494605') in 0.038202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Wall_Corridor_Normal.tif
-  artifactKey: Guid(f4292c2b9fae94f4183427d0db23330d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Wall_Corridor_Normal.tif using Guid(f4292c2b9fae94f4183427d0db23330d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a366cd0eb23a354d1300aba85e8d4db8') in 0.035700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.186840 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Wall_Diningroom_Occlusion.tif
-  artifactKey: Guid(1b7d918996695fd4c9550fd74e3b26d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/DiningRoom/Wall_Diningroom_Occlusion.tif using Guid(1b7d918996695fd4c9550fd74e3b26d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d462fd139d0ec90aee613eb4a17215d') in 0.068357 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Straight_02.prefab
-  artifactKey: Guid(c013316754088b1449bccb219da41401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Straight_02.prefab using Guid(c013316754088b1449bccb219da41401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a030d6988fe7f6a7cdb216383645f2') in 0.078328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/Wand.prefab
-  artifactKey: Guid(c8f2b1b288a4937408386e95b4b23812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/WitchesHut/EscapeRoom/Wand.prefab using Guid(c8f2b1b288a4937408386e95b4b23812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5413c7b8ded8019b46a745e00b6b101c') in 0.101873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Window_02.prefab
-  artifactKey: Guid(962c5f6cf906ba8459778725994343f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Window_02.prefab using Guid(962c5f6cf906ba8459778725994343f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4f6f8af300cbcd76ceeaf28bae3ae9') in 0.116150 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Straight_Exterior_04.prefab
-  artifactKey: Guid(fe38739420c917b45aa10d806da6344b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Worlds/JohnLemon/Environment/Corridors/Wall_Straight_Exterior_04.prefab using Guid(fe38739420c917b45aa10d806da6344b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32f8e1366c7749dbda0d4d0a365b8e5') in 0.090850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 1.221009 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Window_Normal.tif
-  artifactKey: Guid(3773c8801f57fbc4fbf0fe19ef4d83f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/JohnLemon/Corridor/Window_Normal.tif using Guid(3773c8801f57fbc4fbf0fe19ef4d83f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4f55fb1dd736c4b806b5480c105194') in 0.056859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Characters/Wink_Base_Color.png
-  artifactKey: Guid(de611117c205d184c974963966c736a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Characters/Wink_Base_Color.png using Guid(de611117c205d184c974963966c736a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4683b28cbd3dcbc38d4d4dd3bf828318') in 0.073928 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.012632 seconds.
-  path: Assets/_ARPortal/Source Files/Textures/LibraryStreet/Characters/Wink_Normal_OpenGL.png
-  artifactKey: Guid(b87587838992c8641847c64c6567c72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Textures/LibraryStreet/Characters/Wink_Normal_OpenGL.png using Guid(b87587838992c8641847c64c6567c72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a83a4927a28340fb1847ac5db7cb7c') in 0.073792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/_ARPortal/Source Files/VFX/SharedTextures/WispySmoke8x8Flipbook.png
-  artifactKey: Guid(49d1981f71498f747ad8b0c04769b064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/VFX/SharedTextures/WispySmoke8x8Flipbook.png using Guid(49d1981f71498f747ad8b0c04769b064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983f29c829704adafc290e7b732bfd0b') in 0.075045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 3.642756 seconds.
-  path: Assets/_ARPortal/Prefabs/Portals/WitchHut_VerticalPortal_Window.prefab
-  artifactKey: Guid(9a0396caa6a9285429eb3d5e21c000f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Prefabs/Portals/WitchHut_VerticalPortal_Window.prefab using Guid(9a0396caa6a9285429eb3d5e21c000f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc71645e5f91929d5ffdd601bb4a3767') in 0.132691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.782249 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/WoodenFloor.fbx
-  artifactKey: Guid(4da5b88d86a450343bc00d7998c9a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/WoodenFloor.fbx using Guid(4da5b88d86a450343bc00d7998c9a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68600b8dc52e476248fe91897b87ee9') in 0.102448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/_ARPortal/Source Files/Models/Witcheshut/WoodenLog.fbx
-  artifactKey: Guid(514c05e59d36d8f4ba0f0a9c80f0ef2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_ARPortal/Source Files/Models/Witcheshut/WoodenLog.fbx using Guid(514c05e59d36d8f4ba0f0a9c80f0ef2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960d6bf54feafffd0febea184ba2fca7') in 0.098110 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.563382 seconds.
-  path: Assets/XRI/Settings/XRInteractionEditorSettings.asset
-  artifactKey: Guid(68fd0360c3e20c04aaa21bb02c022524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XRI/Settings/XRInteractionEditorSettings.asset using Guid(68fd0360c3e20c04aaa21bb02c022524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd682f21b7da33468c24bec30679a58ad') in 0.028641 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/XR/Resources/XRSimulationRuntimeSettings.asset
-  artifactKey: Guid(4b687d4d3c44e8344898c1f378c32fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Resources/XRSimulationRuntimeSettings.asset using Guid(4b687d4d3c44e8344898c1f378c32fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99e2a155f617748cc5f210833942e4e') in 0.008541 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.418 seconds
+Refreshing native plugins compatible for Editor in 24.52 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Could not load the file 'NiceIO'.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.VisualScripting.Codebase:IsEditorAssembly (System.Reflection.Assembly,System.Collections.Generic.HashSet`1<string>) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:383)
+Unity.VisualScripting.Codebase:IsRuntimeAssembly (System.Reflection.Assembly) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:404)
+Unity.VisualScripting.Codebase:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs:46)
+Unity.VisualScripting.PluginContainer:Initialize () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:86)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed (bool) (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor () (at ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Reflection/Codebase.cs Line: 383)
+
+InvalidCastException: Specified cast is not valid.
+  at Unity.VisualScripting.PluginConfiguration.LoadOrCreateProjectSettingsAsset () [0x0003e] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:184 
+  at Unity.VisualScripting.PluginConfiguration.LoadProjectSettings () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:149 
+  at Unity.VisualScripting.PluginConfiguration.Load () [0x00006] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:75 
+  at Unity.VisualScripting.PluginConfiguration.Initialize () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginConfiguration.cs:23 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x004a3] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:199 
+Rethrow as Exception: Failed to initialize plugin module 'VisualScripting.Core.BoltCoreConfiguration'.
+
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Unity.VisualScripting.PluginContainer:Initialize() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:204)
+Unity.VisualScripting.PluginContainer:InitializeOnLoad() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32)
+Unity.VisualScripting.VSUsageUtility:DoInitializeOnLoadCalls() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76)
+Unity.VisualScripting.VSUsageUtility:set_isVisualScriptingUsed(Boolean) (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114)
+Unity.VisualScripting.VSUsageUtility:CheckAndSetIsVisualScriptingUsed() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33)
+Unity.VisualScripting.VSUsageUtility:.cctor() (at .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+(Filename: ./Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs Line: 204)
+
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  4.590 seconds
+Domain Reload Profiling: 8004ms
+	BeginReloadAssembly (508ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (265ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (2744ms)
+		LoadAssemblies (2460ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (448ms)
+			TypeCache.Refresh (349ms)
+				TypeCache.ScanAssembly (261ms)
+			ScanForSourceGeneratedMonoScriptInfo (72ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (4590ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2713ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (1137ms)
+			ProcessInitializeOnLoadMethodAttributes (1392ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 11.35 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7670 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 370 unused Assets / (5.7 MB). Loaded Objects now: 8122.
+Memory consumption went from 310.3 MB to 304.6 MB.
+Total: 21.251800 ms (FindLiveObjects: 0.956300 ms CreateObjectMapping: 0.617400 ms MarkObjects: 15.884900 ms  DeleteObjects: 3.790600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/LitGUI.cs: cfd178cf78133383ee779ce3c3308683 -> 65fe6d05c8b4633b4f0bf9a9b493894e
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/BaseShaderGUI.cs: 3670a64323ef1fe082e388b258177de9 -> b5cebbc7bcb33d9f34bec913f3c297a3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/MenuUtils.cs: ef61e56f05605c149332b0b451f694ed -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 0f5f72dab822025b0759b197a3119d15 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BakedLitGUI.cs: f00cfe6b0ea276c0f203619238b97524 -> e4236f9efee9cfa54ad40191b580e882
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
