@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a944a55ee1de649419dc931d29b08f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 6878849825424696354, guid: 91fa4428e8296f2448ea8900e5eff9d9,
+  objectToSpawn: {fileID: 5724787971375904813, guid: 80cc7eeba67e39b499ffffb989cde400,
     type: 3}
   crosshair: {fileID: 1314516507}
   arRaycastManager: {fileID: 527692159}
@@ -386,7 +386,6 @@ GameObject:
   - component: {fileID: 527692156}
   - component: {fileID: 527692160}
   - component: {fileID: 527692159}
-  - component: {fileID: 527692161}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -467,19 +466,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 0}
   m_DetectionMode: 1
---- !u!114 &527692161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527692155}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AnchorPrefab: {fileID: 0}
 --- !u!1 &543702614
 GameObject:
   m_ObjectHideFlags: 0

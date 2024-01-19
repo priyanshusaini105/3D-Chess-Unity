@@ -335,3 +335,184 @@ Received Import Request.
 Start importing Assets/SpawnObjectInAR.cs using Guid(a944a55ee1de649419dc931d29b08f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594e453d11922975439fb3bd100c69e7') in 0.036717 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 132.492837 seconds.
+  path: Assets/Prefabs/AR Default Plane.prefab
+  artifactKey: Guid(463af17b949131c4989ed8095ec6d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AR Default Plane.prefab using Guid(463af17b949131c4989ed8095ec6d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b1109901686e19cb45efe973dd1d60') in 0.225962 seconds
+Number of updated asset objects reloaded before import = 33
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
+  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0d1869b325089a7f01824d1423cfce') in 0.071688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx
+  artifactKey: Guid(3ebcae0daf8394e548da469833b04106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Bishop.fbx using Guid(3ebcae0daf8394e548da469833b04106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3436da86e8bb983171c454055fbc21d0') in 0.103746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx
+  artifactKey: Guid(bff675daa93e14cd1a91d9247f54ea89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Chessboard Grid.fbx using Guid(bff675daa93e14cd1a91d9247f54ea89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab17df47e0ca2f5c12647a9b689293d') in 0.046172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/Controller.prefab
+  artifactKey: Guid(81eb8a07f64251845bbe5c9a2ef66920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/Controller.prefab using Guid(81eb8a07f64251845bbe5c9a2ef66920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821fcae213b52682975c232999c22284') in 0.131590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 542
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/ControlRow.prefab
+  artifactKey: Guid(b6a26f020d44b1a4aa35cda05851aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/ControlRow.prefab using Guid(b6a26f020d44b1a4aa35cda05851aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2bc1b1f39213438f3fbbf3dd683fceb') in 0.004273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx
+  artifactKey: Guid(c5f20314b232248d3972665d64a42a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/GPVFX_Rook.fbx using Guid(c5f20314b232248d3972665d64a42a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199ee2eff55cdf1b72e816f7fb7d5ab4') in 0.046403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/AxisControl.prefab
+  artifactKey: Guid(f57e3eacc280d3d458ff758606e5e5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/OpenXR Plugin/1.9.1/Controller/Prefabs/AxisControl.prefab using Guid(f57e3eacc280d3d458ff758606e5e5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118135db638e3b4fef1820d47787b7a2') in 0.006850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Prefabs/Black_King.prefab
+  artifactKey: Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_King.prefab using Guid(26140ab2db891b74d8d10c82e50e28a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d8ac457f9e446373372de989960de9') in 0.064157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefabs/Black_Bishop.prefab
+  artifactKey: Guid(83a16142db6d08b4795f06c37dd083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Black_Bishop.prefab using Guid(83a16142db6d08b4795f06c37dd083e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28882b26ae47b1b385a79c726453e0e') in 0.039441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
+  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c37527382b358defe1df61a771987e0') in 0.025691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Samples/OpenXR Plugin/1.9.1/Controller/Models/Cone.fbx
+  artifactKey: Guid(fa14a214e9ffb1a42850851e0ad9db52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/OpenXR Plugin/1.9.1/Controller/Models/Cone.fbx using Guid(fa14a214e9ffb1a42850851e0ad9db52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8ca5b772a91e976d8542a37707b9e8') in 0.081162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Prefabs/White_Bishop.prefab
+  artifactKey: Guid(cc9c9f92fe83ab241b85c9a80163d7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/White_Bishop.prefab using Guid(cc9c9f92fe83ab241b85c9a80163d7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bfe5af49addf71b6d8c10ef4c16f65') in 0.029579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Prefabs/ChessBoard.prefab
+  artifactKey: Guid(d15a1cf989dcaf445933c5f3dff8e795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ChessBoard.prefab using Guid(d15a1cf989dcaf445933c5f3dff8e795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75aa8ba57d4198815523b3073a3c2542') in 0.197350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 130
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Prefabs/boardChess.prefab
+  artifactKey: Guid(91fa4428e8296f2448ea8900e5eff9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/boardChess.prefab using Guid(91fa4428e8296f2448ea8900e5eff9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca49dc0b4d1a218ff4b2e904db60ac7a') in 0.120155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 130
+========================================================================
+Received Import Request.
+  Time since last request: 13.064895 seconds.
+  path: Assets/Materials/target.mat
+  artifactKey: Guid(a45fb7175e7cbfd4798266a0d80166c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/target.mat using Guid(a45fb7175e7cbfd4798266a0d80166c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3b62ed9eac7af161dbe110b141d5ac') in 0.029416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(5534e154d06a51f4b95698cc40c0734f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(5534e154d06a51f4b95698cc40c0734f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01ddc595ac24d484f77ca64e4aa0065') in 0.000724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.182933 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat
+  artifactKey: Guid(ee18544d8ac514d3ca38bcbe875280ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/Materials/Chessboard Base.mat using Guid(ee18544d8ac514d3ca38bcbe875280ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e8266d16f4167c1fd714554aff7fc2') in 0.063522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat
+  artifactKey: Guid(8727d07ea7a48614f96e93355320fd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/Materials/White_Board.001.mat using Guid(8727d07ea7a48614f96e93355320fd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6503bff7f06bcf72137742e602635e') in 0.014491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/Materials/Material.018.mat
+  artifactKey: Guid(7075a8829a003a14d8e73e5538e817df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/Materials/Material.018.mat using Guid(7075a8829a003a14d8e73e5538e817df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b8bdd4548c62f3004038a83e51287c') in 0.012586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat
+  artifactKey: Guid(f0769a0445f2fb2408b892b5e27edc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/Materials/WHITE_PRIMARY.001.mat using Guid(f0769a0445f2fb2408b892b5e27edc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7c632f87b7d1faabf1173edb2d339a') in 0.019034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/GPVFX_3D Chess Set/3D/Materials/White.mat
+  artifactKey: Guid(d09888fb380864d7d820ffed5c260deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GPVFX_3D Chess Set/3D/Materials/White.mat using Guid(d09888fb380864d7d820ffed5c260deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb8c98886be1d4bb56289a9a856f474') in 0.029400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
