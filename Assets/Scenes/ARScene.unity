@@ -953,6 +953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chess board 3d model
       objectReference: {fileID: 0}
+    - target: {fileID: 6473589580768800985, guid: 1b9dbdfda74c17646a5757e1bf47ea92,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
