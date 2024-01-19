@@ -1,192 +1,154 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using Unity.Services.Authentication;
-using Unity.Services.Core;
+using System.Threading;
+using System.Threading.Tasks;
+using Unity.Netcode.Transports.UTP;
 using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
-using UnityEngine.SceneManagement;
-using UnityEngine.Networking;
-using UnityEngine;
 using Unity.Services.Relay;
-using Unity.Services.Relay.Models;
-using Unity.Netcode;
-using Unity.Netcode.Transports.UTP;
+using UnityEngine;
+using Object = UnityEngine.Object;
 
-
-
-public class LobbyManager : MonoBehaviour
+public static class MatchmakingService
 {
-    // Start is called before the first frame update
-    public string roomId;
-    //[SerializeField] public NetworkManager networkManager; 
-    public bool IsLobbyHost = false;
-    public int playerNum = 1;
-    public GameObject dialogBox;
-    private float lobbyUpdateTimer;
-    private float heartBeatTimer;
-    private Unity.Services.Lobbies.Models.Lobby joinedLobby;
-    async void Start()
-    {
-        await UnityServices.InitializeAsync();
+    private const int HeartbeatInterval = 15;
+    private const int LobbyRefreshRate = 2; // Rate limits at 2
 
-        AuthenticationService.Instance.SignedIn += () =>
+    private static UnityTransport _transport;
+
+    private static Lobby _currentLobby;
+    private static CancellationTokenSource _heartbeatSource, _updateLobbySource;
+
+    private static UnityTransport Transport
+    {
+        get => _transport != null ? _transport : _transport = Object.FindObjectOfType<UnityTransport>();
+        set => _transport = value;
+    }
+
+    public static event Action<Lobby> CurrentLobbyRefreshed;
+
+    public static void ResetStatics()
+    {
+        if (Transport != null)
         {
-            Debug.Log("Signed in" + AuthenticationService.Instance.PlayerId);
+            Transport.Shutdown();
+            Transport = null;
+        }
+
+        _currentLobby = null;
+    }
+
+    // Obviously you'd want to add customization to the query, but this
+    // will suffice for this simple demo
+    public static async Task<List<Lobby>> GatherLobbies()
+    {
+        var options = new QueryLobbiesOptions
+        {
+            Count = 15,
+
+            Filters = new List<QueryFilter> {
+                new(QueryFilter.FieldOptions.AvailableSlots, "0", QueryFilter.OpOptions.GT),
+                new(QueryFilter.FieldOptions.IsLocked, "0", QueryFilter.OpOptions.EQ)
+            }
         };
-        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+
+        var allLobbies = await Lobbies.Instance.QueryLobbiesAsync(options);
+        return allLobbies.Results;
     }
 
-    // Update is called once per frame
-    void Update()
+    public static async Task CreateLobbyWithAllocation(LobbyData data)
     {
-        HandleLobbyPollForUpdates();
-    }
-    private async void HandleHeartBeatSync()
-    {
-        if(joinedLobby!=null)
+        // Create a relay allocation and generate a join code to share with the lobby
+        var a = await RelayService.Instance.CreateAllocationAsync(data.MaxPlayers);
+        var joinCode = await RelayService.Instance.GetJoinCodeAsync(a.AllocationId);
+
+        // Create a lobby, adding the relay join code to the lobby data
+        var options = new CreateLobbyOptions
         {
-            heartBeatTimer -= Time.deltaTime;
-            if (heartBeatTimer<0f)
-            {
-                float heartBeatTimerMax = 15;
-                heartBeatTimer = heartBeatTimerMax;
-                await LobbyService.Instance.SendHeartbeatPingAsync(joinedLobby.Id);
-            }
-
-        }
-    }
-    private async void HandleLobbyPollForUpdates()
-    {
-        if (joinedLobby != null)
-        {
-            lobbyUpdateTimer -= Time.deltaTime;
-            if (lobbyUpdateTimer < 0f)
-            {
-                float lobbyUpdateTimerMax = 3.1f;
-                Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobby.Id);
-                lobbyUpdateTimer = lobbyUpdateTimerMax;
-
-                playerNum = 0;
-                foreach (Player player in joinedLobby.Players)
-                {
-                    playerNum += 1;
+            Data = new Dictionary<string, DataObject> {
+                { Constants.JoinKey, new DataObject(DataObject.VisibilityOptions.Member, joinCode) },
+                { Constants.GameTypeKey, new DataObject(DataObject.VisibilityOptions.Public, data.Type.ToString(), DataObject.IndexOptions.N1) }, {
+                    Constants.DifficultyKey,
+                    new DataObject(DataObject.VisibilityOptions.Public, data.Difficulty.ToString(), DataObject.IndexOptions.N2)
                 }
-                Debug.Log("Player COunt " + playerNum);
-
-                if (joinedLobby.Data["KEY_START_GAME"].Value != "0")
-                {
-                    if (!IsLobbyHost)
-                   {
-                        Debug.Log("Relay Joined " + joinedLobby.Data["KEY_START_GAME"].Value);
-                        JoinRelay(joinedLobby.Data["KEY_START_GAME"].Value);
-                    }
-                    joinedLobby = null;
-                }
-
             }
-        }
-    }
-
-    public async void CreateLobby()
-    {
-        CreateLobbyOptions options = new CreateLobbyOptions
-        {
-            IsLocked = false,
-            Data = new Dictionary<string, DataObject>
-        {
-            {"KEY_START_GAME" , new DataObject(DataObject.VisibilityOptions.Member , "0") }
-        }
         };
-        string lobbyName = "My lobby";
-        int maxPlayers = 2;
 
-        Unity.Services.Lobbies.Models.Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
-        joinedLobby = lobby;
-        Debug.Log("Lobby Created with Id " + lobby.LobbyCode);
-        roomId = lobby.LobbyCode;
-        //SceneManager.LoadScene(1);
+        _currentLobby = await Lobbies.Instance.CreateLobbyAsync(data.Name, data.MaxPlayers, options);
+
+        Transport.SetHostRelayData(a.RelayServer.IpV4, (ushort)a.RelayServer.Port, a.AllocationIdBytes, a.Key, a.ConnectionData);
+
+        Heartbeat();
+        PeriodicallyRefreshLobby();
     }
-    public void SpawnGameObject()
-    {
-        dialogBox.SetActive(true);
-    }
-    public async void JoinRoom(string s)
+
+    public static async Task LockLobby()
     {
         try
         {
-            joinedLobby = await LobbyService.Instance.JoinLobbyByCodeAsync(s);
-            Debug.Log(s + " Lobby Joined");
-            foreach (Player player in joinedLobby.Players)
+            await Lobbies.Instance.UpdateLobbyAsync(_currentLobby.Id, new UpdateLobbyOptions { IsLocked = true });
+        }
+        catch (Exception e)
+        {
+            Debug.Log($"Failed closing lobby: {e}");
+        }
+    }
+
+    private static async void Heartbeat()
+    {
+        _heartbeatSource = new CancellationTokenSource();
+        while (!_heartbeatSource.IsCancellationRequested && _currentLobby != null)
+        {
+            await Lobbies.Instance.SendHeartbeatPingAsync(_currentLobby.Id);
+            await Task.Delay(HeartbeatInterval * 1000);
+        }
+    }
+
+    public static async Task JoinLobbyWithAllocation(string lobbyId)
+    {
+        _currentLobby = await Lobbies.Instance.JoinLobbyByIdAsync(lobbyId);
+        var a = await RelayService.Instance.JoinAllocationAsync(_currentLobby.Data[Constants.JoinKey].Value);
+
+        Transport.SetClientRelayData(a.RelayServer.IpV4, (ushort)a.RelayServer.Port, a.AllocationIdBytes, a.Key, a.ConnectionData, a.HostConnectionData);
+
+        PeriodicallyRefreshLobby();
+    }
+
+    private static async void PeriodicallyRefreshLobby()
+    {
+        _updateLobbySource = new CancellationTokenSource();
+        await Task.Delay(LobbyRefreshRate * 1000);
+        while (!_updateLobbySource.IsCancellationRequested && _currentLobby != null)
+        {
+            _currentLobby = await Lobbies.Instance.GetLobbyAsync(_currentLobby.Id);
+            CurrentLobbyRefreshed?.Invoke(_currentLobby);
+            await Task.Delay(LobbyRefreshRate * 1000);
+        }
+    }
+
+    public static async Task LeaveLobby()
+    {
+        _heartbeatSource?.Cancel();
+        _updateLobbySource?.Cancel();
+
+        if (_currentLobby != null)
+            try
             {
-                Debug.Log(player.Id);
+                if (_currentLobby.HostId == Authentication.PlayerId) await Lobbies.Instance.DeleteLobbyAsync(_currentLobby.Id);
+                else await Lobbies.Instance.RemovePlayerAsync(_currentLobby.Id, Authentication.PlayerId);
+                _currentLobby = null;
             }
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
     }
 
-    private async void CreateRelay()
+    public struct LobbyData
     {
-        try
-        {
-            Allocation allocation = await RelayService.Instance.CreateAllocationAsync(7);
-
-            Debug.Log("allocation ID: " + allocation.AllocationId.ToString());
-
-            string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
-
-            Debug.Log(joinCode);
-
-            RelayServerData relayServerData = new RelayServerData(allocation, "dtls");
-
-            Debug.Log(relayServerData.ConnectionData);
-
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
-
-            Debug.Log(NetworkManager.Singleton.GetComponent<UnityTransport>().ConnectionData.Address);
-
-            NetworkManager.Singleton.StartHost();
-
-            IsLobbyHost = true;
-            NetworkManager.Singleton.StartHost();
-        }
-        catch (RelayServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-    private async void JoinRelay(string joinCode)
-    {
-        try
-        {
-            Debug.Log("Joining with joincode " + joinCode);
-            Debug.Log("Joining Relay with " + joinCode);
-            JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
-
-            Debug.Log("allocation ID: " + joinAllocation.AllocationId.ToString() + "Join Code: " + joinCode);
-            RelayServerData relayServerData = new RelayServerData(joinAllocation, "dtls");
-
-            Debug.Log(relayServerData.ConnectionData);
-
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
-
-            Debug.Log(NetworkManager.Singleton.GetComponent<UnityTransport>().ConnectionData.Address);
-
-            NetworkManager.Singleton.StartClient();
-        }
-        catch (RelayServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    public async void StartGame()
-    {
-       // if (!IsLobbyHost())
-      //  {
-
-      //  }
+        public string Name;
+        public int MaxPlayers;
+        public int Difficulty;
+        public int Type;
     }
 }
