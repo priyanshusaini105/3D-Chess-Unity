@@ -2051,6 +2051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chess board 3d model
       objectReference: {fileID: 0}
+    - target: {fileID: 6907529352672436238, guid: 1b9dbdfda74c17646a5757e1bf47ea92,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41
+      objectReference: {fileID: 0}
     - target: {fileID: 9078085216921078864, guid: 1b9dbdfda74c17646a5757e1bf47ea92,
         type: 3}
       propertyPath: blackLocations.Array.size
