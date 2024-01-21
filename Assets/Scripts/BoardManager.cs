@@ -12,6 +12,7 @@ public class BoardManager : MonoBehaviour
     private const float TILE_OFFSET = 0.5f;
     public Transform[] whiteLocations;
     public Transform[] blackLocations;
+    public GameObject[]  gameObjects;
     private int selectionX = -1;
     private int selectionY = -1;
 
@@ -44,7 +45,7 @@ public class BoardManager : MonoBehaviour
     {
         UpdateSelection();
 
-        if (Input.touchCount>0)
+        if (Input.GetMouseButtonDown(0))
         {
             if (selectionX >= 0 && selectionY >= 0)
             {
@@ -171,11 +172,24 @@ public class BoardManager : MonoBehaviour
         if (!Camera.main) return;
 
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.GetTouch(0).position), out hit, 50.0f, LayerMask.GetMask("ChessPlane")))
-        {
-            selectionX = (int)hit.point.x;
+       // if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.GetTouch(0).position), out hit, 50.0f, //LayerMask.GetMask("ChessPieces")))
+      //  {
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 50.0f, LayerMask.GetMask("ChessPieces")))
+            {
+                int i = 0;
+            foreach(GameObject gameObject in gameObjects)
+            {
+                if(hit.collider.gameObject.GetInstanceID() == gameObject.GetInstanceID() )
+                {
+                    i = Array.IndexOf(gameObjects, gameObject);
+                }
+            }
+            selectionX = i%8;
+            selectionX = (int)i/8 ;
+
+            //selectionX = (int)hit.point.x;
             Debug.Log(selectionX);
-            selectionY = (int)hit.point.z;
+            //selectionY = (int)hit.point.z;
             Debug.Log(selectionY);
         }
         else
