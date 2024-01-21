@@ -32,12 +32,16 @@ public class BoardManager : MonoBehaviour
 
     public int[] EnPassantMove { set; get; }
 
+    private AudioSource audioSource;
+    public AudioClip moveSound;
+
     // Use this for initialization
     void Start()
     {
         Instance = this;
         SpawnAllChessmans();
         EnPassantMove = new int[2] { -1, -1 };
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -159,6 +163,7 @@ public class BoardManager : MonoBehaviour
             selectedChessman.SetPosition(x, y);
             Chessmans[x, y] = selectedChessman;
             isWhiteTurn = !isWhiteTurn;
+            PlayMoveSound();
         }
 
         selectedChessman.GetComponent<MeshRenderer>().material = previousMat;
@@ -310,6 +315,29 @@ public class BoardManager : MonoBehaviour
         isWhiteTurn = true;
         BoardHighlights.Instance.HideHighlights();
         SpawnAllChessmans();
+    }
+
+
+    private void PlayMoveSound()
+    {
+        // Check if an AudioClip is assigned
+        if (moveSound != null)
+        {
+            // Check if the AudioSource is not null
+            if (audioSource != null)
+            {
+                // Play the assigned move sound
+                audioSource.PlayOneShot(moveSound);
+            }
+            else
+            {
+                Debug.LogError("AudioSource component not found!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Move sound not assigned!");
+        }
     }
 }
 
