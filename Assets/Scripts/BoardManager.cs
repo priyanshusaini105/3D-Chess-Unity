@@ -44,7 +44,7 @@ public class BoardManager : MonoBehaviour
     {
         UpdateSelection();
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount>0)
         {
             if (selectionX >= 0 && selectionY >= 0)
             {
@@ -171,10 +171,12 @@ public class BoardManager : MonoBehaviour
         if (!Camera.main) return;
 
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 50.0f, LayerMask.GetMask("ChessPlane")))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.GetTouch(0).position), out hit, 50.0f, LayerMask.GetMask("ChessPlane")))
         {
             selectionX = (int)hit.point.x;
+            Debug.Log(selectionX);
             selectionY = (int)hit.point.z;
+            Debug.Log(selectionY);
         }
         else
         {
