@@ -18,7 +18,7 @@ public class BoardManager : MonoBehaviour
     public List<GameObject> chessmanPrefabs;
     private List<GameObject> activeChessman;
 
-    private Quaternion whiteOrientation = Quaternion.Euler(0, 180, 0);
+    private Quaternion whiteOrientation = Quaternion.Euler(0, 0, 0);
     private Quaternion blackOrientation = Quaternion.Euler(0, 180, 0);
 
     public Chessman[,] Chessmans { get; set; }
